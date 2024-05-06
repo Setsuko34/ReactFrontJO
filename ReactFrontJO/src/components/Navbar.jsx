@@ -14,6 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const drawerWidth = 240;
 const navItems = [
@@ -27,7 +28,7 @@ const navItems = [
   },
   {
     label: "Les Sports",
-    href: "/places",
+    href: "/sports",
   },
   {
     label: "Favoris",
@@ -58,7 +59,9 @@ function NavBar(props) {
         {navItems.map((item) => (
           <ListItem key={item.label} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item.label} />
+              <Link to={item.href}>
+                <ListItemText primary={item.label} />
+              </Link>
             </ListItemButton>
           </ListItem>
         ))}
