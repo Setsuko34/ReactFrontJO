@@ -23,11 +23,11 @@ const navItems = [
     href: "/",
   },
   {
-    label: "Les Lieux",
+    label: "Lieux",
     href: "/places",
   },
   {
-    label: "Les Sports",
+    label: "Sports",
     href: "/sports",
   },
   {
