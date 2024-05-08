@@ -18,9 +18,6 @@ export default function Places() {
         Les Lieux
       </Typography>
 
-      <Typography variant="h2" component="div" gutterBottom>
-        Les Disciplines
-      </Typography>
       <Grid container spacing={4}>
         <Grid item xs={4}>
           <SportCard item="237" title="Football" />
