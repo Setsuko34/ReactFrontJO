@@ -11,14 +11,14 @@ import { Divider } from "@mui/material";
 import axios from "axios";
 
 export default function Places() {
-  
   const [places, setPlaces] = useState([]);
+
   const getPlaces = async () => {
     await axios
       .get(
-        "https://data.paris2024.org/api/explore/v2.1/catalog/datasets/paris-2024-sites-de-competition?timezone=UTC&include_links=false&include_app_metas=false"
+        "https://data.paris2024.org/api/explore/v2.1/catalog/datasets/paris-2024-sites-de-competition/records?offset=0&timezone=UTC&include_links=false&include_app_metas=false"
       )
-      .then((response) => {
+      .then(response => {
         // pk places ne retourne rien
         setPlaces(response.data);
         // console.log("response" + response.data);
@@ -27,10 +27,12 @@ export default function Places() {
   };
 
   function afficherPlaces () {
-    if (places) {
+    let longueur = places.length;
+    if (longueur > 0) {
       return (
         console.log("pas vide"),
         console.log(places),
+        console.log(longueur),
         places.map((place) => (
         <div key={place.dataset_id}>
           <Typography variant="body1" component="div" gutterBottom>
@@ -42,6 +44,8 @@ export default function Places() {
     } else {
       return (
         console.log("vide"),
+        console.log(places),
+        console.log(longueur),
         <Box sx={{ flexGrow: 1, textAlign: "left" }}>
           {/* <NavBar /> */}
           <div style={{ height: "12vh" }}></div>
