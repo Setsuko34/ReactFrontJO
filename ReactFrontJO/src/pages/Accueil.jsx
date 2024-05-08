@@ -15,31 +15,31 @@ export default function Accueil() {
       <NavBar />
       <div style={{ height: "12vh" }}></div>
       <Typography variant="h2" component="div" gutterBottom>
-        Nos Jeux Olympiques
+        Les Jeux Olympiques
       </Typography>
       <Box sx={{ textAlign: "center" }}>
         <Carousel autoPlay>
           <div>
-            <img src="https://picsum.photos/id/237/200/100/" />
+            <img src="https://picsum.photos/id/237/1600/800/" />
             <p className="legend">Legend 1</p>
           </div>
           <div>
-            <img src="https://picsum.photos/id/243/200/100" />
+            <img src="https://picsum.photos/id/243/1600/800/" />
             <p className="legend">Legend 2</p>
           </div>
           <div>
-            <img src="https://picsum.photos/id/257/200/100" />
+            <img src="https://picsum.photos/id/257/1600/800/" />
             <p className="legend">Legend 3</p>
           </div>
           <div>
-            <img src="https://picsum.photos/id/200/200/100" />
+            <img src="https://picsum.photos/id/200/1600/800/" />
             <p className="legend">Legend 3</p>
           </div>
         </Carousel>
       </Box>
 
       <Typography variant="h2" component="div" gutterBottom>
-        Les Disciplines
+        Les disciplines
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={4}>
@@ -57,11 +57,14 @@ export default function Accueil() {
         <Grid item xs={4}>
           <SportCard item="201" title="Rugby" />
         </Grid>
+        <Grid item xs={4}>
+          <SportCard item="504" title="Judo" />
+        </Grid>
       </Grid>
 
       <Box
         sx={{
-          marginTop: "14vh",
+          marginTop: "4vh",
           paddingY: "4vh",
           display: "flex",
           alignItems: "center",
