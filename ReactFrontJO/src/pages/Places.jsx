@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
@@ -8,48 +8,63 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import SportCard from "../components/SportCard";
 import { Divider } from "@mui/material";
+import axios from "axios";
 
 export default function Places() {
+  
+  const [places, setPlaces] = useState([]);
+  const getPlaces = async () => {
+    await axios
+      .get(
+        "https://data.paris2024.org/api/explore/v2.1/catalog/datasets/paris-2024-sites-de-competition?timezone=UTC&include_links=false&include_app_metas=false"
+      )
+      .then((response) => {
+        // pk places ne retourne rien
+        setPlaces(response.data);
+        // console.log("response" + response.data);
+        // console.log("places" + places);
+      });
+  };
+
+  function afficherPlaces () {
+    if (places) {
+      return (
+        console.log("pas vide"),
+        console.log(places),
+        places.map((place) => (
+        <div key={place.dataset_id}>
+          <Typography variant="body1" component="div" gutterBottom>
+            {place.dataset_id}
+          </Typography>
+          <Divider />
+        </div>
+      )));
+    } else {
+      return (
+        console.log("vide"),
+        <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+          {/* <NavBar /> */}
+          <div style={{ height: "12vh" }}></div>
+          <Typography variant="h2" component="div" gutterBottom>
+            Pas de lieux
+          </Typography>
+        </Box>
+      );
+    }
+  };
+
+  useEffect(() => {
+    getPlaces();
+    afficherPlaces();
+  }, []);
+
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
-      <NavBar />
+      {/* <NavBar /> */}
       <div style={{ height: "12vh" }}></div>
       <Typography variant="h2" component="div" gutterBottom>
-        Les Lieux
+        Lieux
       </Typography>
-
-      <Grid container spacing={4}>
-        <Grid item xs={4}>
-          <SportCard item="237" title="Football" />
-        </Grid>
-        <Grid item xs={4}>
-          <SportCard item="11" title="Basket" />
-        </Grid>
-        <Grid item xs={4}>
-          <SportCard item="257" title="Natation" />
-        </Grid>
-        <Grid item xs={4}>
-          <SportCard item="200" title="Athlétisme" />
-        </Grid>
-        <Grid item xs={4}>
-          <SportCard item="201" title="Rugby" />
-        </Grid>
-      </Grid>
-
-      <Box
-        sx={{
-          marginTop: "14vh",
-          paddingY: "4vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          borderTop: "3px solid black",
-        }}
-      >
-        <Button variant="contained" color="primary">
-          Voir toutes les disciplines
-        </Button>
-      </Box>
     </Box>
   );
 }
