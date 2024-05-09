@@ -1,11 +1,13 @@
 # Projet ReactFrontJO
 
 ### TODO : 
-##### Page discipline :
+##### Page Disciplines :
 - Afficher la liste de toutes les disciplines et sélectionner les disciplines favorites
 - Obtenir cette liste en allant chercher sur un site officiel et stocker les résultats dans un fichier externe
 
-##### Pages discipline 1 et discipline 2 :
+***
+
+##### Pages Discipline1 et Discipline2 :
 - Les données sont à récupérer (scrapping ou autre AI)
 - Un composant affichant la liste chronologique des épreuves de la discipline (épreuve, discipline, date, heure, état, médaille )
 - Un filtre est possible par épreuve  et par gender (input user)
@@ -14,8 +16,13 @@
 
 > Ex : https://olympics.com/en/paris-2024/schedule/swimming
 
- ***
+***
+
+##### Page Favoris : 
+- Affiche les favoris sélectionnés dans la page Disciplines
+
+***
  
-##### Page LocationSites : 
+##### Page Lieux : 
 - Une page / composant affichant la liste de tous les sites ou se déroulent les épreuves
 > S'appuyer sur l'API : https://data.paris2024.org/api/explore/v2.1/console
