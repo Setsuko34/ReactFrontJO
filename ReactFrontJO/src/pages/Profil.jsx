@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../components/Navbar";
-import { TextField, Button, Snackbar, Alert, Typography } from "@mui/material";
+import { TextField, Button, Snackbar, Alert, Typography, Box } from "@mui/material";
 
 const Profil = () => {
   const initialUser = {
@@ -29,52 +29,54 @@ const Profil = () => {
 
   return (
     <div>
-      <NavBar />
-      <Typography variant="h4" align="center" gutterBottom>
-        Profil
-      </Typography>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <TextField
-          label="Pseudo"
-          name="pseudo"
-          value={user.pseudo}
-          onChange={handleInputChange}
-          style={{ marginBottom: 20 }}
-        />
-        <TextField
-          label="Nom"
-          name="nom"
-          value={user.nom}
-          onChange={handleInputChange}
-          style={{ marginBottom: 20 }}
-        />
-        <TextField
-          label="Prénom"
-          name="prenom"
-          value={user.prenom}
-          onChange={handleInputChange}
-          style={{ marginBottom: 20 }}
-        />
-        <TextField
-          label="Email"
-          name="email"
-          value={user.email}
-          onChange={handleInputChange}
-          style={{ marginBottom: 20 }}
-        />
-        <Button variant="contained" onClick={handleSave}>
-          Sauvegarder
-        </Button>
-        <Snackbar
-          open={isSaved}
-          autoHideDuration={4000}
-          onClose={() => setIsSaved(false)}
-        >
-          <Alert severity="success">
-            Données sauvegardées (visible dans la console)
-          </Alert>
-        </Snackbar>
-      </div>
+      <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+        <NavBar />
+        <Typography variant="h4" align="center" gutterBottom>
+          Profil
+        </Typography>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <TextField
+            label="Pseudo"
+            name="pseudo"
+            value={user.pseudo}
+            onChange={handleInputChange}
+            style={{ marginBottom: 20 }}
+          />
+          <TextField
+            label="Nom"
+            name="nom"
+            value={user.nom}
+            onChange={handleInputChange}
+            style={{ marginBottom: 20 }}
+          />
+          <TextField
+            label="Prénom"
+            name="prenom"
+            value={user.prenom}
+            onChange={handleInputChange}
+            style={{ marginBottom: 20 }}
+          />
+          <TextField
+            label="Email"
+            name="email"
+            value={user.email}
+            onChange={handleInputChange}
+            style={{ marginBottom: 20 }}
+          />
+          <Button variant="contained" onClick={handleSave}>
+            Sauvegarder
+          </Button>
+          <Snackbar
+            open={isSaved}
+            autoHideDuration={4000}
+            onClose={() => setIsSaved(false)}
+          >
+            <Alert severity="success">
+              Données sauvegardées (visible dans la console)
+            </Alert>
+          </Snackbar>
+        </div>
+      </Box>
     </div>
   );
 };
