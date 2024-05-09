@@ -24,22 +24,29 @@ const navItems = [
   },
   {
     label: "Lieux",
-    href: "/places",
+    href: "/lieux",
   },
   {
-    label: "Sports",
-    href: "/sports",
+    label: "Disciplines",
+    href: "/disciplines",
+  },
+  {
+    label: "Football",
+    href: "/football",
+  },
+  {
+    label: "Basketball",
+    href: "/basketball",
   },
   {
     label: "Favoris",
-    href: "/events",
+    href: "/favoris",
   },
   {
     label: "Profil",
-    href: "/profile",
+    href: "/profil",
   },
 ];
-// const navItems = ["Home", "About", "Contact"];
 
 function NavBar(props) {
   const { window } = props;

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../components/Navbar";
-import { TextField, Button } from "@mui/material";
-import { Snackbar } from "@mui/material";
-import { Alert } from "@mui/material";
+import { TextField, Button, Snackbar, Alert, Typography } from "@mui/material";
 
 const Profil = () => {
   const initialUser = {
@@ -32,7 +30,9 @@ const Profil = () => {
   return (
     <div>
       <NavBar />
-      <h1>Profil</h1>
+      <Typography variant="h4" align="center" gutterBottom>
+        Profil
+      </Typography>
       <div style={{ display: "flex", flexDirection: "column" }}>
         <TextField
           label="Pseudo"
@@ -70,7 +70,9 @@ const Profil = () => {
           autoHideDuration={4000}
           onClose={() => setIsSaved(false)}
         >
-          <Alert severity="success">Données sauvegardées (visible dans la console)</Alert>
+          <Alert severity="success">
+            Données sauvegardées (visible dans la console)
+          </Alert>
         </Snackbar>
       </div>
     </div>

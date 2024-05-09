@@ -14,7 +14,7 @@ export default function Accueil() {
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
       <div style={{ height: "12vh" }}></div>
-      <Typography variant="h2" component="div" gutterBottom>
+      <Typography variant="h4" align="center" gutterBottom>
         Les Jeux Olympiques
       </Typography>
       <Box sx={{ textAlign: "center" }}>
@@ -38,7 +38,7 @@ export default function Accueil() {
         </Carousel>
       </Box>
 
-      <Typography variant="h2" component="div" gutterBottom>
+      <Typography variant="h4" align="center" gutterBottom>
         Les disciplines
       </Typography>
       <Grid container spacing={4}>

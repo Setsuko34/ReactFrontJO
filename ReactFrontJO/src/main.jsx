@@ -6,6 +6,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Accueil from "./pages/Accueil.jsx";
 import Places from "./pages/Places.jsx";
 import Profil from "./pages/Profil.jsx";
+import Disciplines from "./pages/Disciplines.jsx";
+import Football from "./pages/Football.jsx";
+import Basketball from "./pages/Basketball.jsx";
+import Favoris from "./pages/Favoris.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -13,10 +17,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/places" element={<Places />} />
-        <Route path="/sports" element={<Accueil />} />
-        <Route path="/events" element={<Accueil />} />
-        <Route path="/profile" element={<Profil />} />
+        <Route path="/lieux" element={<Places />} />
+        <Route path="/disciplines" element={<Disciplines />} />
+        <Route path="/football" element={<Football />} />
+        <Route path="/basketball" element={<Basketball />} />
+        <Route path="/favoris" element={<Favoris />} />
+        <Route path="/profil" element={<Profil />} />
       </Routes>
     </Router>
   </React.StrictMode>
