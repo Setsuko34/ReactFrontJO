@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Divider, Box, Typography } from "@mui/material";
+import {
+  Divider,
+  Box,
+  Typography,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+} from "@mui/material";
 import NavBar from "../components/Navbar";
 import axios from "axios";
 import { Loader } from "semantic-ui-react";
 import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import SportCard from "../components/SportCard";
@@ -31,32 +38,42 @@ export default function Lieux() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left", marginTop: 10 }}>
       <NavBar />
-      {lieux.length > 0
-        ? (lieux.map((place) => (
-            <div key={place.code_site}>
+      {lieux.length > 0 ? (
+        <Grid container spacing={2}>
+          {lieux.map((place) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={place.code_site}>
               {loading ? <Loader /> : null}
-              <Typography variant="body1" component="div" gutterBottom>
-                {place.nom_site}
-              </Typography>
-              <Typography variant="body1" component="div" gutterBottom>
-                {place.sports}
-              </Typography>
-              <Typography variant="body1" component="div" gutterBottom>
-                {place.start_date}
-              </Typography>
-              <Divider />
-            </div>
-          ))
-        ) : (
-          (
-            <Box sx={{ flexGrow: 1, textAlign: "left" }}>
-              <Typography variant="h4" align="center" gutterBottom>
-                Chargement des lieux...
-              </Typography>
-            </Box>
+              <Card
+                sx={{
+                  height: "100%",
+                }}
+              >
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography variant="h6" component="div" gutterBottom>
+                    {place.nom_site}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    Sport : {place.sports}
+                  </Typography>
+                  <div style={{ marginTop: "10px" }}>
+                    <Typography variant="body2" color="text.secondary">
+                      Date : {new Date(place.start_date).toLocaleDateString("fr-FR")}
+                    </Typography>
+                  </div>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
+        </Grid>
+      ) : (
+        <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+          <Typography variant="h4" align="center" gutterBottom>
+            Chargement des lieux...
+          </Typography>
+        </Box>
+      )}
     </Box>
   );
 }
