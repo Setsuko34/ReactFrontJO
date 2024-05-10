@@ -14,7 +14,7 @@ export default function SportCard({ item, title }) {
           <CardMedia
             component="img"
             height="140"
-            image={"https://picsum.photos/id/" + item + "/200/100"}
+            image={"https://picsum.photos/id/" + item + "/2000/1000"}
             alt={title}
           />
         </CardActionArea>
