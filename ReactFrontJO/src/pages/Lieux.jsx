@@ -38,8 +38,16 @@ export default function Lieux() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", marginTop: 10 }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
+        <Box sx={{ flexGrow: 1, textAlign: "center", marginY: 5 }}>
+          <Typography variant="h4" align="center" gutterBottom>
+            Lieux
+          </Typography>
+          <Typography variant="p" align="center" gutterBottom>
+            Voici tous les lieux qui vont accueillir les compétitions des Jeux Olympiques de Paris 2024.
+          </Typography>
+        </Box>
       {lieux.length > 0 ? (
         <Grid container spacing={2}>
           {lieux.map((place) => (
