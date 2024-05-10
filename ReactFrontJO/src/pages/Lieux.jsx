@@ -11,7 +11,6 @@ import SportCard from "../components/SportCard";
 
 export default function Lieux() {
   const [lieux, setLieux] = useState([]);
-  const [nbLieux, setNbLieux] = useState(0);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -19,15 +18,13 @@ export default function Lieux() {
   }, []);
 
   const getLieux = async () => {
-    setLoading(true);
     try {
       const response = await axios.get(
         "https://data.paris2024.org/api/explore/v2.1/catalog/datasets/paris-2024-sites-de-competition/records?offset=0&timezone=UTC&include_links=false&include_app_metas=false"
       );
       // pk lieux ne contient rien
-      setLieux(response.data);
+      setLieux(response.data.results);
       setLoading(false);
-      setNbLieux(lieux.length);
     } catch (error) {
       console.error("Error trying to fetch locations", error);
     }
@@ -36,17 +33,8 @@ export default function Lieux() {
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
-      {/* {(() => {
-        while (nbLieux == 0) {
-          getLieux();
-          console.log("nbLieux = 0");
-        }
-      })()} */}
-      {nbLieux > 0
-        ? (console.log("pas vide"),
-          console.log(lieux),
-          console.log(nbLieux),
-          lieux.map((place) => (
+      {lieux.length > 0
+        ? (lieux.map((place) => (
             <div key={place.code_site}>
               {loading ? <Loader /> : null}
               <Typography variant="body1" component="div" gutterBottom>
@@ -60,10 +48,8 @@ export default function Lieux() {
               </Typography>
               <Divider />
             </div>
-          )))
-        : (console.log("vide"),
-          console.log(lieux),
-          console.log(nbLieux),
+          ))
+        ) : (
           (
             <Box sx={{ flexGrow: 1, textAlign: "left" }}>
               <Typography variant="h4" align="center" gutterBottom>
