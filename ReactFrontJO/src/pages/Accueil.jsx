@@ -8,8 +8,13 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import SportCard from "../components/SportCard";
 import { Divider } from "@mui/material";
+import * as images from "../assets/picture/images.jsx";
+
 
 export default function Accueil() {
+  function removeAccents(str) {
+    return str.normalize("NFD").replaceAll(/[\u0300-\u036f]/g, "").replaceAll(' ', '_').replace("'",'_').replace('-','_');
+  }
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
@@ -19,22 +24,11 @@ export default function Accueil() {
       </Typography>
       <Box sx={{ textAlign: "center" }}>
         <Carousel autoPlay>
-          <div>
-            <img src="https://picsum.photos/id/237/1600/800/" />
-            <p className="legend">Legend 1</p>
-          </div>
-          <div>
-            <img src="https://picsum.photos/id/243/1600/800/" />
-            <p className="legend">Legend 2</p>
-          </div>
-          <div>
-            <img src="https://picsum.photos/id/257/1600/800/" />
-            <p className="legend">Legend 3</p>
-          </div>
-          <div>
-            <img src="https://picsum.photos/id/200/1600/800/" />
-            <p className="legend">Legend 3</p>
-          </div>
+          {Object.keys(images).map((sport, index) => (
+            <div>
+              <img src={images[removeAccents(sport).toLowerCase()]} />
+            </div>
+          ))}
         </Carousel>
       </Box>
 
@@ -58,7 +52,7 @@ export default function Accueil() {
           <SportCard item="201" title="Rugby" />
         </Grid>
         <Grid item xs={4}>
-          <SportCard item="504" title="Judo" />
+          <SportCard item="..." title="Voir Plus" onclick={"/disciplines"}/>
         </Grid>
       </Grid>
 
