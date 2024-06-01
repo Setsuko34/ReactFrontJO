@@ -8,19 +8,32 @@ import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
 
-export default function SportDetailedCard({ item, sportInfo, onClick }) {
+export default function SportDetailedCard({ item, sportInfo }) {
   const { sport, description, lieu, dates, participants } = sportInfo;
+  
   function removeAccents(str) {
-    return str.normalize("NFD").replaceAll(/[\u0300-\u036f]/g, "").replaceAll(' ', '_').replace("'",'_').replace('-','_');
+    return str
+      .normalize("NFD")
+      .replaceAll(/[\u0300-\u036f]/g, "")
+      .replaceAll(" ", "_")
+      .replace("'", "_")
+      .replace("-", "_");
   }
+
   return (
-    <Link to={onClick} style={{ textDecoration: 'none' }}>
-      <Box sx={{ display: 'flex', width: '100%', marginBottom: "2vh" }}>
+    <Link
+      to={{
+        pathname: "/disciplinedetails",
+        search: `?sport=${sport}&description=${description}&lieu=${lieu}&dates=${dates}&participants=${participants}`,
+      }}
+      style={{ textDecoration: "none" }}
+    >
+      <Box sx={{ display: "flex", width: "100%", marginBottom: "2vh" }}>
         <Card sx={{ borderRadius: 6 }}>
-          <CardActionArea sx={{ display: 'flex' }}>
+          <CardActionArea sx={{ display: "flex" }}>
             <CardMedia
               component="img"
-              sx={{ width: 400, imageFit: 'cover', height: '100%'}}
+              sx={{ width: 400, imageFit: "cover", height: "100%", margin: "auto" }}
               image={images[removeAccents(sport).toLowerCase()]}
               alt={sport}
             />
@@ -31,7 +44,11 @@ export default function SportDetailedCard({ item, sportInfo, onClick }) {
               <Typography variant="body2" color="text.secondary">
                 {description}
               </Typography>
-              <Typography variant="body2" color="text.primary" sx={{ marginTop: '1vh' }}>
+              <Typography
+                variant="body2"
+                color="text.primary"
+                sx={{ marginTop: "1vh" }}
+              >
                 <strong>Lieu :</strong> {lieu}
               </Typography>
               <Typography variant="body2" color="text.primary">

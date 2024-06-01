@@ -3,9 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NavBar from "../components/Navbar";
 import SportDetailedCard from "../components/SportDetailedCard";
-import sportsData from '../assets/data/sports.json';
-import Grid from "@mui/material/Grid";
-
+import sportsData from "../assets/data/sports.json";
 
 export default function Disciplines() {
   return (
@@ -16,7 +14,12 @@ export default function Disciplines() {
         Disciplines
       </Typography>
       {sportsData.map((sport, key) => (
-          <SportDetailedCard key={key} item={1} title={sport.sport} sportInfo={sport} />
+        <SportDetailedCard
+          key={key}
+          item={1}
+          title={sport.sport}
+          sportInfo={sport}
+        />
       ))}
     </Box>
   );

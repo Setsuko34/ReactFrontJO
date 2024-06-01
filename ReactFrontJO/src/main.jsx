@@ -10,6 +10,7 @@ import Disciplines from "./pages/Disciplines.jsx";
 import Football from "./pages/Football.jsx";
 import Basketball from "./pages/Basketball.jsx";
 import Favoris from "./pages/Favoris.jsx";
+import DisciplineDetails from "./pages/DisciplineDetails.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/basketball" element={<Basketball />} />
         <Route path="/favoris" element={<Favoris />} />
         <Route path="/profil" element={<Profil />} />
+        <Route path="/disciplinedetails" element={<DisciplineDetails />} />
       </Routes>
     </Router>
   </React.StrictMode>
