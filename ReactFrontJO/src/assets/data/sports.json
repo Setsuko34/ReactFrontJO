@@ -3,35 +3,77 @@
         "sport": "Athlétisme",
         "description": "L'athlétisme comprend une variété d'épreuves de course, de saut et de lancer, testant la vitesse, l'endurance et la puissance des athlètes.",
         "lieu": "Stade de France",
-        "coordonnees_gps": {
-            "lat": 48.924459,
-            "lon": 2.360165
-        },
+        "coordonnees_gps": [
+            "48.924459",
+            "2.360165"
+        ],
         "dates": {
             "début": "2024-08-02",
             "fin": "2024-08-11"
         },
-        "participants": [
-            "Usain Bolt",
-            "Allyson Felix",
-            "Mo Farah",
-            "Elaine Thompson-Herah",
-            "Armand Duplantis",
-            "Shelly-Ann Fraser-Pryce",
-            "Karsten Warholm",
-            "Dalilah Muhammad",
-            "Mondo Duplantis",
-            "Yulimar Rojas"
-        ]
+        "participants": {
+            "Hommes": [
+                "Usain Bolt (JAM)",
+                "Mo Farah (GBR)",
+                "Eliud Kipchoge (KEN)",
+                "Noah Lyles (USA)",
+                "Wayde van Niekerk (RSA)",
+                "Mutaz Essa Barshim (QAT)",
+                "Christian Coleman (USA)",
+                "Armand Duplantis (SWE)",
+                "Yulimar Rojas (VEN)",
+                "Andre De Grasse (CAN)",
+                "Rai Benjamin (USA)",
+                "Ryan Crouser (USA)",
+                "Karsten Warholm (NOR)",
+                "Joshua Cheptegei (UGA)",
+                "Timothy Cheruiyot (KEN)",
+                "Hugues Fabrice Zango (BUR)",
+                "Donavan Brazier (USA)",
+                "Daniel Stahl (SWE)",
+                "Luvo Manyonga (RSA)",
+                "Marcell Jacobs (ITA)",
+                "Renaud Lavillenie (FRA)",
+                "Jakob Ingebrigtsen (NOR)",
+                "Allyson Felix (USA)",
+                "Mondo Duplantis (SWE)"
+            ],
+            "Femmes": [
+                "Allyson Felix (USA)",
+                "Shelly-Ann Fraser-Pryce (JAM)",
+                "Elaine Thompson-Herah (JAM)",
+                "Sifan Hassan (NED)",
+                "Dina Asher-Smith (GBR)",
+                "Shaunae Miller-Uibo (BAH)",
+                "Sydney McLaughlin (USA)",
+                "Yulimar Rojas (VEN)",
+                "Caterine Ibargüen (COL)",
+                "Faith Kipyegon (KEN)",
+                "Jessica Ennis-Hill (GBR)",
+                "Dalilah Muhammad (USA)",
+                "Marie-Josée Ta Lou (CIV)",
+                "Beatrice Chepkoech (KEN)",
+                "Anita Wlodarczyk (POL)",
+                "Sandra Perkovic (CRO)",
+                "Tori Bowie (USA)",
+                "Nafissatou Thiam (BEL)",
+                "Genzebe Dibaba (ETH)",
+                "Hellen Obiri (KEN)",
+                "Mariya Lasitskene (RUS)",
+                "Katarina Johnson-Thompson (GBR)",
+                "Ivana Spanovic (SRB)",
+                "Salwa Eid Naser (BRN)"
+            ]
+        }
     },
     {
         "sport": "Natation",
         "description": "La natation est une série de compétitions dans diverses épreuves, y compris la nage libre, la brasse, le dos et le papillon, ainsi que les relais.",
         "lieu": "Piscine Olympique",
-        "coordonnees_gps": {
-            "lat": 48.844303,
-            "lon": 2.257774
-        },
+        "coordonnees_gps": [
+            "48.844303",
+            2.257774
+        ],
         "dates": {
             "début": "2024-07-26",
             "fin": "2024-08-03"
@@ -53,10 +95,10 @@
         "sport": "Gymnastique artistique",
         "description": "La gymnastique artistique combine des exercices sur divers appareils pour tester la force, la souplesse, l'équilibre et la coordination des athlètes.",
         "lieu": "Accor Arena",
-        "coordonnees_gps": {
-            "lat": 48.838097,
-            "lon": 2.378891
-        },
+        "coordonnees_gps": [
+            "48.838097",
+            2.378891
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-05"
@@ -78,10 +120,10 @@
         "sport": "Football",
         "description": "Le football est un sport d'équipe où deux équipes de onze joueurs tentent de marquer des buts en envoyant un ballon dans les filets adverses.",
         "lieu": "Parc des Princes",
-        "coordonnees_gps": {
-            "lat": 48.841388,
-            "lon": 2.253019
-        },
+        "coordonnees_gps": [
+            "48.841388",
+            2.253019
+        ],
         "dates": {
             "début": "2024-07-24",
             "fin": "2024-08-10"
@@ -103,10 +145,10 @@
         "sport": "Basketball",
         "description": "Le basketball est un sport d'équipe où deux équipes de cinq joueurs tentent de marquer des points en lançant un ballon à travers un cerceau.",
         "lieu": "Bercy Arena",
-        "coordonnees_gps": {
-            "lat": 48.838057,
-            "lon": 2.378723
-        },
+        "coordonnees_gps": [
+            "48.838057",
+            2.378723
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-10"
@@ -128,10 +170,10 @@
         "sport": "Basketball 3x3",
         "description": "Le basketball 3x3 est une variante du basketball joué avec trois joueurs par équipe sur un demi-terrain, visant à marquer des points rapidement.",
         "lieu": "Place de la Concorde",
-        "coordonnees_gps": {
-            "lat": 48.865633,
-            "lon": 2.321236
-        },
+        "coordonnees_gps": [
+            "48.865633",
+            2.321236
+        ],
         "dates": {
             "début": "2024-07-30",
             "fin": "2024-08-03"
@@ -153,10 +195,10 @@
         "sport": "Volleyball",
         "description": "Le volleyball est un sport d'équipe où deux équipes de six joueurs tentent de faire tomber le ballon dans le camp adverse en passant par-dessus un filet.",
         "lieu": "Parc des Expositions",
-        "coordonnees_gps": {
-            "lat": 48.831099,
-            "lon": 2.285024
-        },
+        "coordonnees_gps": [
+            "48.831099",
+            2.285024
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-10"
@@ -178,10 +220,10 @@
         "sport": "Beach volley",
         "description": "Le beach-volley est une version du volleyball jouée sur le sable avec des équipes de deux joueurs, se concentrant sur l'agilité et les stratégies rapides.",
         "lieu": "Tour Eiffel",
-        "coordonnees_gps": {
-            "lat": 48.858370,
-            "lon": 2.294481
-        },
+        "coordonnees_gps": [
+            "48.858370",
+            2.294481
+        ],
         "dates": {
             "début": "2024-07-28",
             "fin": "2024-08-10"
@@ -203,10 +245,10 @@
         "sport": "Boxe",
         "description": "La boxe est un sport de combat où deux concurrents se battent en utilisant uniquement leurs poings, avec des catégories de poids spécifiques.",
         "lieu": "Grand Palais",
-        "coordonnees_gps": {
-            "lat": 48.866523,
-            "lon": 2.312243
-        },
+        "coordonnees_gps": [
+            "48.866523",
+            2.312243
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-10"
@@ -228,10 +270,10 @@
         "sport": "Breaking",
         "description": "Le breaking, ou breakdance, est une danse urbaine de compétition mettant en avant des mouvements acrobatiques et des figures spectaculaires.",
         "lieu": "Le Dôme",
-        "coordonnees_gps": {
-            "lat": 48.857489,
-            "lon": 2.287600
-        },
+        "coordonnees_gps": [
+            "48.857489",
+            2.287600
+        ],
         "dates": {
             "début": "2024-08-09",
             "fin": "2024-08-10"
@@ -253,10 +295,10 @@
         "sport": "Canoë slalom",
         "description": "Le canoë slalom est une course chronométrée où les athlètes naviguent à travers des portes suspendues sur une rivière à débit rapide.",
         "lieu": "Île de Puteaux",
-        "coordonnees_gps": {
-            "lat": 48.883054,
-            "lon": 2.239073
-        },
+        "coordonnees_gps": [
+            "48.883054",
+            2.239073
+        ],
         "dates": {
             "début": "2024-07-29",
             "fin": "2024-08-04"
@@ -278,10 +320,10 @@
         "sport": "Canoë sprint",
         "description": "Le canoë sprint est une course de vitesse sur des eaux calmes où les athlètes pagaient sur une distance définie dans des lignes droites.",
         "lieu": "Île de Puteaux",
-        "coordonnees_gps": {
-            "lat": 48.883054,
-            "lon": 2.239073
-        },
+        "coordonnees_gps": [
+            "48.883054",
+            2.239073
+        ],
         "dates": {
             "début": "2024-08-06",
             "fin": "2024-08-10"
@@ -303,10 +345,10 @@
         "sport": "BMX Freestyle",
         "description": "Le BMX freestyle consiste en des performances acrobatiques sur un vélo de BMX, avec des figures aériennes et des sauts complexes.",
         "lieu": "La Villette",
-        "coordonnees_gps": {
-            "lat": 48.889722,
-            "lon": 2.393333
-        },
+        "coordonnees_gps": [
+            "48.889722",
+            2.393333
+        ],
         "dates": {
             "début": "2024-07-30",
             "fin": "2024-08-01"
@@ -366,10 +408,10 @@
         "sport": "BMX Racing",
         "description": "Le BMX racing est une course de sprint sur une piste accidentée avec des bosses et des virages serrés, nécessitant vitesse et agilité.",
         "lieu": "La Villette",
-        "coordonnees_gps": {
-            "lat": 48.889722,
-            "lon": 2.393333
-        },
+        "coordonnees_gps": [
+            "48.889722",
+            2.393333
+        ],
         "dates": {
             "début": "2024-07-30",
             "fin": "2024-08-01"
@@ -391,10 +433,10 @@
         "sport": "Cyclisme VTT",
         "description": "Le cyclisme VTT (vélo tout-terrain) consiste en des courses sur des terrains accidentés avec des obstacles naturels, mettant à l'épreuve l'endurance et la technique.",
         "lieu": "Elancourt",
-        "coordonnees_gps": {
-            "lat": 48.784177,
-            "lon": 1.958038
-        },
+        "coordonnees_gps": [
+            "48.784177",
+            1.958038
+        ],
         "dates": {
             "début": "2024-07-28",
             "fin": "2024-08-01"
@@ -416,10 +458,10 @@
         "sport": "Cyclisme Route",
         "description": "Le cyclisme sur route est une course de vitesse et d'endurance sur des routes pavées, souvent avec des parcours de plusieurs centaines de kilomètres.",
         "lieu": "Champs-Élysées",
-        "coordonnees_gps": {
-            "lat": 48.867348,
-            "lon": 2.329141
-        },
+        "coordonnees_gps": [
+            "48.867348",
+            2.329141
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-03"
@@ -441,10 +483,10 @@
         "sport": "Cyclisme Piste",
         "description": "Le cyclisme sur piste se déroule dans un vélodrome où les athlètes participent à diverses courses de vitesse et d'endurance sur une piste ovale inclinée.",
         "lieu": "Vélodrome de Saint-Quentin-en-Yvelines",
-        "coordonnees_gps": {
-            "lat": 48.784082,
-            "lon": 2.029441
-        },
+        "coordonnees_gps": [
+            "48.784082",
+            2.029441
+        ],
         "dates": {
             "début": "2024-08-05",
             "fin": "2024-08-08"
@@ -466,10 +508,10 @@
         "sport": "Plongeon",
         "description": "Le plongeon est une épreuve où les athlètes exécutent des figures acrobatiques en sautant dans l'eau depuis des hauteurs variées.",
         "lieu": "Piscine Olympique",
-        "coordonnees_gps": {
-            "lat": 48.844303,
-            "lon": 2.257774
-        },
+        "coordonnees_gps": [
+            "48.844303",
+            2.257774
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-07"
@@ -491,10 +533,10 @@
         "sport": "Équitation",
         "description": "L'équitation comprend diverses disciplines où les cavaliers et leurs chevaux démontrent leur habileté dans des épreuves de dressage, de saut et de cross-country.",
         "lieu": "Château de Versailles",
-        "coordonnees_gps": {
-            "lat": 48.804865,
-            "lon": 2.120355
-        },
+        "coordonnees_gps": [
+            "48.804865",
+            2.120355
+        ],
         "dates": {
             "début": "2024-07-26",
             "fin": "2024-08-07"
@@ -516,10 +558,10 @@
         "sport": "Escrime",
         "description": "L'escrime est un sport de combat où les concurrents s'affrontent avec des armes comme le fleuret, l'épée et le sabre, visant à toucher l'adversaire.",
         "lieu": "Grand Palais",
-        "coordonnees_gps": {
-            "lat": 48.866523,
-            "lon": 2.312243
-        },
+        "coordonnees_gps": [
+            "48.866523",
+            2.312243
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-04"
@@ -541,10 +583,10 @@
         "sport": "Golf",
         "description": "Le golf est un sport où les joueurs utilisent différents clubs pour frapper une balle dans une série de trous sur un parcours dans le moins de coups possible.",
         "lieu": "Golf National",
-        "coordonnees_gps": {
-            "lat": 48.754505,
-            "lon": 2.074608
-        },
+        "coordonnees_gps": [
+            "48.754505",
+            2.074608
+        ],
         "dates": {
             "début": "2024-07-29",
             "fin": "2024-08-11"
@@ -566,10 +608,10 @@
         "sport": "Handball",
         "description": "Le handball est un sport d'équipe où deux équipes de sept joueurs tentent de marquer des buts en lançant une balle dans le filet adverse.",
         "lieu": "Pierre Mauroy",
-        "coordonnees_gps": {
-            "lat": 50.611944,
-            "lon": 3.130833
-        },
+        "coordonnees_gps": [
+            "50.611944",
+            3.130833
+        ],
         "dates": {
             "début": "2024-07-25",
             "fin": "2024-08-10"
@@ -591,10 +633,10 @@
         "sport": "Hockey",
         "description": "Le hockey est un sport d'équipe où deux équipes de onze joueurs utilisent des crosses pour frapper une balle et marquer des buts dans le camp adverse.",
         "lieu": "Stade Yves-du-Manoir",
-        "coordonnees_gps": {
-            "lat": 48.927800,
-            "lon": 2.237300
-        },
+        "coordonnees_gps": [
+            "48.927800",
+            2.237300
+        ],
         "dates": {
             "début": "2024-07-24",
             "fin": "2024-08-08"
@@ -616,10 +658,10 @@
         "sport": "Judo",
         "description": "Le judo est un art martial et sport de combat où les compétiteurs utilisent des techniques de projection et de soumission pour marquer des points ou immobiliser l'adversaire.",
         "lieu": "Champ de Mars",
-        "coordonnees_gps": {
-            "lat": 48.855556,
-            "lon": 2.298611
-        },
+        "coordonnees_gps": [
+            "48.855556",
+            2.298611
+        ],
         "dates": {
             "début": "2024-07-26",
             "fin": "2024-08-03"
@@ -641,10 +683,10 @@
         "sport": "Karaté",
         "description": "Le karaté est un art martial où les athlètes utilisent des coups de poing, de pied, des genoux et des techniques de blocage pour marquer des points contre leurs adversaires.",
         "lieu": "Le Grand Palais",
-        "coordonnees_gps": {
-            "lat": 48.866667,
-            "lon": 2.312222
-        },
+        "coordonnees_gps": [
+            "48.866667",
+            2.312222
+        ],
         "dates": {
             "début": "2024-08-05",
             "fin": "2024-08-07"
@@ -666,10 +708,10 @@
         "sport": "Pentathlon moderne",
         "description": "Le pentathlon moderne est une épreuve multi-sports comprenant l'escrime, la natation, l'équitation, le tir au pistolet et la course à pied.",
         "lieu": "Versailles",
-        "coordonnees_gps": {
-            "lat": 48.804722,
-            "lon": 2.120556
-        },
+        "coordonnees_gps": [
+            "48.804722",
+            2.120556
+        ],
         "dates": {
             "début": "2024-07-29",
             "fin": "2024-08-06"
@@ -691,10 +733,10 @@
         "sport": "Rugby",
         "description": "Le rugby à 7 est une variante du rugby traditionnel avec sept joueurs par équipe, connu pour son rythme rapide et ses matchs courts.",
         "lieu": "Stade de France",
-        "coordonnees_gps": {
-            "lat": 48.924444,
-            "lon": 2.360833
-        },
+        "coordonnees_gps": [
+            "48.924444",
+            2.360833
+        ],
         "dates": {
             "début": "2024-08-02",
             "fin": "2024-08-10"
@@ -716,10 +758,10 @@
         "sport": "Skateboard",
         "description": "Le skateboard comprend des compétitions de street et de park, où les athlètes réalisent des figures et des manœuvres acrobatiques sur une planche à roulettes.",
         "lieu": "Place de la Concorde",
-        "coordonnees_gps": {
-            "lat": 48.865633,
-            "lon": 2.321236
-        },
+        "coordonnees_gps": [
+            "48.865633",
+            2.321236
+        ],
         "dates": {
             "début": "2024-08-03",
             "fin": "2024-08-08"
@@ -741,10 +783,10 @@
         "sport": "Surf",
         "description": "Le surf est une compétition où les athlètes montent sur les vagues avec des planches, jugés sur leur technique, leur style et leurs manœuvres.",
         "lieu": "Biarritz",
-        "coordonnees_gps": {
-            "lat": 43.483151,
-            "lon": -1.558626
-        },
+        "coordonnees_gps": [
+            "43.483151",
+            -1.558626
+        ],
         "dates": {
             "début": "2024-08-05",
             "fin": "2024-08-10"
@@ -766,10 +808,10 @@
         "sport": "Taekwondo",
         "description": "Le taekwondo est un art martial coréen qui met l'accent sur les coups de pied spectaculaires et les techniques de main pour marquer des points contre l'adversaire.",
         "lieu": "Le Dôme",
-        "coordonnees_gps": {
-            "lat": 48.857222,
-            "lon": 2.355833
-        },
+        "coordonnees_gps": [
+            "48.857222",
+            2.355833
+        ],
         "dates": {
             "début": "2024-07-26",
             "fin": "2024-08-01"
@@ -791,10 +833,10 @@
         "sport": "Tennis",
         "description": "Le tennis est un sport de raquette où les joueurs frappent une balle de part et d'autre d'un filet, cherchant à marquer des points en la faisant atterrir dans le court adverse.",
         "lieu": "Roland-Garros",
-        "coordonnees_gps": {
-            "lat": 48.847026,
-            "lon": 2.252807
-        },
+        "coordonnees_gps": [
+            "48.847026",
+            2.252807
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-04"
@@ -816,10 +858,10 @@
         "sport": "Tennis de table",
         "description": "Le tennis de table est un sport de raquette où les joueurs échangent une balle légère sur une petite table divisée par un filet.",
         "lieu": "Champ de Mars",
-        "coordonnees_gps": {
-            "lat": 48.855556,
-            "lon": 2.298611
-        },
+        "coordonnees_gps": [
+            "48.855556",
+            2.298611
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-05"
@@ -841,10 +883,10 @@
         "sport": "Tir",
         "description": "Le tir est un sport de précision où les concurrents utilisent des fusils, des pistolets et des carabines pour atteindre des cibles à diverses distances.",
         "lieu": "Châteauroux",
-        "coordonnees_gps": {
-            "lat": 46.812838,
-            "lon": 1.693792
-        },
+        "coordonnees_gps": [
+            "46.812838",
+            1.693792
+        ],
         "dates": {
             "début": "2024-07-25",
             "fin": "2024-08-03"
@@ -866,10 +908,10 @@
         "sport": "Tir à l'arc",
         "description": "Le tir à l'arc est un sport de précision où les archers tirent des flèches sur des cibles fixes à différentes distances.",
         "lieu": "Les Invalides",
-        "coordonnees_gps": {
-            "lat": 48.855665,
-            "lon": 2.312519
-        },
+        "coordonnees_gps": [
+            "48.855665",
+            2.312519
+        ],
         "dates": {
             "début": "2024-07-26",
             "fin": "2024-08-04"
@@ -891,10 +933,10 @@
         "sport": "Triathlon",
         "description": "Le triathlon est une course d'endurance combinant la natation, le cyclisme et la course à pied.",
         "lieu": "Pont d'Iéna",
-        "coordonnees_gps": {
-            "lat": 48.860086,
-            "lon": 2.288692
-        },
+        "coordonnees_gps": [
+            "48.860086",
+            2.288692
+        ],
         "dates": {
             "début": "2024-07-30",
             "fin": "2024-08-02"
@@ -916,10 +958,10 @@
         "sport": "Voile",
         "description": "La voile est un sport nautique où les athlètes naviguent sur des parcours définis en utilisant différents types de bateaux à voile.",
         "lieu": "Marseille",
-        "coordonnees_gps": {
-            "lat": 43.296482,
-            "lon": 5.36978
-        },
+        "coordonnees_gps": [
+            "43.296482",
+            5.36978
+        ],
         "dates": {
             "début": "2024-07-28",
             "fin": "2024-08-08"
@@ -941,10 +983,10 @@
         "sport": "Water-polo",
         "description": "Le water-polo est un sport d'équipe aquatique où les joueurs tentent de marquer des buts en lançant une balle dans le but adverse.",
         "lieu": "Piscine Aquatics Centre",
-        "coordonnees_gps": {
-            "lat": 48.844303,
-            "lon": 2.257774
-        },
+        "coordonnees_gps": [
+            "48.844303",
+            2.257774
+        ],
         "dates": {
             "début": "2024-07-27",
             "fin": "2024-08-11"

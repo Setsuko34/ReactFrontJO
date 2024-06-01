@@ -63,8 +63,8 @@ function NavBar(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item.label} disablePadding>
+        {navItems.map((item, index) => (
+          <ListItem key={index} disablePadding>
             <Link to={item.href}>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.label} />
@@ -100,8 +100,8 @@ function NavBar(props) {
             FRANCE 2024
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Link to={item.href}>
+            {navItems.map((item, index) => (
+              <Link to={item.href} key={index}>
                 <Button key={item.label} sx={{ color: "#fff" }}>
                   {item.label}
                 </Button>

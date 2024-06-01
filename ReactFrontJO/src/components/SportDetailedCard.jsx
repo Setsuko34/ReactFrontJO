@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
 
 export default function SportDetailedCard({ item, sportInfo }) {
-  const { sport, description, lieu, dates, participants } = sportInfo;
+  const { sport, description, lieu, dates, participants, coordonnees_gps } = sportInfo;
   
   function removeAccents(str) {
     return str
@@ -24,7 +24,7 @@ export default function SportDetailedCard({ item, sportInfo }) {
     <Link
       to={{
         pathname: "/disciplinedetails",
-        search: `?sport=${sport}&description=${description}&lieu=${lieu}&dates=${dates}&participants=${participants}`,
+        search: `?sport=${sport}&description=${description}&lieu=${lieu}&dates=${dates}&participants=${participants}&coordonnees_gps=${coordonnees_gps}`,
       }}
       style={{ textDecoration: "none" }}
     >
