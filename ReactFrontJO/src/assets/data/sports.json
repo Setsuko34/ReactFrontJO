@@ -1650,227 +1650,513 @@
     },
     {
         "sport": "Surf",
-        "description": "Le surf est une compétition où les athlètes montent sur les vagues avec des planches, jugés sur leur technique, leur style et leurs manœuvres.",
-        "lieu": "Biarritz",
+        "description": "Le surf est un sport de glisse pratiqué en mer, consistant à se maintenir debout sur une planche de surf tout en se laissant porter par une vague. Les surfeurs utilisent leur équilibre, leur force et leur agilité pour se déplacer sur les vagues et réaliser des manoeuvres spectaculaires. Le surf est à la fois un art, un mode de vie et un moyen de communier avec la nature. Les compétitions de surf sont organisées dans des spots célèbres du monde entier, offrant un spectacle époustouflant de performances sur l'eau.",
+        "lieu": "Plage de Tahiti",
         "coordonnees_gps": [
-            "43.483151",
-            -1.558626
+          "-17.6509",
+          "-149.426"
         ],
         "dates": {
-            "début": "2024-08-05",
-            "fin": "2024-08-10"
+          "début": "2024-07-27",
+          "fin": "2024-08-02",
+          "épreuves": [
+            {"épreuve": "Shortboard (Hommes)", "date": "2024-07-27"},
+            {"épreuve": "Shortboard (Femmes)", "date": "2024-07-28"},
+            {"épreuve": "Longboard (Hommes)", "date": "2024-07-29"},
+            {"épreuve": "Longboard (Femmes)", "date": "2024-07-30"}
+          ]
         },
-        "participants": [
-            "John John Florence",
-            "Carissa Moore",
-            "Gabriel Medina",
-            "Stephanie Gilmore",
-            "Italo Ferreira",
-            "Tatiana Weston-Webb",
-            "Kanoa Igarashi",
-            "Caroline Marks",
-            "Filipe Toledo",
-            "Sally Fitzgibbons"
-        ]
+        "participants": {
+          "Shortboard": [
+              "Gabriel Medina (BRA)",
+              "John John Florence (USA)",
+              "Filipe Toledo (BRA)",
+              "Italo Ferreira (BRA)",
+              "Kolohe Andino (USA)",
+              "Jordy Smith (RSA)",
+              "Kanoa Igarashi (JPN)",
+              "Griffin Colapinto (USA)",
+              "Michel Bourez (FRA)",
+              "Owen Wright (AUS)",
+              "Carissa Moore (USA)",
+              "Stephanie Gilmore (AUS)",
+              "Sally Fitzgibbons (AUS)",
+              "Johanne Defay (FRA)",
+              "Tatiana Weston-Webb (BRA)",
+              "Caroline Marks (USA)",
+              "Lakey Peterson (USA)",
+              "Isabella Nichols (AUS)",
+              "Tyler Wright (AUS)",
+              "Courtney Conlogue (USA)"
+            ],
+          "Longboard": [
+              "Justin Quintal (USA)",
+              "Steven Sawyer (RSA)",
+              "Kai Sallas (HAW)",
+              "Jared Neal (AUS)",
+              "Tony Silvagni (USA)",
+              "Ben Skinner (GBR)",
+              "Kai Lenny (USA)",
+              "Harley Ingleby (AUS)",
+              "Zye Norris (AUS)",
+              "Kevin Skvarna (USA)",
+              "Honolua Blomfield (HAW)",
+              "Alice Lemoigne (FRA)",
+              "Kaitlin Maguire (USA)",
+              "Rachel Tilly (USA)",
+              "Lindsay Steinriede (USA)",
+              "Natsumi Taoka (JPN)",
+              "Tully White (AUS)",
+              "Amanda Callaghan (AUS)",
+              "Haley Otto (USA)",
+              "Karina Rozunko (USA)"
+            ]
+        }
     },
     {
         "sport": "Taekwondo",
-        "description": "Le taekwondo est un art martial coréen qui met l'accent sur les coups de pied spectaculaires et les techniques de main pour marquer des points contre l'adversaire.",
-        "lieu": "Le Dôme",
+        "description": "Le taekwondo est un art martial d'origine coréenne qui se caractérise par l'utilisation de coups de pieds, de poings, de blocages et de techniques de combat à distance. Les combattants de taekwondo cherchent à marquer des points en touchant des zones spécifiques du corps de leur adversaire avec précision et puissance. Le taekwondo est à la fois un sport de compétition et un moyen de développer la discipline personnelle, la confiance en soi et la maîtrise de soi.",
+        "lieu": "Centre de Taekwondo de Paris",
         "coordonnees_gps": [
-            "48.857222",
-            2.355833
+          "48.8261",
+          "2.2935"
         ],
         "dates": {
-            "début": "2024-07-26",
-            "fin": "2024-08-01"
+          "début": "2024-08-02",
+          "fin": "2024-08-05",
+          "épreuves": [
+            {"épreuve": "Poomsae Individuel (Hommes)", "date": "2024-08-02"},
+            {"épreuve": "Poomsae Individuel (Femmes)", "date": "2024-08-02"},
+            {"épreuve": "Poomsae Équipes (Mixte)", "date": "2024-08-03"},
+            {"épreuve": "Kyorugi (Combats) (Hommes)", "date": "2024-08-04"},
+            {"épreuve": "Kyorugi (Combats) (Femmes)", "date": "2024-08-05"}
+          ]
         },
-        "participants": [
-            "Lee Dae-hoon",
-            "Jade Jones",
-            "Hadi Saei",
-            "Hwang Kyung-seon",
-            "Cheick Sallah Cissé",
-            "Bianca Walkden",
-            "Zhao Shuai",
-            "Wu Jingyu",
-            "Ahmad Abughaush",
-            "Kim So-hui"
-        ]
+        "participants": {
+          "Poomsae": [
+                "Lee Dae-Hoon (KOR)",
+                "Jang Jun (KOR)",
+                "Kang Min-Hyuk (KOR)",
+                "Mogwop Kim (KOR)",
+                "Jalal Chalabi (IRN)",
+                "Rodolfo Reyes (MEX)",
+                "Vladislav Larin (RUS)",
+                "Jihoon Choi (KOR)",
+                "Miguel Gonzales (PER)",
+                "Kang Yohan (KOR)",
+                "Jade Jones (GBR)",
+                "Hedaya Wahba (EGY)",
+                "Nur Tatar (TUR)",
+                "Carla Salazar (MEX)",
+                "Bianca Walkden (GBR)",
+                "Seulbee Lee (KOR)",
+                "Jade Stoyer (USA)",
+                "Elin Johansson (SWE)",
+                "Maria Espinoza (MEX)",
+                "Aminata Diatta (SEN)"
+              ],
+          "Kyorugi": [
+                "Tawin Hanprab (THA)",
+                "Fatemeh Rouhani (IRN)",
+                "Gobinathan Santhi (SIN)",
+                "Nikita Rafalovich (UZB)",
+                "Jan Muhammad (PAK)",
+                "Maksim Ivanov (RUS)",
+                "Takateli Chilombo (ZAM)",
+                "Nikhil Kaul (IND)",
+                "Ebrahim Maghsoodi (IRN)",
+                "Jalal-Edine El-Mers (MAR)",
+                "Bianca Walkden (GBR)",
+                "Ruth Gbagbi (CIV)",
+                "Hedaya Wahba (EGY)",
+                "Lauren Williams (GBR)",
+                "Magda Wiet-Henin (FRA)",
+                "María Espinoza (MEX)",
+                "Moustapha Mohamed (EGY)",
+                "Nur Tatar (TUR)",
+                "Milica Mandic (SRB)",
+                "Anastasija Zolotic (USA)"
+              ]
+        }
     },
     {
         "sport": "Tennis",
-        "description": "Le tennis est un sport de raquette où les joueurs frappent une balle de part et d'autre d'un filet, cherchant à marquer des points en la faisant atterrir dans le court adverse.",
-        "lieu": "Roland-Garros",
+        "description": "Le tennis est un sport de raquette qui se joue sur un terrain rectangulaire, divisé en deux moitiés par un filet. Les joueurs utilisent des raquettes pour frapper une balle en caoutchouc par-dessus le filet, en visant à la faire rebondir dans la moitié adverse du terrain de manière à ce que l'adversaire ne puisse pas la renvoyer. Le tennis se joue en simple (un joueur contre un joueur) ou en double (deux joueurs contre deux joueurs), et l'objectif est de marquer des points en faisant rebondir la balle dans des zones spécifiques du terrain.",
+        "lieu": "Stade Roland-Garros",
         "coordonnees_gps": [
-            "48.847026",
-            2.252807
+          "48.8472",
+          "2.2493"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-04"
+          "début": "2024-05-26",
+          "fin": "2024-06-09",
+          "épreuves": [
+            {"épreuve": "Simple (Hommes)", "date": "2024-05-26"},
+            {"épreuve": "Simple (Femmes)", "date": "2024-05-26"},
+            {"épreuve": "Double (Hommes)", "date": "2024-06-03"},
+            {"épreuve": "Double (Femmes)", "date": "2024-06-03"},
+            {"épreuve": "Double Mixte", "date": "2024-06-05"}
+          ]
         },
-        "participants": [
-            "Novak Djokovic",
-            "Rafael Nadal",
-            "Serena Williams",
-            "Naomi Osaka",
-            "Roger Federer",
-            "Ashleigh Barty",
-            "Daniil Medvedev",
-            "Simona Halep",
-            "Alexander Zverev",
-            "Iga Swiatek"
-        ]
+        "participants": {
+          "Simple-Hommes": [
+              "Novak Djokovic (SRB)",
+              "Rafael Nadal (ESP)",
+              "Roger Federer (SUI)",
+              "Stefanos Tsitsipas (GRE)",
+              "Alexander Zverev (GER)",
+              "Dominic Thiem (AUT)",
+              "Daniil Medvedev (RUS)",
+              "Andrey Rublev (RUS)",
+              "Matteo Berrettini (ITA)",
+              "Diego Schwartzman (ARG)"
+            ],
+            "Simple-Femmes": [
+              "Ashleigh Barty (AUS)",
+              "Simona Halep (ROU)",
+              "Naomi Osaka (JPN)",
+              "Aryna Sabalenka (BLR)",
+              "Bianca Andreescu (CAN)",
+              "Sofia Kenin (USA)",
+              "Elina Svitolina (UKR)",
+              "Karolina Pliskova (CZE)",
+              "Iga Swiatek (POL)",
+              "Garbine Muguruza (ESP)"
+            ],
+            "Double-Hommes": [
+              "Bob Bryan (USA), Mike Bryan (USA)",
+              "Łukasz Kubot (POL), Marcelo Melo (BRA)",
+              "Pierre-Hugues Herbert (FRA), Nicolas Mahut (FRA)",
+              "Juan Sebastián Cabal (COL), Robert Farah (COL)",
+              "Wesley Koolhof (NED), Nikola Mektić (CRO)"
+            ],
+            "Double-Femmes": [
+              "Kristina Mladenovic (FRA), Tímea Babos (HUN)",
+              "Elise Mertens (BEL), Aryna Sabalenka (BLR)",
+              "Barbora Krejčíková (CZE), Kateřina Siniaková (CZE)",
+              "Nicole Melichar-Martinez (USA), Demi Schuurs (NED)",
+              "Gabriela Dabrowski (CAN), Jelena Ostapenko (LAT)"
+            ],
+            "Double-Mixte": [
+            "Latisha Chan (TPE), Ivan Dodig (CRO)",
+            "Gabriela Dabrowski (CAN), Mate Pavić (CRO)",
+            "Desirae Krawczyk (USA), Joe Salisbury (GBR)",
+            "Elise Mertens (BEL), Wesley Koolhof (NED)",
+            "Nicole Melichar-Martinez (USA), John Peers (AUS)"
+            ]
+        }
     },
     {
         "sport": "Tennis de table",
-        "description": "Le tennis de table est un sport de raquette où les joueurs échangent une balle légère sur une petite table divisée par un filet.",
-        "lieu": "Champ de Mars",
+        "description": "Le tennis de table, également connu sous le nom de ping-pong, est un sport de raquette qui se joue sur une table divisée par un filet. Les joueurs utilisent des raquettes pour frapper une balle légère en caoutchouc par-dessus le filet, en visant à la faire rebondir dans le camp adverse de manière à ce que l'adversaire ne puisse pas la renvoyer. Le tennis de table se joue en simple (un joueur contre un joueur) ou en double (deux joueurs contre deux joueurs), et il combine la vitesse, la coordination, la précision et la stratégie.",
+        "lieu": "Stade Pierre de Coubertin",
         "coordonnees_gps": [
-            "48.855556",
-            2.298611
+          "48.8384",
+          "2.2516"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-05"
+          "début": "2024-07-25",
+          "fin": "2024-08-07",
+          "épreuves": [
+            {"épreuve": "Simple (Hommes)", "date": "2024-07-25"},
+            {"épreuve": "Simple (Femmes)", "date": "2024-07-25"},
+            {"épreuve": "Double (Hommes)", "date": "2024-08-01"},
+            {"épreuve": "Double (Femmes)", "date": "2024-08-02"},
+            {"épreuve": "Double Mixte", "date": "2024-08-03"}
+          ]
         },
-        "participants": [
-            "Ma Long",
-            "Ding Ning",
-            "Xu Xin",
-            "Chen Meng",
-            "Fan Zhendong",
-            "Mima Ito",
-            "Tomokazu Harimoto",
-            "Sun Yingsha",
-            "Timo Boll",
-            "Liu Shiwen"
-        ]
+        "participants": {
+          "Simple-Hommes": [
+              "Ma Long (CHN)",
+              "Fan Zhendong (CHN)",
+              "Tomokazu Harimoto (JPN)",
+              "Lin Yun-Ju (TPE)",
+              "Hugo Calderano (BRA)",
+              "Jang Woojin (KOR)",
+              "Liang Jingkun (CHN)",
+              "Jeoung Young-sik (KOR)",
+              "Timothy Wang (USA)",
+              "Achanta Sharath Kamal (IND)"
+            ],
+            "Simple-Femmes": [
+              "Chen Meng (CHN)",
+              "Sun Yingsha (CHN)",
+              "Mima Ito (JPN)",
+              "Wang Manyu (CHN)",
+              "Liu Shiwen (CHN)",
+              "Kasumi Ishikawa (JPN)",
+              "Cheng I-ching (TPE)",
+              "Feng Tianwei (SGP)",
+              "Han Ying (GER)",
+              "Lily Zhang (USA)"
+            ],
+          "Double-Hommes": [
+              "Ma Long (CHN), Xu Xin (CHN)",
+              "Fan Zhendong (CHN), Lin Gaoyuan (CHN)",
+              "Jeoung Young-sik (KOR), Lee Sangsu (KOR)",
+              "Liang Jingkun (CHN), Lin Yun-Ju (TPE)",
+              "Hugo Calderano (BRA), Gustavo Tsuboi (BRA)"
+            ],
+            "Double-Femmes": [
+              "Sun Yingsha (CHN), Wang Manyu (CHN)",
+              "Chen Meng (CHN), Zhu Yuling (CHN)",
+              "Kasumi Ishikawa (JPN), Mima Ito (JPN)",
+              "Cheng I-ching (TPE), Chen Szu-yu (TPE)",
+              "Feng Tianwei (SGP), Yu Mengyu (SGP)"
+            ],
+          "Double-Mixte": [
+            "Fan Zhendong (CHN), Chen Meng (CHN)",
+            "Lin Gaoyuan (CHN), Sun Yingsha (CHN)",
+            "Tomokazu Harimoto (JPN), Mima Ito (JPN)",
+            "Hugo Calderano (BRA), Bruna Takahashi (BRA)",
+            "Liam Pitchford (GBR), Tin-Tin Ho (GBR)"
+          ]
+        }
     },
     {
         "sport": "Tir",
-        "description": "Le tir est un sport de précision où les concurrents utilisent des fusils, des pistolets et des carabines pour atteindre des cibles à diverses distances.",
-        "lieu": "Châteauroux",
+        "description": "Le tir est un sport de précision qui consiste à projeter des projectiles, tels que des balles ou des flèches, vers une cible spécifique. Les compétitions de tir impliquent généralement différentes disciplines, telles que le tir à la carabine, le tir au pistolet, le tir à l'arc, etc. Les tireurs doivent démontrer une grande précision, une maîtrise de la respiration et une concentration extrême pour atteindre leurs cibles. Le tir est un sport exigeant qui demande un entraînement rigoureux et une discipline mentale.",
+        "lieu": "Centre National de Tir",
         "coordonnees_gps": [
-            "46.812838",
-            1.693792
+          "48.9195",
+          "2.3476"
         ],
         "dates": {
-            "début": "2024-07-25",
-            "fin": "2024-08-03"
+          "début": "2024-07-25",
+          "fin": "2024-08-05",
+          "épreuves": [
+            {"épreuve": "Tir à la carabine (10 mètres)", "date": "2024-07-25"},
+            {"épreuve": "Tir à la carabine (50 mètres)", "date": "2024-07-26"},
+            {"épreuve": "Tir à la carabine (300 mètres)", "date": "2024-07-27"},
+            {"épreuve": "Tir au pistolet (10 mètres)", "date": "2024-07-28"},
+            {"épreuve": "Tir au pistolet (25 mètres)", "date": "2024-07-29"},
+            {"épreuve": "Tir au pistolet (50 mètres)", "date": "2024-07-30"},
+            {"épreuve": "Tir à l'arc (Individuel)", "date": "2024-07-31"},
+            {"épreuve": "Tir à l'arc (Équipe)", "date": "2024-08-01"}
+          ]
         },
-        "participants": [
-            "Jin Jong-oh",
-            "Anna Korakaki",
-            "Vincent Hancock",
-            "Rajmond Debevec",
-            "Nino Salukvadze",
-            "Abhinav Bindra",
-            "Du Li",
-            "Matthew Emmons",
-            "Vitalina Batsarashkina",
-            "Xing Yaping"
-        ]
+        "participants": {
+          "Tir à la carabine Hommes": [
+              "Niccolo Campriani (ITA)",
+              "Sergei Martynov (BLR)",
+              "Jin Jong-oh (KOR)",
+              "Petar Gorsa (CRO)",
+              "Alin George Moldoveanu (ROU)",
+              "Abhinav Bindra (IND)",
+              "Henri Junghaenel (GER)",
+              "Nicolas Fraga (ARG)",
+              "Alexander Schmirl (AUT)",
+              "Oleh Tsarkov (UKR)"
+            ],
+            "Tir à la carabine Femmes": [
+              "Barbara Engleder (GER)",
+              "Zhang Binbin (CHN)",
+              "Petra Zublasing (ITA)",
+              "Andrea Arsovic (SRB)",
+              "Snjezana Pejcic (CRO)",
+              "Daria Vdovina (RUS)",
+              "Jasmine Ser Xiang Wei (SIN)",
+              "Ivana Maksimovic (SRB)",
+              "Anastasiia Galashina (RUS)",
+              "Laurence Brize (FRA)"
+            ],
+          "Tir au pistolet Hommes": [
+              "Jin Jong-oh (KOR)",
+              "Choi Young-rae (KOR)",
+              "Pang Wei (CHN)",
+              "Tomoyuki Matsuda (JPN)",
+              "Javad Foroughi (IRI)",
+              "Kim Jun-hong (KOR)",
+              "Alberto Fernandez (ESP)",
+              "Sergei Evglevski (AUS)",
+              "Juraj Tuzinsky (SVK)",
+              "Pavol Kopp (SVK)"
+            ],
+            "Tir au pistolet Femmes": [
+              "Anna Korakaki (GRE)",
+              "Chen Ying (CHN)",
+              "Kim Min-jung (KOR)",
+              "Olena Kostevych (UKR)",
+              "Veronika Major (HUN)",
+              "Heena Sidhu (IND)",
+              "Yashaswini Singh Deswal (IND)",
+              "Zhang Mengxue (CHN)",
+              "Alejandra Zavala (MEX)",
+              "Wu Chia-ying (TPE)"
+            ]
+          }
     },
     {
         "sport": "Tir à l'arc",
-        "description": "Le tir à l'arc est un sport de précision où les archers tirent des flèches sur des cibles fixes à différentes distances.",
-        "lieu": "Les Invalides",
+        "description": "Le tir à l'arc est un sport de précision qui consiste à projeter des flèches vers une cible fixée à une certaine distance. Il fait partie des plus anciens sports pratiqués par l'homme, et il requiert à la fois une grande habileté technique et une concentration mentale intense. Les compétitions de tir à l'arc sont divisées en épreuves individuelles et par équipe, et les archers doivent viser avec précision pour atteindre les différentes zones de la cible et marquer des points. Le tir à l'arc est à la fois un sport compétitif et un art traditionnel, apprécié pour sa combinaison de force, de grâce et de discipline.",
+        "lieu": "Centre National de Tir à l'arc",
         "coordonnees_gps": [
-            "48.855665",
-            2.312519
+          "48.836805",
+          "2.379815"
         ],
         "dates": {
-            "début": "2024-07-26",
-            "fin": "2024-08-04"
+          "début": "2024-07-26",
+          "fin": "2024-08-03",
+          "épreuves": [
+            {"épreuve": "Tir à l'arc (Individuel)", "date": "2024-07-26"},
+            {"épreuve": "Tir à l'arc (Équipe)", "date": "2024-07-28"}
+          ]
         },
-        "participants": [
-            "Kim Woo-jin",
-            "Brady Ellison",
-            "Ki Bo-bae",
-            "Deepika Kumari",
-            "Im Dong-hyun",
-            "Lisa Unruh",
-            "Oh Jin-hyek",
-            "Alejandra Valencia",
-            "Mete Gazoz",
-            "Lei Chien-ying"
-        ]
+        "participants": {
+          "Hommes": [
+            "Brady Ellison (USA)",
+            "Kim Woo-jin (KOR)",
+            "Wei Chun-heng (TPE)",
+            "Steve Wijler (NED)",
+            "Takaharu Furukawa (JPN)",
+            "Atanu Das (IND)",
+            "Jean-Charles Valladont (FRA)",
+            "Florian Unruh (GER)",
+            "Kuang Hsiao-ting (TPE)",
+            "Mauro Nespoli (ITA)"
+          ],
+          "Femmes": [
+            "An San (KOR)",
+            "Kang Chae-young (KOR)",
+            "Lee Eun-gyeong (KOR)",
+            "Alejandra Valencia (MEX)",
+            "Deepika Kumari (IND)",
+            "Tatiana Andrievskaia (RUS)",
+            "Chen Yu-chia (TPE)",
+            "Lisa Unruh (GER)",
+            "Yuan Shu-chi (TPE)",
+            "Aida Roman (MEX)"
+          ]
+        }
     },
     {
         "sport": "Triathlon",
-        "description": "Le triathlon est une course d'endurance combinant la natation, le cyclisme et la course à pied.",
-        "lieu": "Pont d'Iéna",
+        "description": "Le triathlon est un sport d'endurance combinant trois disciplines : la natation, le cyclisme et la course à pied. Les participants s'affrontent sur des distances variées, allant des formats les plus courts comme le sprint aux formats Ironman qui exigent une extrême résistance physique. Le triathlon teste non seulement la vitesse et l'endurance des athlètes, mais aussi leur capacité à passer efficacement d'une discipline à l'autre, ce qui en fait l'un des sports les plus exigeants sur le plan physique et mental.",
+        "lieu": "Paris",
         "coordonnees_gps": [
-            "48.860086",
-            2.288692
+          "48.8566",
+          "2.3522"
         ],
         "dates": {
-            "début": "2024-07-30",
-            "fin": "2024-08-02"
+          "début": "2024-07-28",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "Triathlon (Individuel)", "date": "2024-07-28"},
+            {"épreuve": "Triathlon (Relais)", "date": "2024-07-31"}
+          ]
         },
-        "participants": [
-            "Alistair Brownlee",
-            "Flora Duffy",
-            "Vincent Luis",
-            "Katie Zaferes",
-            "Mario Mola",
-            "Jessica Learmonth",
-            "Alex Yee",
-            "Cassandre Beaugrand",
-            "Tyler Mislawchuk",
-            "Taylor Spivey"
-        ]
+        "participants": {
+          "Hommes": [
+            "Vincent Luis (FRA)",
+            "Jonathan Brownlee (GBR)",
+            "Kristian Blummenfelt (NOR)",
+            "Mario Mola (ESP)",
+            "Alex Yee (GBR)",
+            "Javier Gomez Noya (ESP)",
+            "Alistair Brownlee (GBR)",
+            "Henri Schoeman (RSA)",
+            "Richard Murray (RSA)",
+            "Fernando Alarza (ESP)"
+          ],
+          "Femmes": [
+            "Katie Zaferes (USA)",
+            "Flora Duffy (BER)",
+            "Georgia Taylor-Brown (GBR)",
+            "Jessica Learmonth (GBR)",
+            "Taylor Knibb (USA)",
+            "Maya Kingma (NED)",
+            "Nicola Spirig (SUI)",
+            "Vicky Holland (GBR)",
+            "Summer Rappaport (USA)",
+            "Yuka Sato (JPN)"
+          ]
+        }
     },
     {
         "sport": "Voile",
-        "description": "La voile est un sport nautique où les athlètes naviguent sur des parcours définis en utilisant différents types de bateaux à voile.",
-        "lieu": "Marseille",
+        "description": "La voile est un sport nautique qui consiste à naviguer à la surface de l'eau à l'aide d'un voilier propulsé par le vent. Les compétitions de voile peuvent se dérouler en mer, sur des lacs ou des rivières, et impliquent différentes classes de bateaux et de formats de course. Les compétiteurs doivent maîtriser les techniques de navigation, de manœuvre et de stratégie pour exploiter au mieux les conditions météorologiques et remporter la course.",
+        "lieu": "Baie de Marseille",
         "coordonnees_gps": [
-            "43.296482",
-            5.36978
+          "43.296482",
+          "5.369780"
         ],
         "dates": {
-            "début": "2024-07-28",
-            "fin": "2024-08-08"
+          "début": "2024-07-28",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Course en flotte", "date": "2024-07-28"},
+            {"épreuve": "Course au large", "date": "2024-08-02"},
+            {"épreuve": "Match racing", "date": "2024-08-05"}
+          ]
         },
-        "participants": [
-            "Peter Burling",
-            "Marit Bouwmeester",
-            "Giles Scott",
-            "Hannah Mills",
-            "Mat Belcher",
-            "Anne-Marie Rindom",
-            "Tom Slingsby",
-            "Sarah-Quita Offringa",
-            "Billy Besson",
-            "Emma Wilson"
-        ]
+        "participants": {
+          "Hommes": [
+            "Peter Burling (NZL)",
+            "Blair Tuke (NZL)",
+            "Mat Belcher (AUS)",
+            "Robert Scheidt (BRA)",
+            "Giles Scott (GBR)",
+            "Joel Turner (AUS)",
+            "Giovanni Coccoluto (ITA)",
+            "Tom Burton (AUS)",
+            "Jean Baptiste Bernaz (FRA)",
+            "Maxime Nocher (FRA)"
+          ],
+          "Femmes": [
+            "Hannah Mills (GBR)",
+            "Evi Van Acker (BEL)",
+            "Paige Railey (USA)",
+            "Lilian De Geus (NED)",
+            "Anne-Marie Rindom (DEN)",
+            "Marit Bouwmeester (NED)",
+            "Emma Plasschaert (BEL)",
+            "Dorien van Rijsselberghe (NED)",
+            "Sarah Douglas (CAN)",
+            "Martina Reino (ESP)"
+          ]
+        }
     },
     {
         "sport": "Water-polo",
-        "description": "Le water-polo est un sport d'équipe aquatique où les joueurs tentent de marquer des buts en lançant une balle dans le but adverse.",
-        "lieu": "Piscine Aquatics Centre",
+        "description": "Le water-polo est un sport aquatique qui se joue dans une piscine entre deux équipes de sept joueurs. L'objectif du jeu est de marquer des buts en lançant un ballon dans le but adverse. Les joueurs peuvent nager et passer le ballon entre eux tout en essayant d'éviter les défenseurs de l'équipe adverse. Le water-polo est un sport physique et exigeant qui nécessite à la fois force, vitesse, agilité et stratégie.",
+        "lieu": "Centre Aquatique Olympique",
         "coordonnees_gps": [
-            "48.844303",
-            2.257774
+          "48.942084",
+          "2.286163"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-11"
+          "début": "2024-07-28",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Tournoi masculin", "date": "2024-07-28"},
+            {"épreuve": "Tournoi féminin", "date": "2024-07-29"}
+          ]
         },
-        "participants": [
-            "Maggie Steffens",
-            "Viktor Nagy",
-            "Ashleigh Johnson",
-            "Felipe Perrone",
-            "Jesse Smith",
-            "Gabriele Palm",
-            "Maddie Musselman",
-            "Sandro Sukno",
-            "Laura Aarts",
-            "John Mann"
-        ]
-    }
+        "participants": {
+          "Hommes": [
+            "Josip Pavic (CRO)",
+            "Marko Bijac (CRO)",
+            "Denis Sefik (CRO)",
+            "Felipe Perrone (ESP)",
+            "Gonzalo Echenique (ESP)",
+            "Luka Bukic (CRO)",
+            "Francesco Di Fulvio (ITA)",
+            "Ioannis Fountoulis (GRE)",
+            "Nikola Dedovic (MNE)",
+            "Alex Obert (USA)"
+          ],
+          "Femmes": [
+            "Ashleigh Johnson (USA)",
+            "Maddie Musselman (USA)",
+            "Rachel Fattal (USA)",
+            "Makenzie Fischer (USA)",
+            "Maggie Steffens (USA)",
+            "Stephania Haralabidis (USA)",
+            "Melissa Seidemann (USA)",
+            "Aria Fischer (USA)",
+            "Paige Hauschild (USA)",
+            "Amanda Longan (USA)"
+          ]
+        }
+      }      
 ]
