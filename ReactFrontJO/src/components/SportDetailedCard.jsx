@@ -3,10 +3,13 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, IconButton } from "@mui/material";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
+import Button from "@mui/material/Button";
 
 export default function SportDetailedCard({ item, sportInfo }) {
   const { sport, description, lieu, dates, participants, coordonnees_gps } =
@@ -22,14 +25,14 @@ export default function SportDetailedCard({ item, sportInfo }) {
   }
 
   return (
-    <Link
-      to={{
-        pathname: "/disciplinedetails",
-        search: `?sport=${sport}`,
-      }}
-      style={{ textDecoration: "none" }}
-    >
-      <Box sx={{ display: "flex", width: "100%", marginBottom: "2vh" }}>
+    <Box sx={{ display: "flex", width: "100%", marginBottom: "2vh" }}>
+      <Link
+        to={{
+          pathname: "/disciplinedetails",
+          search: `?sport=${sport}`,
+        }}
+        style={{ textDecoration: "none" }}
+      >
         <Card sx={{ borderRadius: 6 }}>
           <CardActionArea sx={{ display: "flex" }}>
             <CardMedia
@@ -66,7 +69,12 @@ export default function SportDetailedCard({ item, sportInfo }) {
             </CardContent>
           </CardActionArea>
         </Card>
-      </Box>
-    </Link>
+      </Link>
+      {/* Si on clique, on ajoute au tableau de favoris et on met l'icone plein */}
+      {/* Pour vérifier si on met l'icone plein ou vide, on check si le sport est déjà dans le tableau, comme fait dans le composant favoris */}
+        <IconButton aria-label="favorite" color="error">
+          <FavoriteBorderIcon />
+        </IconButton>
+    </Box>
   );
 }

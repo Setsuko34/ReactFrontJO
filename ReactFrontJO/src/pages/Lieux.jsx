@@ -63,11 +63,11 @@ export default function Lieux() {
                     {place.nom_site}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Sport : {place.sports}
+                    <strong>Sport : </strong>{place.sports}
                   </Typography>
                   <div style={{ marginTop: "10px" }}>
                     <Typography variant="body2" color="text.secondary">
-                      Date : {new Date(place.start_date).toLocaleDateString("fr-FR")}
+                      <strong>Date : </strong>{new Date(place.start_date).toLocaleDateString("fr-FR")}
                     </Typography>
                   </div>
                 </CardContent>
