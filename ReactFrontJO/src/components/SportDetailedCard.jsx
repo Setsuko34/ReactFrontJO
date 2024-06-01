@@ -9,8 +9,9 @@ import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
 
 export default function SportDetailedCard({ item, sportInfo }) {
-  const { sport, description, lieu, dates, participants, coordonnees_gps } = sportInfo;
-  
+  const { sport, description, lieu, dates, participants, coordonnees_gps } =
+    sportInfo;
+
   function removeAccents(str) {
     return str
       .normalize("NFD")
@@ -24,7 +25,7 @@ export default function SportDetailedCard({ item, sportInfo }) {
     <Link
       to={{
         pathname: "/disciplinedetails",
-        search: `?sport=${sport}&description=${description}&lieu=${lieu}&dates=${dates}&participants=${participants}&coordonnees_gps=${coordonnees_gps}`,
+        search: `?sport=${sport}`,
       }}
       style={{ textDecoration: "none" }}
     >
@@ -33,7 +34,12 @@ export default function SportDetailedCard({ item, sportInfo }) {
           <CardActionArea sx={{ display: "flex" }}>
             <CardMedia
               component="img"
-              sx={{ width: 400, imageFit: "cover", height: "100%", margin: "auto" }}
+              sx={{
+                width: 400,
+                imageFit: "cover",
+                height: "100%",
+                margin: "auto",
+              }}
               image={images[removeAccents(sport).toLowerCase()]}
               alt={sport}
             />

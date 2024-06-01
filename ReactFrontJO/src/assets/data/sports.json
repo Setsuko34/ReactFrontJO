@@ -1,359 +1,748 @@
 [
     {
         "sport": "Athlétisme",
-        "description": "L'athlétisme comprend une variété d'épreuves de course, de saut et de lancer, testant la vitesse, l'endurance et la puissance des athlètes.",
+        "description": "L'athlétisme est un ensemble de disciplines sportives qui inclut une vaste gamme d'épreuves de course, de saut et de lancer. Ces épreuves mettent à l'épreuve la vitesse, l'endurance, la force et l'agilité des athlètes, offrant un spectacle de performances physiques et techniques. Les compétitions d'athlétisme, allant des sprints fulgurants aux marathons éprouvants, en passant par les sauts vertigineux et les lancers puissants, sont un véritable test de la polyvalence et des capacités athlétiques des participants.",
         "lieu": "Stade de France",
         "coordonnees_gps": [
-            "48.924459",
-            "2.360165"
+          "48.924459",
+          "2.360165"
         ],
         "dates": {
-            "début": "2024-08-02",
-            "fin": "2024-08-11"
+          "début": "2024-08-02",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "100m Hommes", "date": "2024-08-02"},
+            {"épreuve": "100m Femmes", "date": "2024-08-03"},
+            {"épreuve": "200m Hommes", "date": "2024-08-04"},
+            {"épreuve": "200m Femmes", "date": "2024-08-05"},
+            {"épreuve": "400m Hommes", "date": "2024-08-06"},
+            {"épreuve": "400m Femmes", "date": "2024-08-07"},
+            {"épreuve": "Marathon Hommes", "date": "2024-08-08"},
+            {"épreuve": "Marathon Femmes", "date": "2024-08-09"}
+          ]
         },
         "participants": {
-            "Hommes": [
-                "Usain Bolt (JAM)",
-                "Mo Farah (GBR)",
-                "Eliud Kipchoge (KEN)",
-                "Noah Lyles (USA)",
-                "Wayde van Niekerk (RSA)",
-                "Mutaz Essa Barshim (QAT)",
-                "Christian Coleman (USA)",
-                "Armand Duplantis (SWE)",
-                "Yulimar Rojas (VEN)",
-                "Andre De Grasse (CAN)",
-                "Rai Benjamin (USA)",
-                "Ryan Crouser (USA)",
-                "Karsten Warholm (NOR)",
-                "Joshua Cheptegei (UGA)",
-                "Timothy Cheruiyot (KEN)",
-                "Hugues Fabrice Zango (BUR)",
-                "Donavan Brazier (USA)",
-                "Daniel Stahl (SWE)",
-                "Luvo Manyonga (RSA)",
-                "Marcell Jacobs (ITA)",
-                "Renaud Lavillenie (FRA)",
-                "Jakob Ingebrigtsen (NOR)",
-                "Allyson Felix (USA)",
-                "Mondo Duplantis (SWE)"
-            ],
-            "Femmes": [
-                "Allyson Felix (USA)",
-                "Shelly-Ann Fraser-Pryce (JAM)",
-                "Elaine Thompson-Herah (JAM)",
-                "Sifan Hassan (NED)",
-                "Dina Asher-Smith (GBR)",
-                "Shaunae Miller-Uibo (BAH)",
-                "Sydney McLaughlin (USA)",
-                "Yulimar Rojas (VEN)",
-                "Caterine Ibargüen (COL)",
-                "Faith Kipyegon (KEN)",
-                "Jessica Ennis-Hill (GBR)",
-                "Dalilah Muhammad (USA)",
-                "Marie-Josée Ta Lou (CIV)",
-                "Beatrice Chepkoech (KEN)",
-                "Anita Wlodarczyk (POL)",
-                "Sandra Perkovic (CRO)",
-                "Tori Bowie (USA)",
-                "Nafissatou Thiam (BEL)",
-                "Genzebe Dibaba (ETH)",
-                "Hellen Obiri (KEN)",
-                "Mariya Lasitskene (RUS)",
-                "Katarina Johnson-Thompson (GBR)",
-                "Ivana Spanovic (SRB)",
-                "Salwa Eid Naser (BRN)"
-            ]
+          "Hommes": [
+            "Usain Bolt (JAM)",
+            "Mo Farah (GBR)",
+            "Eliud Kipchoge (KEN)",
+            "Noah Lyles (USA)",
+            "Wayde van Niekerk (RSA)",
+            "Mutaz Essa Barshim (QAT)",
+            "Christian Coleman (USA)",
+            "Armand Duplantis (SWE)",
+            "Andre De Grasse (CAN)",
+            "Rai Benjamin (USA)",
+            "Ryan Crouser (USA)",
+            "Karsten Warholm (NOR)",
+            "Joshua Cheptegei (UGA)",
+            "Timothy Cheruiyot (KEN)",
+            "Hugues Fabrice Zango (BUR)",
+            "Donavan Brazier (USA)",
+            "Daniel Stahl (SWE)",
+            "Luvo Manyonga (RSA)",
+            "Marcell Jacobs (ITA)",
+            "Renaud Lavillenie (FRA)",
+            "Jakob Ingebrigtsen (NOR)",
+            "Mondo Duplantis (SWE)"
+          ],
+          "Femmes": [
+            "Allyson Felix (USA)",
+            "Shelly-Ann Fraser-Pryce (JAM)",
+            "Elaine Thompson-Herah (JAM)",
+            "Sifan Hassan (NED)",
+            "Dina Asher-Smith (GBR)",
+            "Shaunae Miller-Uibo (BAH)",
+            "Sydney McLaughlin (USA)",
+            "Yulimar Rojas (VEN)",
+            "Caterine Ibargüen (COL)",
+            "Faith Kipyegon (KEN)",
+            "Jessica Ennis-Hill (GBR)",
+            "Dalilah Muhammad (USA)",
+            "Marie-Josée Ta Lou (CIV)",
+            "Beatrice Chepkoech (KEN)",
+            "Anita Wlodarczyk (POL)",
+            "Sandra Perkovic (CRO)",
+            "Tori Bowie (USA)",
+            "Nafissatou Thiam (BEL)",
+            "Genzebe Dibaba (ETH)",
+            "Hellen Obiri (KEN)",
+            "Mariya Lasitskene (RUS)",
+            "Katarina Johnson-Thompson (GBR)",
+            "Ivana Spanovic (SRB)",
+            "Salwa Eid Naser (BRN)"
+          ]
         }
     },
     {
         "sport": "Natation",
-        "description": "La natation est une série de compétitions dans diverses épreuves, y compris la nage libre, la brasse, le dos et le papillon, ainsi que les relais.",
-        "lieu": "Piscine Olympique",
+        "description": "La natation est un sport aquatique qui consiste à se déplacer dans l'eau en utilisant les mouvements des bras, des jambes et du corps. Il comprend différentes épreuves telles que la brasse, le crawl, le dos crawlé et le papillon, ainsi que les épreuves individuelles et de relais. La natation est non seulement un excellent exercice pour la santé, mais aussi une compétition passionnante qui demande vitesse, endurance et technique.",
+        "lieu": "Centre Aquatique de Paris",
         "coordonnees_gps": [
-            "48.844303",
-            2.257774
+          "48.8280",
+          "2.3796"
         ],
         "dates": {
-            "début": "2024-07-26",
-            "fin": "2024-08-03"
+          "début": "2024-07-28",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "100m Nage Libre Hommes", "date": "2024-07-28"},
+            {"épreuve": "100m Nage Libre Femmes", "date": "2024-07-29"},
+            {"épreuve": "200m Nage Libre Hommes", "date": "2024-07-30"},
+            {"épreuve": "200m Nage Libre Femmes", "date": "2024-07-31"},
+            {"épreuve": "100m Dos Hommes", "date": "2024-08-01"},
+            {"épreuve": "100m Dos Femmes", "date": "2024-08-02"},
+            {"épreuve": "200m Dos Hommes", "date": "2024-08-03"},
+            {"épreuve": "200m Dos Femmes", "date": "2024-08-04"}
+          ]
         },
-        "participants": [
-            "Caeleb Dressel",
-            "Katie Ledecky",
-            "Adam Peaty",
-            "Simone Manuel",
-            "Sarah Sjöström",
-            "Katinka Hosszú",
-            "Daiya Seto",
-            "Ariarne Titmus",
-            "Federica Pellegrini",
-            "Ryan Murphy"
-        ]
+        "participants": {
+          "Hommes": [
+            "Michael Phelps (USA)",
+            "Ryan Lochte (USA)",
+            "César Cielo (BRA)",
+            "Adam Peaty (GBR)",
+            "Sun Yang (CHN)",
+            "Kosuke Hagino (JPN)",
+            "Cameron van der Burgh (RSA)",
+            "Chad le Clos (RSA)",
+            "Laszlo Cseh (HUN)",
+            "Nathan Adrian (USA)"
+          ],
+          "Femmes": [
+            "Katie Ledecky (USA)",
+            "Missy Franklin (USA)",
+            "Sarah Sjöström (SWE)",
+            "Federica Pellegrini (ITA)",
+            "Katinka Hosszú (HUN)",
+            "Cate Campbell (AUS)",
+            "Ranomi Kromowidjojo (NED)",
+            "Yulia Efimova (RUS)",
+            "Bronte Campbell (AUS)",
+            "Kylie Masse (CAN)"
+          ]
+        }
     },
     {
-        "sport": "Gymnastique artistique",
-        "description": "La gymnastique artistique combine des exercices sur divers appareils pour tester la force, la souplesse, l'équilibre et la coordination des athlètes.",
-        "lieu": "Accor Arena",
+        "sport": "Gymnastique Artistique",
+        "description": "La gymnastique artistique est une discipline qui combine force, souplesse, agilité, équilibre et grâce. Les gymnastes exécutent une série de mouvements et de routines sur différents appareils, tels que le sol, les barres asymétriques, la poutre et le cheval d'arçons. Les compétitions de gymnastique artistique mettent en valeur la technique, la précision et l'expression artistique des athlètes, offrant un spectacle impressionnant et captivant.",
+        "lieu": "Palais des Sports de Paris",
         "coordonnees_gps": [
-            "48.838097",
-            2.378891
+          "48.8411",
+          "2.3788"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-05"
+          "début": "2024-07-27",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "Sol Masculin", "date": "2024-07-27"},
+            {"épreuve": "Sol Féminin", "date": "2024-07-28"},
+            {"épreuve": "Barres Parallèles", "date": "2024-07-29"},
+            {"épreuve": "Barres Asymétriques", "date": "2024-07-30"},
+            {"épreuve": "Poutre", "date": "2024-07-31"},
+            {"épreuve": "Saut de Cheval", "date": "2024-08-01"}
+          ]
         },
-        "participants": [
-            "Simone Biles",
-            "Nadia Comaneci",
-            "Kohei Uchimura",
-            "Sunisa Lee",
-            "Aliya Mustafina",
-            "Max Whitlock",
-            "Morgan Hurd",
-            "Artur Dalaloyan",
-            "Rebeca Andrade",
-            "Vanessa Ferrari"
-        ]
+        "participants": {
+          "Hommes": [
+            "Kohei Uchimura (JPN)",
+            "Nikita Nagornyy (RUS)",
+            "Arthur Zanetti (BRA)",
+            "Oleg Verniaiev (UKR)",
+            "Epke Zonderland (NED)",
+            "Kenzo Shirai (JPN)",
+            "Max Whitlock (GBR)",
+            "Sam Mikulak (USA)",
+            "Sun Wei (CHN)",
+            "Liu Yang (CHN)"
+          ],
+          "Femmes": [
+            "Simone Biles (USA)",
+            "Aliya Mustafina (RUS)",
+            "Sanne Wevers (NED)",
+            "Mai Murakami (JPN)",
+            "Angelina Melnikova (RUS)",
+            "Rebecca Andrade (BRA)",
+            "Morgan Hurd (USA)",
+            "Nina Derwael (BEL)",
+            "Elisabeth Seitz (GER)",
+            "Chen Yile (CHN)"
+          ]
+        }
     },
     {
         "sport": "Football",
-        "description": "Le football est un sport d'équipe où deux équipes de onze joueurs tentent de marquer des buts en envoyant un ballon dans les filets adverses.",
-        "lieu": "Parc des Princes",
-        "coordonnees_gps": [
-            "48.841388",
-            2.253019
-        ],
-        "dates": {
-            "début": "2024-07-24",
-            "fin": "2024-08-10"
-        },
-        "participants": [
-            "Lionel Messi",
-            "Neymar",
-            "Kylian Mbappe",
-            "Cristiano Ronaldo",
-            "Kevin De Bruyne",
-            "Robert Lewandowski",
-            "Sergio Ramos",
-            "Eden Hazard",
-            "Paul Pogba",
-            "Virgil van Dijk"
-        ]
+  "description": "Le football est un sport d'équipe qui se joue principalement avec les pieds. Deux équipes de onze joueurs s'affrontent pour marquer des buts en faisant passer un ballon dans le but adverse. Le football est le sport le plus populaire au monde, offrant des compétitions passionnantes à tous les niveaux, des matchs de quartier aux tournois internationaux comme la Coupe du Monde.",
+  "lieu": "Stade de France",
+  "coordonnees_gps": [
+    "48.924459",
+    "2.360165"
+  ],
+  "dates": {
+    "début": "2024-07-25",
+    "fin": "2024-08-11",
+    "épreuves": [
+      {"épreuve": "Tournoi Masculin", "date": "2024-07-25"},
+      {"épreuve": "Tournoi Féminin", "date": "2024-07-25"}
+    ]
+  },
+  "participants": {
+    "Hommes": [
+      "Lionel Messi (ARG)",
+      "Cristiano Ronaldo (POR)",
+      "Neymar Jr. (BRA)",
+      "Kylian Mbappé (FRA)",
+      "Kevin De Bruyne (BEL)",
+      "Mohamed Salah (EGY)",
+      "Sadio Mané (SEN)",
+      "Robert Lewandowski (POL)",
+      "Harry Kane (ENG)",
+      "Sergio Ramos (ESP)",
+      "Luka Modrić (CRO)",
+      "Eden Hazard (BEL)",
+      "Virgil van Dijk (NED)",
+      "Paul Pogba (FRA)",
+      "Bruno Fernandes (POR)",
+      "Romelu Lukaku (BEL)",
+      "Erling Haaland (NOR)",
+      "Son Heung-min (KOR)",
+      "Antoine Griezmann (FRA)",
+      "Jadon Sancho (ENG)"
+    ],
+    "Femmes": [
+      "Marta (BRA)",
+      "Sam Kerr (AUS)",
+      "Alex Morgan (USA)",
+      "Lieke Martens (NED)",
+      "Vivianne Miedema (NED)",
+      "Ada Hegerberg (NOR)",
+      "Wendie Renard (FRA)",
+      "Tobin Heath (USA)",
+      "Dzsenifer Marozsán (GER)",
+      "Saki Kumagai (JPN)",
+      "Caroline Graham Hansen (NOR)",
+      "Lucy Bronze (ENG)",
+      "Megan Rapinoe (USA)",
+      "Eugénie Le Sommer (FRA)",
+      "Christine Sinclair (CAN)",
+      "Vero Boquete (ESP)",
+      "Barbara Bonansea (ITA)",
+      "Wang Shuang (CHN)",
+      "Pernille Harder (DEN)",
+      "Kosovare Asllani (SWE)"
+    ]
+  }
     },
     {
         "sport": "Basketball",
-        "description": "Le basketball est un sport d'équipe où deux équipes de cinq joueurs tentent de marquer des points en lançant un ballon à travers un cerceau.",
-        "lieu": "Bercy Arena",
+        "description": "Le basketball est un sport d'équipe dans lequel deux équipes de cinq joueurs s'affrontent pour marquer des points en lançant un ballon dans un panier. Le basketball est rapide et dynamique, mettant en jeu des compétences telles que le dribble, le tir, le passing et la défense. C'est l'un des sports les plus populaires au monde, joué dans des ligues professionnelles, des tournois internationaux et des matchs amateurs à travers le globe.",
+        "lieu": "Palais omnisports de Paris-Bercy",
         "coordonnees_gps": [
-            "48.838057",
-            2.378723
+          "48.838922",
+          "2.379254"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-10"
+          "début": "2024-07-28",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Tournoi Masculin", "date": "2024-07-28"},
+            {"épreuve": "Tournoi Féminin", "date": "2024-07-28"}
+          ]
         },
-        "participants": [
-            "LeBron James",
-            "Kevin Durant",
-            "Luka Doncic",
-            "Stephen Curry",
-            "Giannis Antetokounmpo",
-            "Kawhi Leonard",
-            "Nikola Jokic",
-            "James Harden",
-            "Anthony Davis",
-            "Damian Lillard"
-        ]
+        "participants": {
+          "Hommes": [
+            "LeBron James (USA)",
+            "Giannis Antetokounmpo (GRE)",
+            "Kevin Durant (USA)",
+            "Luka Dončić (SLO)",
+            "Stephen Curry (USA)",
+            "James Harden (USA)",
+            "Kawhi Leonard (USA)",
+            "Joel Embiid (CMR)",
+            "Nikola Jokić (SRB)",
+            "Damian Lillard (USA)",
+            "Jayson Tatum (USA)",
+            "Jimmy Butler (USA)",
+            "Devin Booker (USA)",
+            "Anthony Davis (USA)",
+            "Khris Middleton (USA)",
+            "Zion Williamson (USA)",
+            "Rudy Gobert (FRA)",
+            "LaMelo Ball (USA)",
+            "Karl-Anthony Towns (USA)",
+            "Russell Westbrook (USA)"
+          ],
+          "Femmes": [
+            "Breanna Stewart (USA)",
+            "A'ja Wilson (USA)",
+            "Diana Taurasi (USA)",
+            "Sue Bird (USA)",
+            "Elena Delle Donne (USA)",
+            "Brittney Griner (USA)",
+            "Nneka Ogwumike (USA)",
+            "Sylvia Fowles (USA)",
+            "Angel McCoughtry (USA)",
+            "Liz Cambage (AUS)",
+            "Alysha Clark (USA)",
+            "Candace Parker (USA)",
+            "Jewell Loyd (USA)",
+            "Chelsea Gray (USA)",
+            "DeWanna Bonner (USA)",
+            "Diana Tolo (FRA)",
+            "Tina Charles (USA)",
+            "Skylar Diggins-Smith (USA)",
+            "Chiney Ogwumike (USA)",
+            "Napheesa Collier (USA)"
+          ]
+        }
     },
     {
         "sport": "Basketball 3x3",
-        "description": "Le basketball 3x3 est une variante du basketball joué avec trois joueurs par équipe sur un demi-terrain, visant à marquer des points rapidement.",
-        "lieu": "Place de la Concorde",
+        "description": "Le basketball 3x3 est une variante du basketball traditionnel, se jouant avec seulement trois joueurs par équipe sur un demi-terrain. Ce format plus rapide et plus dynamique implique des règles simplifiées et des matchs plus courts, offrant un spectacle intense et divertissant. Le basketball 3x3 est devenu très populaire dans le monde entier, avec des compétitions internationales et des tournois locaux attirant des joueurs de tous niveaux.",
+        "lieu": "Esplanade des Invalides",
         "coordonnees_gps": [
-            "48.865633",
-            2.321236
+          "48.857948",
+          "2.314958"
         ],
         "dates": {
-            "début": "2024-07-30",
-            "fin": "2024-08-03"
+          "début": "2024-07-24",
+          "fin": "2024-08-07",
+          "épreuves": [
+            {"épreuve": "Tournoi Masculin", "date": "2024-07-24"},
+            {"épreuve": "Tournoi Féminin", "date": "2024-07-24"}
+          ]
         },
-        "participants": [
-            "Dusan Bulut",
-            "Riga Ghetto",
-            "Princeton",
-            "Kareem Maddox",
-            "Karlis Lasmanis",
-            "Nauris Miezis",
-            "Agnis Cavars",
-            "Michael Hicks",
-            "Joey King",
-            "Disraeli Lufadeju"
-        ]
+        "participants": {
+          "Hommes": [
+            "Dusan Bulut (SRB)",
+            "Stefan Stojacic (SRB)",
+            "Mihailo Vasic (SRB)",
+            "Dejan Majstorovic (SRB)",
+            "Kareem Maddox (USA)",
+            "Nate Robinson (USA)",
+            "David Carlos Seagers (USA)",
+            "Zahir Carrington (USA)",
+            "Josiah Cody Hicks (USA)",
+            "Angel Santana Matias (PUR)",
+            "Iván Del Valle Ramos (PUR)",
+            "Edgar Rivera (PUR)",
+            "Ibrahim Fatih Karaagac (TUR)",
+            "Ender Arslan (TUR)",
+            "Arda Eraslan (TUR)",
+            "Nauris Miezis (LAT)",
+            "Kārlis Lasmanis (LAT)",
+            "Edgars Krūmiņš (LAT)",
+            "Norbert Jezsik (HUN)",
+            "Ádám Kovács (HUN)"
+          ],
+          "Femmes": [
+            "Maddison Rocci (AUS)",
+            "Bec Cole (AUS)",
+            "Keely Froling (AUS)",
+            "Alice Kunek (AUS)",
+            "Mai Yamamoto (JPN)",
+            "Stephanie Mawuli (FRA)",
+            "Marie-Eve Paget (FRA)",
+            "Mamignan Touré (FRA)",
+            "Sonia Bompastor (FRA)",
+            "Laura Westerik (NED)",
+            "Bettina Boer (NED)",
+            "Loyce Bettonvil (NED)",
+            "Ula Motuga (NZL)",
+            "Zara Jillings (NZL)",
+            "Micaela Cocks (NZL)",
+            "Jamina Roberts (NZL)",
+            "Ingrid Swinkels (BEL)",
+            "Jolien Thys (BEL)",
+            "Seraphine Bastin (BEL)",
+            "Liselot Kulk (BEL)"
+          ]
+        }
     },
     {
         "sport": "Volleyball",
-        "description": "Le volleyball est un sport d'équipe où deux équipes de six joueurs tentent de faire tomber le ballon dans le camp adverse en passant par-dessus un filet.",
-        "lieu": "Parc des Expositions",
+        "description": "Le volleyball est un sport collectif où deux équipes s'affrontent en lançant un ballon par-dessus un filet, en essayant de le faire atterrir dans le camp adverse. Chaque équipe dispose de trois touches pour renvoyer le ballon, en utilisant principalement des passes et des attaques pour marquer des points. Le volleyball est un sport rapide et dynamique, nécessitant à la fois des compétences techniques et tactiques, ainsi qu'une coordination et une communication efficaces entre les coéquipiers.",
+        "lieu": "Paris Expo Porte de Versailles",
         "coordonnees_gps": [
-            "48.831099",
-            2.285024
+          "48.832262",
+          "2.287407"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-10"
+          "début": "2024-07-24",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Tournoi Masculin", "date": "2024-07-24"},
+            {"épreuve": "Tournoi Féminin", "date": "2024-07-25"}
+          ]
         },
-        "participants": [
-            "Brazil",
-            "USA",
-            "Italy",
-            "France",
-            "Russia",
-            "Poland",
-            "Argentina",
-            "Serbia",
-            "Japan",
-            "Canada"
-        ]
+        "participants": {
+          "Hommes": [
+            "Matthew Anderson (USA)",
+            "Taylor Sander (USA)",
+            "Maxwell Holt (USA)",
+            "Micah Christenson (USA)",
+            "Wilfredo León (POL)",
+            "Bartosz Kurek (POL)",
+            "Zbigniew Bartman (POL)",
+            "Fabian Drzyzga (POL)",
+            "Tsvetan Sokolov (BUL)",
+            "Todor Skrimov (BUL)",
+            "Viktor Yosifov (BUL)",
+            "Radoslav Parapunov (BUL)",
+            "Yuki Ishikawa (JPN)",
+            "Masahiro Yanagida (JPN)",
+            "Issei Otake (JPN)",
+            "Naonobu Fujii (JPN)",
+            "Gavin Schmitt (CAN)",
+            "Nicholas Hoag (CAN)",
+            "Lucas Van Berkel (CAN)",
+            "Graham Vigrass (CAN)"
+          ],
+          "Femmes": [
+            "Zhu Ting (CHN)",
+            "Yuan Xinyue (CHN)",
+            "Zhang Changning (CHN)",
+            "Li Yingying (CHN)",
+            "Brankica Mihajlovic (SRB)",
+            "Tijana Bošković (SRB)",
+            "Ana Bjelica (SRB)",
+            "Maja Ognjenovic (SRB)",
+            "Paola Egonu (ITA)",
+            "Miriam Sylla (ITA)",
+            "Celeste Plak (ITA)",
+            "Valentina Diouf (ITA)",
+            "Neriman Özsoy (TUR)",
+            "Hande Baladin (TUR)",
+            "Ebrar Karakurt (TUR)",
+            "Zehra Güneş (TUR)",
+            "Natalia Goncharova (RUS)",
+            "Tatiana Kosheleva (RUS)",
+            "Nataliya Goncharova (RUS)",
+            "Natalia Malykh (RUS)"
+          ]
+        }
     },
     {
-        "sport": "Beach volley",
-        "description": "Le beach-volley est une version du volleyball jouée sur le sable avec des équipes de deux joueurs, se concentrant sur l'agilité et les stratégies rapides.",
-        "lieu": "Tour Eiffel",
+        "sport": "Beach Volley",
+        "description": "Le beach-volley est une variante du volleyball traditionnel, se pratiquant sur du sable plutôt que sur un terrain en salle. Deux équipes de deux joueurs s'affrontent, en utilisant les mêmes règles que le volleyball en salle, mais avec quelques adaptations pour s'adapter au terrain extérieur. Le beach-volley est un sport dynamique et spectaculaire, mettant à l'épreuve la technique, la coordination et la résistance des joueurs.",
+        "lieu": "Paris Plages",
         "coordonnees_gps": [
-            "48.858370",
-            2.294481
+          "48.8566",
+          "2.3522"
         ],
         "dates": {
-            "début": "2024-07-28",
-            "fin": "2024-08-10"
+          "début": "2024-07-26",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Tournoi Masculin", "date": "2024-07-26"},
+            {"épreuve": "Tournoi Féminin", "date": "2024-07-27"}
+          ]
         },
-        "participants": [
-            "Alison Cerutti",
-            "Kerri Walsh Jennings",
-            "April Ross",
-            "Phil Dalhausser",
-            "Nick Lucena",
-            "Taliqua Clancy",
-            "Mariafe Artacho del Solar",
-            "Anders Mol",
-            "Christian Sørum",
-            "Sarah Pavan"
-        ]
+        "participants": {
+          "Hommes": [
+            "Anders Mol (NOR)",
+            "Christian Sørum (NOR)",
+            "Viacheslav Krasilnikov (RUS)",
+            "Oleg Stoyanovskiy (RUS)",
+            "Cherif Younousse (QAT)",
+            "Ahmed Tijan (QAT)",
+            "Taylor Crabb (USA)",
+            "Jake Gibb (USA)",
+            "Julius Thole (GER)",
+            "Clemens Wickler (GER)",
+            "Piotr Kantor (POL)",
+            "Bartosz Losiak (POL)",
+            "Adrian Carambula (ITA)",
+            "Enrico Rossi (ITA)",
+            "Martins Plavins (LAT)",
+            "Edgars Tocs (LAT)",
+            "Nils Ehlers (GER)",
+            "Lorenz Schümann (GER)",
+            "Sergiy Popov (UKR)",
+            "Iaroslav Gordieiev (UKR)"
+          ],
+          "Femmes": [
+            "Sarah Pavan (CAN)",
+            "Melissa Humana-Paredes (CAN)",
+            "April Ross (USA)",
+            "Alexandra Klineman (USA)",
+            "Rebecca Cavalcanti (BRA)",
+            "Ana Patricia Silva (BRA)",
+            "Agatha Bednarczuk (BRA)",
+            "Eduarda Santos Lisboa (BRA)",
+            "Taliqua Clancy (AUS)",
+            "Mariafe Artacho del Solar (AUS)",
+            "Joana Heidrich (SUI)",
+            "Anouk Vergé-Dépré (SUI)",
+            "Tina Graudina (LAT)",
+            "Anastasija Kravcenoka (LAT)",
+            "Svetlana Kholomina (RUS)",
+            "Nadezda Makroguzova (RUS)",
+            "Chantal Laboureur (GER)",
+            "Sandra Ittlinger (GER)",
+            "Marta Menegatti (ITA)",
+            "Viktoria Orsi Toth (ITA)"
+          ]
+        }
     },
     {
         "sport": "Boxe",
-        "description": "La boxe est un sport de combat où deux concurrents se battent en utilisant uniquement leurs poings, avec des catégories de poids spécifiques.",
-        "lieu": "Grand Palais",
+        "description": "La boxe est un sport de combat dans lequel deux adversaires, généralement de poids et de taille similaires, se battent en utilisant uniquement leurs poings. Les compétitions de boxe se déroulent sur un ring, où les boxeurs s'affrontent pour marquer des points en frappant leur adversaire tout en évitant les coups. La boxe est un sport exigeant qui met à l'épreuve la condition physique, la stratégie et le courage des participants.",
+        "lieu": "Paris Expo Porte de Versailles",
         "coordonnees_gps": [
-            "48.866523",
-            2.312243
+          "48.8325",
+          "2.2875"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-10"
+          "début": "2024-07-20",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "Poids Léger Hommes", "date": "2024-07-20"},
+            {"épreuve": "Poids Léger Femmes", "date": "2024-07-21"},
+            {"épreuve": "Poids Moyen Hommes", "date": "2024-07-22"},
+            {"épreuve": "Poids Moyen Femmes", "date": "2024-07-23"},
+            {"épreuve": "Poids Lourd Hommes", "date": "2024-07-24"},
+            {"épreuve": "Poids Lourd Femmes", "date": "2024-07-25"}
+          ]
         },
-        "participants": [
-            "Anthony Joshua",
-            "Katie Taylor",
-            "Vasiliy Lomachenko",
-            "Claressa Shields",
-            "Canelo Alvarez",
-            "Gennady Golovkin",
-            "Naoya Inoue",
-            "Terrence Crawford",
-            "Tyson Fury",
-            "Amanda Serrano"
-        ]
+        "participants": {
+          "Hommes": [
+            "Mohamed Ali (USA)",
+            "Mike Tyson (USA)",
+            "Floyd Mayweather Jr. (USA)",
+            "Manny Pacquiao (PHI)",
+            "George Foreman (USA)",
+            "Sugar Ray Robinson (USA)",
+            "Evander Holyfield (USA)",
+            "Lennox Lewis (UK)",
+            "Joe Louis (USA)",
+            "Vasyl Lomachenko (UKR)",
+            "Saul Alvarez (MEX)",
+            "Anthony Joshua (UK)",
+            "Oscar De La Hoya (USA)",
+            "Miguel Cotto (PUR)",
+            "Tyson Fury (UK)",
+            "Sonny Liston (USA)",
+            "Larry Holmes (USA)",
+            "Julio César Chávez (MEX)",
+            "Jack Dempsey (USA)",
+            "Roy Jones Jr. (USA)"
+          ],
+          "Femmes": [
+            "Laila Ali (USA)",
+            "Claressa Shields (USA)",
+            "Katie Taylor (IRL)",
+            "Mary Kom (IND)",
+            "Nicola Adams (UK)",
+            "Marlen Esparza (USA)",
+            "Lucia Rijker (NED)",
+            "Holly Holm (USA)",
+            "Regina Halmich (GER)",
+            "Anne Wolfe (USA)",
+            "Christy Martin (USA)",
+            "Ronda Rousey (USA)",
+            "Amanda Serrano (PUR)",
+            "Jackie Nava (MEX)",
+            "Cecilia Brækhus (NOR)",
+            "Ann Wolfe (USA)",
+            "Vonda Ward (USA)",
+            "Jessica McCaskill (USA)",
+            "Layla McCarter (USA)",
+            "Alejandra Jiménez (MEX)"
+          ]
+        }
     },
     {
         "sport": "Breaking",
-        "description": "Le breaking, ou breakdance, est une danse urbaine de compétition mettant en avant des mouvements acrobatiques et des figures spectaculaires.",
-        "lieu": "Le Dôme",
+        "description": "Le breaking, également connu sous le nom de breakdance, est un style de danse urbaine qui s'est développé dans les années 1970 à New York. Les danseurs, appelés b-boys et b-girls, exécutent des mouvements acrobatiques, des figures au sol et des pas de danse rythmés, souvent en improvisant en fonction de la musique. Le breaking est un sport spectaculaire qui combine créativité, expression artistique et maîtrise physique.",
+        "lieu": "Palais des Sports Marcel Cerdan",
         "coordonnees_gps": [
-            "48.857489",
-            2.287600
+          "48.8925",
+          "2.3845"
         ],
         "dates": {
-            "début": "2024-08-09",
-            "fin": "2024-08-10"
+          "début": "2024-07-28",
+          "fin": "2024-08-08",
+          "épreuves": [
+            {"épreuve": "Battles Hommes", "date": "2024-07-28"},
+            {"épreuve": "Battles Femmes", "date": "2024-07-29"}
+          ]
         },
-        "participants": [
-            "B-Boy Menno",
-            "B-Girl Ami",
-            "B-Boy Shigekix",
-            "B-Boy Lilou",
-            "B-Girl Roxy",
-            "B-Boy Hong 10",
-            "B-Girl Kastet",
-            "B-Boy Victor",
-            "B-Boy Kid David",
-            "B-Girl Ayumi"
-        ]
+        "participants": {
+          "Hommes": [
+            "B-boy Lilou (FRA)",
+            "B-boy Issei (JPN)",
+            "B-boy Hong 10 (KOR)",
+            "B-boy Menno (NED)",
+            "B-boy Victor (USA)",
+            "B-boy Vero (FRA)",
+            "B-boy Neguin (BRA)",
+            "B-boy Thesis (USA)",
+            "B-boy Taisuke (JPN)",
+            "B-boy Moy (USA)",
+            "B-boy Sunni (GBR)",
+            "B-boy Roxrite (USA)",
+            "B-boy Alkolil (RUS)",
+            "B-boy Wing (KOR)",
+            "B-boy Gravity (USA)",
+            "B-boy Ayumi (JPN)"
+          ],
+          "Femmes": [
+            "B-girl Ami (JPN)",
+            "B-girl Narumi (JPN)",
+            "B-girl Ayane (JPN)",
+            "B-girl Terra (USA)",
+            "B-girl San Andrea (USA)",
+            "B-girl Baby OG (USA)",
+            "B-girl Jilou (FRA)",
+            "B-girl Kastet (RUS)",
+            "B-girl Narumi (JPN)",
+            "B-girl Terra (USA)",
+            "B-girl Ami (JPN)",
+            "B-girl Hanan (JPN)",
+            "B-girl Ishtar (FRA)",
+            "B-girl Sunny (USA)",
+            "B-girl Alisha (RUS)",
+            "B-girl Minami (JPN)"
+          ]
+        }
     },
     {
-        "sport": "Canoë slalom",
-        "description": "Le canoë slalom est une course chronométrée où les athlètes naviguent à travers des portes suspendues sur une rivière à débit rapide.",
-        "lieu": "Île de Puteaux",
+        "sport": "Canoë Slalom",
+        "description": "Le canoë slalom est une discipline sportive qui consiste à naviguer dans un kayak ou un canoë à travers une série de portes suspendues sur une rivière en eau vive. Les compétiteurs doivent négocier les rapides, les tourbillons et les obstacles tout en passant à travers les portes dans un ordre spécifique et dans le sens indiqué. Le canoë slalom est un sport exigeant qui allie force, agilité, coordination et stratégie.",
+        "lieu": "Base de loisirs de Vaires-sur-Marne",
         "coordonnees_gps": [
-            "48.883054",
-            2.239073
+          "48.8739",
+          "2.6222"
         ],
         "dates": {
-            "début": "2024-07-29",
-            "fin": "2024-08-04"
+          "début": "2024-07-29",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "C1 Hommes", "date": "2024-07-29"},
+            {"épreuve": "C1 Femmes", "date": "2024-07-30"},
+            {"épreuve": "C2 Hommes", "date": "2024-07-31"},
+            {"épreuve": "C2 Femmes", "date": "2024-08-01"}
+          ]
         },
-        "participants": [
-            "Jessica Fox",
-            "Peter Kauzer",
-            "Michal Martikan",
-            "Jiří Prskavec",
-            "Mallory Franklin",
-            "Takuya Haneda",
-            "Ricarda Funk",
-            "Boris Neveu",
-            "Eva Tercelj",
-            "Benjamin Savsek"
-        ]
+        "participants": {
+          "Hommes": [
+            "Michal Martikán (SVK)",
+            "Benjamin Savšek (SLO)",
+            "Sideris Tasiadis (GER)",
+            "Alexander Slafkovský (SVK)",
+            "Václav Chaloupka (CZE)",
+            "Peter Kauzer (SLO)",
+            "Jakub Grigar (SVK)",
+            "Marek Šindler (CZE)",
+            "Luka Božič (SLO)",
+            "Matej Beňuš (SVK)",
+            "David Florence (GBR)",
+            "Martin Thomas (FRA)",
+            "Marko Mirgorodsky (CZE)",
+            "Kai Lenny (USA)",
+            "Egor Voskoboynikov (RUS)"
+          ],
+          "Femmes": [
+            "Jessica Fox (AUS)",
+            "Mallory Franklin (GBR)",
+            "Nina Weratschnig (AUT)",
+            "Eva Tercelj (SLO)",
+            "Amalie Hilgertová (CZE)",
+            "Nuria Vilarrubla (ESP)",
+            "Nurcan Soylu (TUR)",
+            "Viktoria Wolffhardt (AUT)",
+            "Teresa Fábián (HUN)",
+            "Jasmin Schornberg (GER)",
+            "Nadine Weratschnig (AUT)",
+            "Elena Apel (GER)",
+            "Anja Jotanović (SRB)",
+            "Oliwia Konieczna (POL)",
+            "Gabriela Satková (SVK)"
+          ]
+        }
     },
     {
-        "sport": "Canoë sprint",
-        "description": "Le canoë sprint est une course de vitesse sur des eaux calmes où les athlètes pagaient sur une distance définie dans des lignes droites.",
-        "lieu": "Île de Puteaux",
+        "sport": "Canoë Sprint",
+        "description": "Le canoë sprint est une discipline de course en canoë ou kayak sur des distances de 200m, 500m, 1000m et 4x100m relais. Les compétiteurs utilisent des pagaies pour propulser leur embarcation le long d'un parcours rectiligne, visant à atteindre la ligne d'arrivée le plus rapidement possible. Le canoë sprint est un sport de vitesse qui exige une combinaison de force, d'endurance et de technique pour réussir.",
+        "lieu": "Lac de Vaires-sur-Marne",
         "coordonnees_gps": [
-            "48.883054",
-            2.239073
+          "48.8708",
+          "2.6269"
         ],
         "dates": {
-            "début": "2024-08-06",
-            "fin": "2024-08-10"
+          "début": "2024-07-29",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "K1 200m Hommes", "date": "2024-07-29"},
+            {"épreuve": "K1 200m Femmes", "date": "2024-07-30"},
+            {"épreuve": "K1 500m Hommes", "date": "2024-07-31"},
+            {"épreuve": "K1 500m Femmes", "date": "2024-08-01"},
+            {"épreuve": "K1 1000m Hommes", "date": "2024-08-02"},
+            {"épreuve": "K1 1000m Femmes", "date": "2024-08-03"},
+            {"épreuve": "K2 500m Hommes", "date": "2024-08-04"},
+            {"épreuve": "K2 500m Femmes", "date": "2024-08-05"},
+            {"épreuve": "K4 500m Hommes", "date": "2024-08-06"},
+            {"épreuve": "K4 500m Femmes", "date": "2024-08-07"}
+          ]
         },
-        "participants": [
-            "Lisa Carrington",
-            "Sebastian Brendel",
-            "Isaquias Queiroz",
-            "Saul Craviotto",
-            "Renee Podunavac",
-            "Mark de Jonge",
-            "Josef Dostál",
-            "Catherine Widmer",
-            "Volha Khudzenka",
-            "Eugenio Monteiro"
-        ]
+        "participants": {
+          "Hommes": [
+            "Adam van Koeverden (CAN)",
+            "Max Hoff (GER)",
+            "Fernando Pimenta (POR)",
+            "Sebastian Brendel (GER)",
+            "Miroslav Kirchev (BUL)",
+            "Mathieu Goubel (FRA)",
+            "Kenny Wallace (AUS)",
+            "Nikita Morgachev (RUS)",
+            "Eirik Verås Larsen (NOR)",
+            "Marcus Walz (ESP)",
+            "Ed McKeever (GBR)",
+            "Andreas Dittmer (GER)",
+            "David Cal (ESP)",
+            "Attila Vajda (HUN)",
+            "Tom Liebscher (GER)"
+          ],
+          "Femmes": [
+            "Teresa Portela (POR)",
+            "Natasa Douchev-Janics (HUN)",
+            "Lisa Carrington (NZL)",
+            "Inna Osypenko-Radomska (UKR)",
+            "Volha Khudzenka (BLR)",
+            "Danuta Kozák (HUN)",
+            "Yvonne Schuring (NED)",
+            "Sabrina Hering (GER)",
+            "Caroline Brunet (CAN)",
+            "Birgit Fischer (GER)",
+            "Josefa Idem (ITA)",
+            "Katrin Wagner-Augustin (GER)",
+            "Birgit Fischer-Schmidt (GER)",
+            "Anita Szabó (HUN)",
+            "Liudmyla Luzan (UKR)"
+          ]
+        }
     },
     {
         "sport": "BMX Freestyle",
-        "description": "Le BMX freestyle consiste en des performances acrobatiques sur un vélo de BMX, avec des figures aériennes et des sauts complexes.",
-        "lieu": "La Villette",
+        "description": "Le BMX Freestyle est une discipline de cyclisme extrême où les athlètes réalisent des figures acrobatiques et des sauts sur des rampes, des modules et des obstacles. Les compétiteurs sont jugés sur la difficulté, le style, la variété et l'exécution de leurs mouvements. Le BMX Freestyle est un sport spectaculaire qui allie agilité, force et créativité, offrant un spectacle dynamique et captivant pour les spectateurs.",
+        "lieu": "Parc de la Villette",
         "coordonnees_gps": [
-            "48.889722",
-            2.393333
+          "48.8958",
+          "2.3931"
         ],
         "dates": {
-            "début": "2024-07-30",
-            "fin": "2024-08-01"
+          "début": "2024-07-27",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "Park Hommes", "date": "2024-07-27"},
+            {"épreuve": "Park Femmes", "date": "2024-07-28"},
+            {"épreuve": "Street Hommes", "date": "2024-07-29"},
+            {"épreuve": "Street Femmes", "date": "2024-07-30"}
+          ]
         },
-        "participants": [
+        "participants": {
+          "Hommes": [
             "Logan Martin (AUS)",
             "Jaie Toohey (AUS)",
             "Alec Danelutti (AUS)",
@@ -377,7 +766,9 @@
             "Hai Yang (CHN)",
             "Zoltan Kempf (HUN)",
             "Vincent Leygonie (RSA)",
-            "Paul Thölen (GER)",
+            "Paul Thölen (GER)"
+          ],
+          "Femmes": [
             "Deng Yawen (CHN)",
             "Sun Sibei (CHN)",
             "Sun Jiaqi (CHN)",
@@ -402,382 +793,860 @@
             "Eduarda Bordignon (BRA)",
             "Analia Gabriela Zacarias (ARG)",
             "Katherine Seiran Diaz Darmase (VEN)"
-        ]
+          ]
+        }
     },
     {
         "sport": "BMX Racing",
-        "description": "Le BMX racing est une course de sprint sur une piste accidentée avec des bosses et des virages serrés, nécessitant vitesse et agilité.",
-        "lieu": "La Villette",
+        "description": "Le BMX Racing est une discipline de cyclisme qui se déroule sur des pistes spécialement conçues, parsemées de bosses, de virages relevés et de sauts. Les courses opposent plusieurs concurrents qui s'affrontent pour franchir la ligne d'arrivée en premier. Le BMX Racing est un sport rapide et intense, combinant vitesse, agilité et stratégie pour surmonter les obstacles et les adversaires.",
+        "lieu": "Vélodrome national de Saint-Quentin-en-Yvelines",
         "coordonnees_gps": [
-            "48.889722",
-            2.393333
+          "48.7836",
+          "2.0402"
         ],
         "dates": {
-            "début": "2024-07-30",
-            "fin": "2024-08-01"
+          "début": "2024-07-30",
+          "fin": "2024-08-02",
+          "épreuves": [
+            {"épreuve": "Course Hommes", "date": "2024-07-30"},
+            {"épreuve": "Course Femmes", "date": "2024-07-31"}
+          ]
         },
-        "participants": [
-            "Niek Kimmann",
-            "Bethany Shriever",
-            "Connor Fields",
-            "Alise Willoughby",
-            "Joris Daudet",
-            "Twan van Gendt",
-            "Laura Smulders",
-            "Sylvain André",
-            "Simone Tetsche Christensen",
-            "David Graf"
-        ]
+        "participants": {
+          "Hommes": [
+            "Connor Fields (USA)",
+            "Joris Daudet (FRA)",
+            "Niek Kimmann (NED)",
+            "Sylvain André (FRA)",
+            "David Graf (SUI)",
+            "Jeremy Rencurel (FRA)",
+            "Carlos Ramírez (COL)",
+            "Romain Mahieu (FRA)",
+            "Twan van Gendt (NED)",
+            "Anthony Dean (AUS)",
+            "Kyle Evans (GBR)",
+            "Romain Mayet (FRA)",
+            "Tore Navrestad (NOR)",
+            "Vincent Pelluard (COL)",
+            "Kai Sakakibara (AUS)",
+            "Kye Whyte (GBR)",
+            "Jelle van Gorkom (NED)",
+            "Gonzalo Molina (ARG)",
+            "Rihards Veide (LAT)",
+            "Bodi Turner (AUS)"
+          ],
+          "Femmes": [
+            "Bethany Shriever (GBR)",
+            "Laura Smulders (NED)",
+            "Alise Willoughby (USA)",
+            "Mariana Pajón (COL)",
+            "Saya Sakakibara (AUS)",
+            "Yaroslava Bondarenko (RUS)",
+            "Merel Smulders (NED)",
+            "Drew Mechielsen (CAN)",
+            "Sylvia Alejandra Stepanenko (ARG)",
+            "Tatjana Schoenmaker (RSA)",
+            "Axelle Etienne (FRA)",
+            "Arielle Martin (USA)",
+            "Madison Hoover (USA)",
+            "Zoe Claessens (NED)",
+            "Rebecca Petch (NZL)",
+            "Samantha Cools (CAN)",
+            "Stefany Hernández (VEN)",
+            "Domenica Azuero Gonzalez (ECU)",
+            "Paula Kibare (LAT)",
+            "Anna Krieger (GER)"
+          ]
+        }
     },
     {
         "sport": "Cyclisme VTT",
-        "description": "Le cyclisme VTT (vélo tout-terrain) consiste en des courses sur des terrains accidentés avec des obstacles naturels, mettant à l'épreuve l'endurance et la technique.",
-        "lieu": "Elancourt",
+        "description": "Le cyclisme VTT, ou Vélo Tout-Terrain, est une discipline de cyclisme qui se déroule sur des terrains variés, tels que des sentiers de montagne, des pistes forestières et des parcours accidentés. Les épreuves de VTT incluent des courses de cross-country, de descente, de trial et de slalom, mettant à l'épreuve les compétences techniques, l'endurance et la vitesse des cyclistes. Le VTT est un sport exigeant qui demande agilité, force et maîtrise pour naviguer à travers les obstacles naturels et artificiels.",
+        "lieu": "Domaine de Saint-Cloud",
         "coordonnees_gps": [
-            "48.784177",
-            1.958038
+          "48.8416",
+          "2.2281"
         ],
         "dates": {
-            "début": "2024-07-28",
-            "fin": "2024-08-01"
+          "début": "2024-08-03",
+          "fin": "2024-08-08",
+          "épreuves": [
+            {"épreuve": "Cross-country Hommes", "date": "2024-08-03"},
+            {"épreuve": "Cross-country Femmes", "date": "2024-08-04"},
+            {"épreuve": "Descente Hommes", "date": "2024-08-05"},
+            {"épreuve": "Descente Femmes", "date": "2024-08-06"},
+            {"épreuve": "Trial", "date": "2024-08-07"},
+            {"épreuve": "Slalom", "date": "2024-08-08"}
+          ]
         },
-        "participants": [
-            "Nino Schurter",
-            "Jolanda Neff",
-            "Mathieu van der Poel",
-            "Pauline Ferrand-Prévot",
-            "Henrique Avancini",
-            "Jenny Rissveds",
-            "Ondrej Cink",
-            "Rebecca McConnell",
-            "Lars Forster",
-            "Loana Lecomte"
-        ]
+        "participants": {
+          "Hommes": [
+            "Nino Schurter (SUI)",
+            "Mathieu van der Poel (NED)",
+            "Henrique Avancini (BRA)",
+            "Jordan Sarrou (FRA)",
+            "Mathias Flückiger (SUI)",
+            "Tom Pidcock (GBR)",
+            "David Valero Serrano (ESP)",
+            "Victor Koretzky (FRA)",
+            "Alan Hatherly (RSA)",
+            "Florian Vogel (SUI)",
+            "Filippo Colombo (SUI)",
+            "Maxime Marotte (FRA)",
+            "Gunn-Rita Dahle Flesjå (NOR)",
+            "Jolanda Neff (SUI)",
+            "Pauline Ferrand-Prévot (FRA)",
+            "Loana Lecomte (FRA)",
+            "Haley Batten (USA)",
+            "Sina Frei (SUI)",
+            "Evie Richards (GBR)",
+            "Rebecca McConnell (AUS)"
+          ],
+          "Femmes": [
+            "Nino Schurter (SUI)",
+            "Mathieu van der Poel (NED)",
+            "Henrique Avancini (BRA)",
+            "Jordan Sarrou (FRA)",
+            "Mathias Flückiger (SUI)",
+            "Tom Pidcock (GBR)",
+            "David Valero Serrano (ESP)",
+            "Victor Koretzky (FRA)",
+            "Alan Hatherly (RSA)",
+            "Florian Vogel (SUI)",
+            "Filippo Colombo (SUI)",
+            "Maxime Marotte (FRA)",
+            "Gunn-Rita Dahle Flesjå (NOR)",
+            "Jolanda Neff (SUI)",
+            "Pauline Ferrand-Prévot (FRA)",
+            "Loana Lecomte (FRA)",
+            "Haley Batten (USA)",
+            "Sina Frei (SUI)",
+            "Evie Richards (GBR)",
+            "Rebecca McConnell (AUS)"
+          ]
+        }
     },
     {
         "sport": "Cyclisme Route",
-        "description": "Le cyclisme sur route est une course de vitesse et d'endurance sur des routes pavées, souvent avec des parcours de plusieurs centaines de kilomètres.",
-        "lieu": "Champs-Élysées",
+        "description": "Le cyclisme sur route est une discipline de cyclisme qui se déroule sur des routes ouvertes à la circulation. Les épreuves de cyclisme sur route comprennent des courses en ligne, des contre-la-montre individuels et par équipes, ainsi que des courses de relais. Les compétitions de cyclisme sur route sont souvent disputées sur des distances longues, mettant à l'épreuve l'endurance, la stratégie et la puissance des coureurs. Le cyclisme sur route est l'une des disciplines les plus populaires et les plus emblématiques des Jeux olympiques, attirant des athlètes du monde entier.",
+        "lieu": "Champs-Élysées, Paris",
         "coordonnees_gps": [
-            "48.867348",
-            2.329141
+          "48.8706",
+          "2.3095"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-03"
+          "début": "2024-07-27",
+          "fin": "2024-08-03",
+          "épreuves": [
+            {"épreuve": "Course en ligne Hommes", "date": "2024-07-27"},
+            {"épreuve": "Course en ligne Femmes", "date": "2024-07-28"},
+            {"épreuve": "Contre-la-montre Individuel Hommes", "date": "2024-07-29"},
+            {"épreuve": "Contre-la-montre Individuel Femmes", "date": "2024-07-30"},
+            {"épreuve": "Course en ligne par équipes Hommes", "date": "2024-07-31"},
+            {"épreuve": "Course en ligne par équipes Femmes", "date": "2024-08-01"}
+          ]
         },
-        "participants": [
-            "Chris Froome",
-            "Anna van der Breggen",
-            "Primoz Roglic",
-            "Tadej Pogacar",
-            "Julian Alaphilippe",
-            "Egan Bernal",
-            "Peter Sagan",
-            "Vincenzo Nibali",
-            "Marianne Vos",
-            "Remco Evenepoel"
-        ]
+        "participants": {
+          "Hommes": [
+            "Tadej Pogacar (SLO)",
+            "Primoz Roglic (SLO)",
+            "Richard Carapaz (ECU)",
+            "Wout van Aert (BEL)",
+            "Mathieu van der Poel (NED)",
+            "Julian Alaphilippe (FRA)",
+            "Remco Evenepoel (BEL)",
+            "Egan Bernal (COL)",
+            "Alejandro Valverde (ESP)",
+            "Marc Hirschi (SUI)",
+            "Michael Woods (CAN)",
+            "Tom Dumoulin (NED)"
+          ],
+          "Femmes": [
+            "Anna van der Breggen (NED)",
+            "Annemiek van Vleuten (NED)",
+            "Marianne Vos (NED)",
+            "Elisa Longo Borghini (ITA)",
+            "Chloe Dygert (USA)",
+            "Ashleigh Moolman-Pasio (RSA)",
+            "Cecilie Uttrup Ludwig (DEN)",
+            "Lizzie Deignan (GBR)",
+            "Kasia Niewiadoma (POL)",
+            "Marta Bastianelli (ITA)",
+            "Lotte Kopecky (BEL)",
+            "Grace Brown (AUS)"
+          ]
+        }
     },
     {
         "sport": "Cyclisme Piste",
-        "description": "Le cyclisme sur piste se déroule dans un vélodrome où les athlètes participent à diverses courses de vitesse et d'endurance sur une piste ovale inclinée.",
-        "lieu": "Vélodrome de Saint-Quentin-en-Yvelines",
+        "description": "Le cyclisme sur piste est une discipline de cyclisme qui se déroule sur des pistes spécialement conçues, généralement en forme d'anneau. Les épreuves de cyclisme sur piste comprennent la vitesse, la poursuite, la course aux points, le keirin, la course à l'élimination et le scratch, entre autres. Ces épreuves mettent à l'épreuve la vitesse, la stratégie, l'endurance et l'agilité des coureurs, offrant un spectacle palpitant pour les spectateurs. Le cyclisme sur piste est connu pour ses courses rapides et tactiques, avec des moments de suspense et d'action intense.",
+        "lieu": "Vélodrome national de Saint-Quentin-en-Yvelines",
         "coordonnees_gps": [
-            "48.784082",
-            2.029441
+          "48.7704",
+          "2.0445"
         ],
         "dates": {
-            "début": "2024-08-05",
-            "fin": "2024-08-08"
+          "début": "2024-08-07",
+          "fin": "2024-08-12",
+          "épreuves": [
+            {"épreuve": "Vitesse Individuelle Hommes", "date": "2024-08-07"},
+            {"épreuve": "Vitesse par équipes Hommes", "date": "2024-08-08"},
+            {"épreuve": "Poursuite Individuelle Hommes", "date": "2024-08-09"},
+            {"épreuve": "Course aux points Hommes", "date": "2024-08-10"},
+            {"épreuve": "Keirin Hommes", "date": "2024-08-11"},
+            {"épreuve": "Vitesse Individuelle Femmes", "date": "2024-08-07"},
+            {"épreuve": "Vitesse par équipes Femmes", "date": "2024-08-08"},
+            {"épreuve": "Poursuite Individuelle Femmes", "date": "2024-08-09"},
+            {"épreuve": "Course aux points Femmes", "date": "2024-08-10"},
+            {"épreuve": "Keirin Femmes", "date": "2024-08-11"}
+          ]
         },
-        "participants": [
-            "Jason Kenny",
-            "Laura Kenny",
-            "Filippo Ganna",
-            "Katie Archibald",
-            "Matthijs Büchli",
-            "Chloe Dygert",
-            "Elia Viviani",
-            "Kirsten Wild",
-            "Matthew Walls",
-            "Stephanie Morton"
-        ]
+        "participants": {
+          "Hommes": [
+            "Jason Kenny (GBR)",
+            "Chris Hoy (GBR)",
+            "Matthew Glaetzer (AUS)",
+            "François Pervis (FRA)",
+            "Gregory Baugé (FRA)",
+            "Denis Dmitriev (RUS)",
+            "Hugo Barrette (CAN)",
+            "Eddie Dawkins (NZL)",
+            "Stefan Bötticher (GER)",
+            "Harrie Lavreysen (NED)",
+            "Sebastian Mora Vedri (ESP)",
+            "Glauber Silva (BRA)"
+          ],
+          "Femmes": [
+            "Anna Meares (AUS)",
+            "Kristina Vogel (GER)",
+            "Victoria Pendleton (GBR)",
+            "Simona Krupeckaite (LTU)",
+            "Lee Wai Sze (HKG)",
+            "Shuang Guo (CHN)",
+            "Kaarle McCulloch (AUS)",
+            "Elis Ligtlee (NED)",
+            "Becky James (GBR)",
+            "Lyubov Shulika (UKR)",
+            "Olga Ismayilova (AZE)",
+            "Olena Starikova (UKR)"
+          ]
+        }
     },
     {
         "sport": "Plongeon",
-        "description": "Le plongeon est une épreuve où les athlètes exécutent des figures acrobatiques en sautant dans l'eau depuis des hauteurs variées.",
-        "lieu": "Piscine Olympique",
+        "description": "Le plongeon est un sport aquatique qui implique des sauts acrobatiques depuis des plates-formes élevées ou des tremplins dans une piscine. Les plongeurs exécutent une série de figures aériennes complexes, y compris des vrilles, des saltos et des pirouettes, avant de pénétrer dans l'eau avec grâce et précision. Le plongeon est non seulement un test de courage et de compétences athlétiques, mais aussi un art qui combine force, souplesse, coordination et concentration.",
+        "lieu": "Centre Aquatique Olympique",
         "coordonnees_gps": [
-            "48.844303",
-            2.257774
+          "48.8379",
+          "2.2514"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-07"
+          "début": "2024-08-02",
+          "fin": "2024-08-10",
+          "épreuves": [
+            {"épreuve": "Plongeon de haut vol - Hommes", "date": "2024-08-02"},
+            {"épreuve": "Plongeon de haut vol - Femmes", "date": "2024-08-03"},
+            {"épreuve": "Plongeon synchronisé - Hommes", "date": "2024-08-04"},
+            {"épreuve": "Plongeon synchronisé - Femmes", "date": "2024-08-05"},
+            {"épreuve": "Plongeon individuel - Hommes", "date": "2024-08-06"},
+            {"épreuve": "Plongeon individuel - Femmes", "date": "2024-08-07"}
+          ]
         },
-        "participants": [
-            "Tom Daley",
-            "Quan Hongchan",
-            "Tania Cagnotto",
-            "Chen Aisen",
-            "Pandelela Rinong",
-            "Jack Laugher",
-            "Melissa Wu",
-            "Steele Johnson",
-            "Matty Lee",
-            "Zhang Jiaqi"
-        ]
+        "participants": {
+          "Hommes": [
+            "Tom Daley (GBR)",
+            "Patrick Hausding (GER)",
+            "David Boudia (USA)",
+            "Yuan Cao (CHN)",
+            "Javier Illana (ESP)",
+            "Yona Knight-Wisdom (JAM)",
+            "Viktor Minibaev (RUS)",
+            "Jack Laugher (GBR)",
+            "Ilya Zakharov (RUS)",
+            "Yang Jian (CHN)",
+            "Evgenii Kuznetsov (RUS)",
+            "Philippe Gagné (CAN)"
+          ],
+          "Femmes": [
+            "Chen Yuxi (CHN)",
+            "Shi Tingmao (CHN)",
+            "Jennifer Abel (CAN)",
+            "Melissa Wu (AUS)",
+            "Pandelela Rinong (MAS)",
+            "Tania Cagnotto (ITA)",
+            "Lena Hentschel (GER)",
+            "Maria Kurjo (GER)",
+            "Jessica Parratto (USA)",
+            "Nuria Diosdado (MEX)",
+            "Tina Punzel (GER)",
+            "Katrina Young (USA)"
+          ]
+        }
     },
     {
         "sport": "Équitation",
-        "description": "L'équitation comprend diverses disciplines où les cavaliers et leurs chevaux démontrent leur habileté dans des épreuves de dressage, de saut et de cross-country.",
-        "lieu": "Château de Versailles",
+        "description": "L'équitation est un sport qui met en jeu la connexion entre le cavalier et le cheval dans une série d'épreuves techniques et artistiques. Les compétitions d'équitation comprennent des disciplines telles que le dressage, le saut d'obstacles et le concours complet. Les cavaliers démontrent leur habileté, leur grâce et leur contrôle tandis qu'ils naviguent à travers des parcours complexes, sautent des obstacles et exécutent des mouvements précis, le tout en harmonie avec leur monture. L'équitation est une démonstration d'élégance, de force et de partenariat entre l'homme et l'animal.",
+        "lieu": "Parc équestre de Versailles",
         "coordonnees_gps": [
-            "48.804865",
-            2.120355
+          "48.8047",
+          "2.1215"
         ],
         "dates": {
-            "début": "2024-07-26",
-            "fin": "2024-08-07"
+          "début": "2024-08-03",
+          "fin": "2024-08-09",
+          "épreuves": [
+            {"épreuve": "Dressage individuel", "date": "2024-08-03"},
+            {"épreuve": "Dressage par équipe", "date": "2024-08-04"},
+            {"épreuve": "Saut d'obstacles individuel", "date": "2024-08-06"},
+            {"épreuve": "Saut d'obstacles par équipe", "date": "2024-08-07"},
+            {"épreuve": "Concours complet individuel", "date": "2024-08-09"},
+            {"épreuve": "Concours complet par équipe", "date": "2024-08-10"}
+          ]
         },
-        "participants": [
-            "Isabell Werth",
-            "Charlotte Dujardin",
-            "Michael Jung",
-            "Peder Fredricson",
-            "Jessica von Bredow-Werndl",
-            "Andrew Hoy",
-            "Laura Graves",
-            "Boyd Martin",
-            "Ingrid Klimke",
-            "Ben Maher"
-        ]
+        "participants": {
+          "Dressage": [
+            "Charlotte Dujardin (GBR)",
+            "Isabell Werth (GER)",
+            "Jessica von Bredow-Werndl (GER)",
+            "Steffen Peters (USA)",
+            "Edward Gal (NED)",
+            "Laura Graves (USA)",
+            "Adelinde Cornelissen (NED)",
+            "Hans Peter Minderhoud (NED)",
+            "Dorothee Schneider (GER)",
+            "Emmelie Scholtens (NED)",
+            "Helen Langehanenberg (GER)",
+            "Cathrine Dufour (DEN)"
+          ],
+          "Saut d'obstacles": [
+            "Steve Guerdat (SUI)",
+            "Martin Fuchs (SUI)",
+            "Ben Maher (GBR)",
+            "Scott Brash (GBR)",
+            "Daniel Deusser (GER)",
+            "Peder Fredricson (SWE)",
+            "Marcus Ehning (GER)",
+            "Maikel van der Vleuten (NED)",
+            "Eric Lamaze (CAN)",
+            "Edwina Tops-Alexander (AUS)",
+            "Beezie Madden (USA)",
+            "Julien Epaillard (FRA)"
+          ],
+          "Concours complet": [
+            "Michael Jung (GER)",
+            "Ingrid Klimke (GER)",
+            "Jonelle Price (NZL)",
+            "Oliver Townend (GBR)",
+            "Tim Price (NZL)",
+            "Andrew Hoy (AUS)",
+            "Christopher Burton (AUS)",
+            "Piggy March (GBR)",
+            "Thibaut Vallette (FRA)",
+            "Astier Nicolas (FRA)",
+            "Nicola Wilson (GBR)",
+            "Laura Collett (GBR)"
+          ]
+        }
     },
     {
         "sport": "Escrime",
-        "description": "L'escrime est un sport de combat où les concurrents s'affrontent avec des armes comme le fleuret, l'épée et le sabre, visant à toucher l'adversaire.",
-        "lieu": "Grand Palais",
+        "description": "L'escrime est un sport d'opposition où deux adversaires s'affrontent à l'aide d'armes blanches, telles que l'épée, le fleuret et le sabre. L'objectif principal de l'escrime est de toucher l'adversaire avec son arme tout en évitant d'être touché. Les compétitions d'escrime se déroulent sur une piste étroite appelée piste, où les escrimeurs se déplacent rapidement pour attaquer et parer les attaques de leur adversaire. L'escrime nécessite un mélange unique de stratégie, de vitesse, de précision et de réflexes, faisant de ce sport à la fois un défi mental et physique.",
+        "lieu": "Le Grand Palais Éphémère",
         "coordonnees_gps": [
-            "48.866523",
-            2.312243
+          "48.8566",
+          "2.3522"
         ],
         "dates": {
-            "début": "2024-07-27",
-            "fin": "2024-08-04"
+          "début": "2024-08-03",
+          "fin": "2024-08-10",
+          "épreuves": [
+            {"épreuve": "Épée individuelle", "date": "2024-08-03"},
+            {"épreuve": "Épée par équipe", "date": "2024-08-04"},
+            {"épreuve": "Fleuret individuel", "date": "2024-08-06"},
+            {"épreuve": "Fleuret par équipe", "date": "2024-08-07"},
+            {"épreuve": "Sabre individuel", "date": "2024-08-09"},
+            {"épreuve": "Sabre par équipe", "date": "2024-08-10"}
+          ]
         },
-        "participants": [
-            "Romain Cannone",
-            "Lee Kiefer",
-            "Aron Szilagyi",
-            "Inna Deriglazova",
-            "Yannick Borel",
-            "Alice Volpi",
-            "Gergely Siklósi",
-            "Ana Maria Popescu",
-            "Miles Chamley-Watson",
-            "Sofya Velikaya"
-        ]
+        "participants": {
+          "Épée": [
+            "Yannick Borel (FRA)",
+            "Rubén Limardo (VEN)",
+            "Enzo Lefort (FRA)",
+            "Andras Szatmari (HUN)",
+            "Igor Reizlin (ROC)",
+            "Aron Szilagyi (HUN)",
+            "Sergey Bida (ROC)",
+            "Yulen Pereira (ESP)",
+            "Max Heinzer (SUI)",
+            "Nicolas Limbach (GER)",
+            "Kyosuke Matsuyama (JPN)",
+            "Radoslaw Zawrotniak (POL)"
+          ],
+          "Fleuret": [
+            "Daniele Garozzo (ITA)",
+            "Timur Safin (ROC)",
+            "Alexey Cheremisinov (ROC)",
+            "Alessio Foconi (ITA)",
+            "Enrico Garozzo (ITA)",
+            "Miles Chamley-Watson (USA)",
+            "Peter Joppich (GER)",
+            "Andrea Cassarà (ITA)",
+            "Erwann Le Péchoux (FRA)",
+            "Alexander Massialas (USA)",
+            "Richard Kruse (GBR)",
+            "Giorgio Avola (ITA)"
+          ],
+          "Sabre": [
+            "Áron Szilágyi (HUN)",
+            "Oh Sang-uk (KOR)",
+            "Sergey Bida (ROC)",
+            "Gu Bon-gil (KOR)",
+            "Kyoung-doo Park (KOR)",
+            "Daryl Homer (USA)",
+            "Matteo Neri (ITA)",
+            "Luigi Samele (ITA)",
+            "Max Hartung (GER)",
+            "Kamil Ibragimov (ROC)",
+            "Viktor Sidyak (ROC)",
+            "Sandro Bazadze (GEO)"
+          ]
+        }
     },
     {
         "sport": "Golf",
-        "description": "Le golf est un sport où les joueurs utilisent différents clubs pour frapper une balle dans une série de trous sur un parcours dans le moins de coups possible.",
-        "lieu": "Golf National",
+        "description": "Le golf est un sport de plein air qui consiste à frapper une balle avec un club pour l'envoyer dans un trou en un minimum de coups. Le parcours de golf est généralement composé de 18 trous, chacun ayant un niveau de difficulté variable. Les joueurs doivent naviguer à travers le parcours en utilisant une combinaison de précision, de stratégie et de force physique pour réussir. Le golf est un sport très populaire dans le monde entier, avec des compétitions de haut niveau telles que les tournois majeurs qui attirent les meilleurs joueurs professionnels.",
+        "lieu": "Le Golf National",
         "coordonnees_gps": [
-            "48.754505",
-            2.074608
+          "48.7153",
+          "2.0194"
         ],
         "dates": {
-            "début": "2024-07-29",
-            "fin": "2024-08-11"
+          "début": "2024-07-29",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "Tournoi individuel Hommes", "date": "2024-07-29"},
+            {"épreuve": "Tournoi individuel Femmes", "date": "2024-07-30"},
+            {"épreuve": "Tournoi par équipe Hommes", "date": "2024-08-01"},
+            {"épreuve": "Tournoi par équipe Femmes", "date": "2024-08-02"},
+            {"épreuve": "Tournoi de mixte", "date": "2024-08-03"}
+          ]
         },
-        "participants": [
-            "Rory McIlroy",
-            "Nelly Korda",
-            "Jon Rahm",
-            "Dustin Johnson",
-            "Brooks Koepka",
-            "Justin Thomas",
-            "Lexi Thompson",
-            "Hideki Matsuyama",
-            "Inbee Park",
-            "Bryson DeChambeau"
-        ]
+        "participants": {
+          "Hommes": [
+            "Tiger Woods (USA)",
+            "Rory McIlroy (NIR)",
+            "Jordan Spieth (USA)",
+            "Justin Thomas (USA)",
+            "Dustin Johnson (USA)",
+            "Jon Rahm (ESP)",
+            "Brooks Koepka (USA)",
+            "Xander Schauffele (USA)",
+            "Patrick Cantlay (USA)",
+            "Bryson DeChambeau (USA)",
+            "Collin Morikawa (USA)",
+            "Viktor Hovland (NOR)"
+          ],
+          "Femmes": [
+            "Nelly Korda (USA)",
+            "Jin Young Ko (KOR)",
+            "Inbee Park (KOR)",
+            "Sei Young Kim (KOR)",
+            "Brooke Henderson (CAN)",
+            "Danielle Kang (USA)",
+            "Lexi Thompson (USA)",
+            "Lydia Ko (NZL)",
+            "Jessica Korda (USA)",
+            "Nasa Hataoka (JPN)",
+            "Ariya Jutanugarn (THA)",
+            "Minjee Lee (AUS)"
+          ]
+        }
     },
     {
         "sport": "Handball",
-        "description": "Le handball est un sport d'équipe où deux équipes de sept joueurs tentent de marquer des buts en lançant une balle dans le filet adverse.",
-        "lieu": "Pierre Mauroy",
+        "description": "Le handball est un sport d'équipe dynamique et intense qui se joue avec un ballon et oppose deux équipes de sept joueurs sur un terrain rectangulaire. L'objectif du jeu est de marquer des buts en lançant le ballon dans le but de l'adversaire, tout en protégeant son propre but contre les tirs de l'équipe adverse. Le handball se distingue par son rythme rapide, ses mouvements stratégiques et ses tactiques élaborées, offrant un spectacle excitant pour les joueurs et les spectateurs. Les compétitions de handball aux Jeux Olympiques mettent en vedette certains des meilleurs joueurs du monde, représentant leur pays avec fierté et détermination.",
+        "lieu": "Parc des expositions Paris-Nord Villepinte",
         "coordonnees_gps": [
-            "50.611944",
-            3.130833
+          "48.9827",
+          "2.5175"
         ],
         "dates": {
-            "début": "2024-07-25",
-            "fin": "2024-08-10"
+          "début": "2024-07-24",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Tournoi masculin", "date": "2024-07-24"},
+            {"épreuve": "Tournoi féminin", "date": "2024-07-25"}
+          ]
         },
-        "participants": [
-            "Nikola Karabatic",
-            "Mikkel Hansen",
-            "Eduarda Amorim",
-            "Ludovic Fabregas",
-            "Stine Oftedal",
-            "Domagoj Duvnjak",
-            "Nora Mork",
-            "Gonzalo Pérez de Vargas",
-            "Anna Vyakhireva",
-            "Kamil Syprzak"
-        ]
-    },
+        "participants": {
+          "Hommes": [
+            "Nikola Karabatic (FRA)",
+            "Mikkel Hansen (DEN)",
+            "Domagoj Duvnjak (CRO)",
+            "Sander Sagosen (NOR)",
+            "Cedric Sorhaindo (FRA)",
+            "Thiagus Petrus (BRA)",
+            "Jure Dolenec (SLO)",
+            "Luka Cindric (CRO)",
+            "Alex Dujshebaev (ESP)",
+            "Kentin Mahe (GER)",
+            "Niklas Landin (DEN)",
+            "Mate Lekai (HUN)",
+            "Andreas Wolff (GER)"
+          ],
+          "Femmes": [
+            "Stine Oftedal (NOR)",
+            "Anna Vyakhireva (RUS)",
+            "Lois Abbingh (NED)",
+            "Estelle Nze Minko (FRA)",
+            "Cristina Neagu (ROU)",
+            "Siraba Dembele (FRA)",
+            "Veronica Kristiansen (NOR)",
+            "Kari Brattset Dale (NOR)",
+            "Marta Mangue (ESP)",
+            "Eduarda Amorim (BRA)",
+            "Melinda Geiger (HUN)",
+            "Karoline de Souza (BRA)"
+          ]
+        }
+    },      
     {
         "sport": "Hockey",
-        "description": "Le hockey est un sport d'équipe où deux équipes de onze joueurs utilisent des crosses pour frapper une balle et marquer des buts dans le camp adverse.",
-        "lieu": "Stade Yves-du-Manoir",
+        "description": "Le hockey sur gazon est un sport d'équipe rapide et dynamique qui se joue avec une balle et des crosses sur un terrain en gazon synthétique. Chaque équipe cherche à marquer des buts en faisant avancer la balle dans le but adverse à l'aide de leurs crosses, tout en défendant leur propre but contre les attaques de l'équipe adverse. Le hockey sur gazon exige une combinaison de compétences techniques, de stratégie de jeu et de condition physique, offrant un spectacle palpitant pour les joueurs et les spectateurs. Les compétitions de hockey sur gazon aux Jeux Olympiques mettent en vedette certaines des meilleures équipes nationales du monde, rivalisant pour la gloire olympique.",
+        "lieu": "Centre national du rugby",
         "coordonnees_gps": [
-            "48.927800",
-            2.237300
+          "48.8558",
+          "2.3531"
         ],
         "dates": {
-            "début": "2024-07-24",
-            "fin": "2024-08-08"
+          "début": "2024-07-25",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Tournoi masculin", "date": "2024-07-25"},
+            {"épreuve": "Tournoi féminin", "date": "2024-07-26"}
+          ]
         },
-        "participants": [
-            "Eddie Ockenden",
-            "Eva de Goede",
-            "Arthur Van Doren",
-            "Stacy Michelsen",
-            "Blake Govers",
-            "Maddie Hinch",
-            "Billy Bakker",
-            "Jan-Willem Buissant",
-            "Tom Boon",
-            "Frederique Matla"
-        ]
+        "participants": {
+          "Hommes": [
+            "Arthur Van Doren (BEL)",
+            "Manpreet Singh (IND)",
+            "Victor Wegnez (BEL)",
+            "Billy Bakker (NED)",
+            "Jeroen Hertzberger (NED)",
+            "Jake Whetton (AUS)",
+            "Matthias Muller (GER)",
+            "Gonzalo Peillat (ARG)",
+            "Maico Casella (ITA)",
+            "Simon Gougnard (BEL)",
+            "John-John Dohmen (BEL)",
+            "Dan Beale (AUS)",
+            "Artem Borisov (RUS)"
+          ],
+          "Femmes": [
+            "Frédérique Matla (NED)",
+            "Lidewij Welten (NED)",
+            "Felice Albers (NED)",
+            "Maria Verschoor (NED)",
+            "Rosalie Molen (NED)",
+            "Anna Flanagan (AUS)",
+            "Marloes Keetels (NED)",
+            "Laura Nunnink (NED)",
+            "Cecilia Di Nardo (ITA)",
+            "Paula Infante (ESP)",
+            "Nicole Prasad (IND)",
+            "Caterina Casanova (ITA)"
+          ]
+        }
     },
     {
         "sport": "Judo",
-        "description": "Le judo est un art martial et sport de combat où les compétiteurs utilisent des techniques de projection et de soumission pour marquer des points ou immobiliser l'adversaire.",
-        "lieu": "Champ de Mars",
+        "description": "Le judo est un art martial et un sport de combat qui met l'accent sur la technique, la force et l'équilibre. Les judokas s'affrontent sur un tatami, cherchant à marquer des points en effectuant des projections, des immobilisations, des étranglements ou des clés articulaires sur leur adversaire. Le judo est à la fois un moyen de self-défense, un sport de compétition et une discipline éducative, favorisant le développement physique, mental et moral des pratiquants. Les compétitions de judo aux Jeux Olympiques offrent un spectacle passionnant où les meilleurs judokas du monde rivalisent pour remporter l'or olympique.",
+        "lieu": "Centre national des sports de la défense",
         "coordonnees_gps": [
-            "48.855556",
-            2.298611
+          "48.7998",
+          "2.1301"
         ],
         "dates": {
-            "début": "2024-07-26",
-            "fin": "2024-08-03"
+          "début": "2024-07-27",
+          "fin": "2024-08-03",
+          "épreuves": [
+            {"épreuve": "Moins de 60 kg (Hommes)", "date": "2024-07-27"},
+            {"épreuve": "Moins de 52 kg (Femmes)", "date": "2024-07-27"},
+            {"épreuve": "Moins de 66 kg (Hommes)", "date": "2024-07-28"},
+            {"épreuve": "Moins de 57 kg (Femmes)", "date": "2024-07-28"},
+            {"épreuve": "Moins de 73 kg (Hommes)", "date": "2024-07-29"},
+            {"épreuve": "Moins de 63 kg (Femmes)", "date": "2024-07-29"},
+            {"épreuve": "Moins de 81 kg (Hommes)", "date": "2024-07-30"},
+            {"épreuve": "Moins de 70 kg (Femmes)", "date": "2024-07-30"},
+            {"épreuve": "Moins de 90 kg (Hommes)", "date": "2024-07-31"},
+            {"épreuve": "Moins de 78 kg (Femmes)", "date": "2024-07-31"},
+            {"épreuve": "Moins de 100 kg (Hommes)", "date": "2024-08-01"},
+            {"épreuve": "Plus de 100 kg (Hommes)", "date": "2024-08-01"},
+            {"épreuve": "Plus de 78 kg (Femmes)", "date": "2024-08-02"},
+            {"épreuve": "Plus de 78 kg (Femmes)", "date": "2024-08-02"}
+          ]
         },
-        "participants": [
-            "Teddy Riner",
-            "Clarisse Agbegnenou",
-            "Shohei Ono",
-            "Kosovo Kelmendi",
-            "Aaron Wolf",
-            "Distria Krasniqi",
-            "Hifumi Abe",
-            "Uta Abe",
-            "Lukas Krpalek",
-            "Ai Shishime"
-        ]
+        "participants": {
+          "Hommes": [
+            "Teddy Riner (FRA)",
+            "Shohei Ono (JPN)",
+            "Joshiro Maruyama (JPN)",
+            "Takanori Nagase (JPN)",
+            "Lukas Krpálek (CZE)",
+            "Lasha Shavdatuashvili (GEO)",
+            "Soichi Hashimoto (JPN)",
+            "Varlam Liparteliani (GEO)",
+            "Jorge Fonseca (POR)",
+            "Khasan Khalmurzaev (RUS)",
+            "Nikoloz Sherazadishvili (ESP)",
+            "Orkhan Safarov (AZE)",
+            "Lukáš Krpálek (CZE)"
+          ],
+          "Femmes": [
+            "Daria Bilodid (UKR)",
+            "Uta Abe (JPN)",
+            "Chizuru Arai (JPN)",
+            "Madeleine Malonga (FRA)",
+            "Clarisse Agbegnenou (FRA)",
+            "Anna-Maria Wagner (GER)",
+            "Barbara Matić (CRO)",
+            "Sanne van Dijke (NED)",
+            "Yung Wei Yang (TPE)",
+            "Nora Gjakova (KOS)",
+            "Larisa Cerić (BIH)",
+            "Shori Hamada (JPN)"
+          ]
+        }
     },
     {
         "sport": "Karaté",
-        "description": "Le karaté est un art martial où les athlètes utilisent des coups de poing, de pied, des genoux et des techniques de blocage pour marquer des points contre leurs adversaires.",
-        "lieu": "Le Grand Palais",
+        "description": "Le karaté est un art martial d'origine japonaise qui se concentre sur les techniques de frappe à mains nues, de coups de pied, et de blocages, ainsi que sur les mouvements de déplacement et la posture. Les karatékas s'affrontent dans un dojo ou sur un tatami, cherchant à marquer des points en touchant leur adversaire avec précision et contrôle. Le karaté est à la fois un moyen de self-défense, une forme d'exercice physique et un mode de développement personnel et spirituel. Les compétitions de karaté aux Jeux Olympiques mettent en vedette des combats intenses où la vitesse, la puissance et la technique des participants sont mises à l'épreuve.",
+        "lieu": "Paris Expo Porte de Versailles",
         "coordonnees_gps": [
-            "48.866667",
-            2.312222
+          "48.8312",
+          "2.2877"
         ],
         "dates": {
-            "début": "2024-08-05",
-            "fin": "2024-08-07"
+          "début": "2024-07-04",
+          "fin": "2024-07-06",
+          "épreuves": [
+            {"épreuve": "Kumite -60kg (Hommes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite -67kg (Hommes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite -75kg (Hommes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite +75kg (Hommes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite -55kg (Femmes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite -61kg (Femmes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite -68kg (Femmes)", "date": "2024-07-04"},
+            {"épreuve": "Kumite +68kg (Femmes)", "date": "2024-07-04"},
+            {"épreuve": "Kata (Hommes)", "date": "2024-07-05"},
+            {"épreuve": "Kata (Femmes)", "date": "2024-07-05"}
+          ]
         },
-        "participants": [
-            "Ryo Kiyuna",
-            "Sandra Sánchez",
-            "Steven Da Costa",
-            "Kiyou Shimizu",
-            "Damián Quintero",
-            "Ayumi Uekusa",
-            "Ali Sofuoglu",
-            "Grace Lau",
-            "Giana Lotfy",
-            "Sajjad Ganjzadeh"
-        ]
+        "participants": {
+          "Hommes": [
+            "Ryutaro Araga (JPN)",
+            "Ken Nishimura (JPN)",
+            "Steven da Costa (FRA)",
+            "Gakuji Tozaki (JPN)",
+            "Yassine Sekouri (FRA)",
+            "Hamoon Derafshipour (IRI)",
+            "Luigi Busà (ITA)",
+            "Stanislav Horuna (UKR)",
+            "Bahman Asgari Ghoncheh (IRI)",
+            "Angelo Crescenzo (ITA)",
+            "Rafael Aghayev (AZE)",
+            "Luigi Marzi (ITA)"
+          ],
+          "Femmes": [
+            "Anzhelika Terliuga (UKR)",
+            "Irina Zaretska (AZE)",
+            "Sara Cardin (ITA)",
+            "Merve Coban (TUR)",
+            "Serap Özçelik Arapoglu (TUR)",
+            "Yana Zhernosek (BLR)",
+            "Alizée Agier (FRA)",
+            "Jovana Preković (SRB)",
+            "Mandy Sonnemann (GER)",
+            "Carla Burkitt (GBR)",
+            "Linoy Ashram (ISR)",
+            "Ayumi Uekusa (JPN)"
+          ]
+        }
     },
     {
-        "sport": "Pentathlon moderne",
-        "description": "Le pentathlon moderne est une épreuve multi-sports comprenant l'escrime, la natation, l'équitation, le tir au pistolet et la course à pied.",
-        "lieu": "Versailles",
+        "sport": "Pentathlon Moderne",
+        "description": "Le pentathlon moderne est un sport combiné qui comprend cinq épreuves : l'escrime, la natation, l'équitation, le tir au pistolet et la course à pied. Il met à l'épreuve la polyvalence, l'endurance, la précision et la stratégie des athlètes. Chaque épreuve teste une compétence différente, des compétences physiques à la concentration mentale, et les participants doivent exceller dans toutes les disciplines pour réussir. Les compétitions de pentathlon moderne offrent un spectacle dynamique et varié, où chaque moment peut faire la différence entre la victoire et la défaite.",
+        "lieu": "Centre national de pentathlon moderne et d'escrime",
         "coordonnees_gps": [
-            "48.804722",
-            2.120556
+          "48.8145",
+          "2.3959"
         ],
         "dates": {
-            "début": "2024-07-29",
-            "fin": "2024-08-06"
+          "début": "2024-07-01",
+          "fin": "2024-07-04",
+          "épreuves": [
+            {"épreuve": "Fleuret (Hommes)", "date": "2024-07-01"},
+            {"épreuve": "Fleuret (Femmes)", "date": "2024-07-01"},
+            {"épreuve": "Natation (Hommes)", "date": "2024-07-02"},
+            {"épreuve": "Natation (Femmes)", "date": "2024-07-02"},
+            {"épreuve": "Équitation", "date": "2024-07-03"},
+            {"épreuve": "Tir au pistolet", "date": "2024-07-03"},
+            {"épreuve": "Course à pied (Hommes)", "date": "2024-07-04"},
+            {"épreuve": "Course à pied (Femmes)", "date": "2024-07-04"}
+          ]
         },
-        "participants": [
-            "Joe Choong",
-            "Kate French",
-            "Jun Woong-tae",
-            "Gulnaz Gubaydullina",
-            "Marvin Dogue",
-            "Natalia Coyle",
-            "Valentin Belaud",
-            "Annika Schleu",
-            "James Cooke",
-            "Iryna Prasiantsova"
-        ]
+        "participants": {
+          "Hommes": [
+            "Jamie Cooke (GBR)",
+            "Joseph Choong (GBR)",
+            "Valentin Belaud (FRA)",
+            "Arthur Lanigan-O'Keeffe (IRL)",
+            "Jun Woong-tae (KOR)",
+            "Riccardo de Luca (ITA)",
+            "Marvin Dogue (GER)",
+            "Alexander Lifanov (RUS)",
+            "Pavel Ilyashenko (KAZ)",
+            "Jung Jin-hwa (KOR)",
+            "David Svoboda (CZE)",
+            "Ilya Palazkov (BLR)"
+          ],
+          "Femmes": [
+            "Annika Schleu (GER)",
+            "Laura Asadauskaitė Zadneprovskienė (LTU)",
+            "Kate French (GBR)",
+            "Natalie Dianová (CZE)",
+            "Elodie Clouvel (FRA)",
+            "Tamara Alekszejev (HUN)",
+            "Iryna Prasiantsova (BLR)",
+            "Kim Sun-woo (KOR)",
+            "Alice Sotero (ITA)",
+            "Lena Schoeneborn (GER)",
+            "Gulnaz Gubaydullina (RUS)",
+            "Marie Oteiza (FRA)"
+          ]
+        }
     },
     {
         "sport": "Rugby",
-        "description": "Le rugby à 7 est une variante du rugby traditionnel avec sept joueurs par équipe, connu pour son rythme rapide et ses matchs courts.",
-        "lieu": "Stade de France",
+        "description": "Le rugby est un sport d'équipe intense et physique qui se joue avec un ballon ovale. Il existe deux principales variantes de rugby : le rugby à XV et le rugby à VII. Le rugby à XV se joue avec quinze joueurs par équipe et est caractérisé par des phases de jeu physiques, des mêlées et des touches stratégiques. Le rugby à VII, quant à lui, se joue avec sept joueurs par équipe et est connu pour son rythme rapide, ses actions spectaculaires et ses essais fréquents. Dans les deux variantes, le but est de marquer des points en transportant le ballon dans la zone d'en-but adverse ou en effectuant des coups de pied de pénalité ou de transformation.",
+        "lieu": "Stade Olympique de Colombes",
         "coordonnees_gps": [
-            "48.924444",
-            2.360833
+          "48.9206",
+          "2.2487"
         ],
         "dates": {
-            "début": "2024-08-02",
-            "fin": "2024-08-10"
+          "début": "2024-07-26",
+          "fin": "2024-08-11",
+          "épreuves": [
+            {"épreuve": "Rugby à XV (Hommes)", "date": "2024-07-26"},
+            {"épreuve": "Rugby à XV (Femmes)", "date": "2024-07-27"},
+            {"épreuve": "Rugby à VII (Hommes)", "date": "2024-08-02"},
+            {"épreuve": "Rugby à VII (Femmes)", "date": "2024-08-03"}
+          ]
         },
-        "participants": [
-            "Fiji",
-            "New Zealand",
-            "South Africa",
-            "Australia",
-            "England",
-            "USA",
-            "France",
-            "Argentina",
-            "Kenya",
-            "Japan"
-        ]
+        "participants": {
+          "Rugby à XV": [
+              "Nouvelle-Zélande",
+              "Afrique du Sud",
+              "Angleterre",
+              "Australie",
+              "Irlande",
+              "France",
+              "Pays de Galles",
+              "Écosse",
+              "Argentine",
+              "Fidji",
+              "Japon",
+              "Italie",
+              "Samoa",
+              "Canada",
+              "Géorgie",
+              "Uruguay",
+              "États-Unis",
+              "Espagne"
+            ],
+          "Rugby à VII": [
+              "Fidji",
+              "Nouvelle-Zélande",
+              "Afrique du Sud",
+              "Australie",
+              "États-Unis",
+              "Argentine",
+              "Angleterre",
+              "France",
+              "Canada",
+              "Kenya",
+              "Japon",
+              "Samoa",
+              "Brésil"
+            ]
+        }
     },
     {
         "sport": "Skateboard",
-        "description": "Le skateboard comprend des compétitions de street et de park, où les athlètes réalisent des figures et des manœuvres acrobatiques sur une planche à roulettes.",
-        "lieu": "Place de la Concorde",
+        "description": "Le skateboard est un sport de glisse qui implique de rouler et d'effectuer des figures sur une planche à roulettes. Il est pratiqué dans divers environnements, y compris les rues, les parcs de skateboard, les rampes et les bowls. Les skateurs utilisent une variété de techniques, y compris les ollies, les flips, les grabs et les slides, pour exécuter des figures créatives et techniques. Le skateboard est également un mode de vie, une forme d'expression artistique et une communauté mondiale de passionnés.",
+        "lieu": "Grand Palais",
         "coordonnees_gps": [
-            "48.865633",
-            2.321236
+          "48.8667",
+          "2.3167"
         ],
         "dates": {
-            "début": "2024-08-03",
-            "fin": "2024-08-08"
+          "début": "2024-07-25",
+          "fin": "2024-08-04",
+          "épreuves": [
+            {"épreuve": "Street (Hommes)", "date": "2024-07-25"},
+            {"épreuve": "Park (Hommes)", "date": "2024-07-29"},
+            {"épreuve": "Street (Femmes)", "date": "2024-07-26"},
+            {"épreuve": "Park (Femmes)", "date": "2024-07-30"}
+          ]
         },
-        "participants": [
-            "Nyjah Huston",
-            "Yuto Horigome",
-            "Leticia Bufoni",
-            "Aori Nishimura",
-            "Jagger Eaton",
-            "Pamela Rosa",
-            "Cory Juneau",
-            "Sky Brown",
-            "Pedro Barros",
-            "Misugu Okamoto"
-        ]
+        "participants": {
+          "Street": [
+              "Nyjah Huston (USA)",
+              "Yuto Horigome (JPN)",
+              "Gustavo Ribeiro (POR)",
+              "Kelvin Hoefler (BRA)",
+              "Jagger Eaton (USA)",
+              "Vincent Milou (FRA)",
+              "Luan Oliveira (BRA)",
+              "Shane O'Neill (AUS)",
+              "Maurio McCoy (USA)",
+              "Dashawn Jordan (USA)",
+              "Aori Nishimura (JPN)",
+              "Pamela Rosa (BRA)",
+              "Rayssa Leal (BRA)",
+              "Leticia Bufoni (BRA)",
+              "Mariah Duran (USA)",
+              "Alexis Sablone (USA)",
+              "Alana Smith (USA)",
+              "Candy Jacobs (NED)",
+              "Funa Nakayama (JPN)",
+              "Momiji Nishiya (JPN)"
+            ],
+          "Park": [
+              "Pedro Barros (BRA)",
+              "Heimana Reynolds (USA)",
+              "Luiz Francisco (BRA)",
+              "Zion Wright (USA)",
+              "Tom Schaar (USA)",
+              "Clay Kreiner (USA)",
+              "Karl Berglind (SWE)",
+              "Tristan Rennie (USA)",
+              "Trey Wood (USA)",
+              "Jagger Eaton (USA)",
+              "Sky Brown (GBR)",
+              "Misugu Okamoto (JPN)",
+              "Sakura Yosozumi (JPN)",
+              "Kokona Hiraki (JPN)",
+              "Yndiara Asp (BRA)",
+              "Brighton Zeuner (USA)",
+              "Kisa Nakamura (JPN)",
+              "Mami Tezuka (JPN)",
+              "Poppy Starr Olsen (AUS)",
+              "Lizzie Armanto (USA)"
+            ]
+        }
     },
     {
         "sport": "Surf",

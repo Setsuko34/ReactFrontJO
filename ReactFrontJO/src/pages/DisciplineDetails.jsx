@@ -3,12 +3,20 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NavBar from "../components/Navbar";
 import { useLocation } from "react-router-dom";
-import * as images from "../assets/picture/images.jsx";
-import { MapContainer, Marker, TileLayer } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import { List, ListItem, ListItemText } from "@mui/material";
+import { MapContainer, Marker, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemAvatar,
+  Grid,
+} from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import PersonIcon from "@mui/icons-material/Person";
 import sportsData from "../assets/data/sports.json";
-
+import Person from "@mui/icons-material/Person";
+import * as images from "../assets/picture/images.jsx";
 
 export default function DisciplineDetails() {
   const location = useLocation();
@@ -17,20 +25,22 @@ export default function DisciplineDetails() {
 
   // const sport = params.get("sport");
 
-
   useEffect(() => {
-  const sportFind = sportsData.find((sport) => sport.sport === params.get("sport"));
-  setSportInfo(sportFind);
-}, [params]);
-// const sport = params.get("sport");
-// const description = params.get("description");
-// const lieu = params.get("lieu");
-// const dates = params.get("dates");
-// const participants = params.get("participants");
-// const coordonnees_gps = params.get("coordonnees_gps").split(',');
-// const coords = [coordonnees_gps.lat, coordonnees_gps.lon];
+    const sportFind = sportsData.find(
+      (data) => data.sport === params.get("sport")
+    );
+    setSportInfo(sportFind);
+  }, []);
+  // const sport = params.get("sport");
+  // const description = params.get("description");
+  // const lieu = params.get("lieu");
+  // const dates = params.get("dates");
+  // const participants = params.get("participants");
+  // const coordonnees_gps = params.get("coordonnees_gps").split(',');
+  // const coords = [coordonnees_gps.lat, coordonnees_gps.lon];
 
-console.log(sportInfo);
+  console.log(sportInfo);
+
   function removeAccents(str) {
     return str
       .normalize("NFD")
@@ -43,48 +53,104 @@ console.log(sportInfo);
   // console.log(dates);
   //  console.log( participants);
 
-  return (
-    <Box sx={{ flexGrow: 1, marginTop: "50px", textAlign:'left' }}>
-      <NavBar />
+  if (!sportInfo) {
+    return <p>Loading...</p>;
+  } else {
+    return (
+      <Box sx={{ flexGrow: 1, marginTop: "50px", textAlign: "left" }}>
+        <NavBar />
 
-      <Typography variant="h2" component="h1" gutterBottom>
-          {sport}
+        <Typography variant="h2" component="h1" gutterBottom>
+          {sportInfo.sport}
         </Typography>
-        <Typography variant="body1" paragraph>
-          {description}
-        </Typography>
-        <Typography variant="h4" component="h2" gutterBottom>
-          Lieu : {lieu}
-        </Typography>
-        <Box sx={{ height: '400px', my: 2 }}>
-          <MapContainer center={coordonnees_gps} zoom={15} style={{ height: '100%', width: '100%' }}>
-          <TileLayer
-    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  />
-            <Marker position={coordonnees_gps} />
-          </MapContainer>
-        </Box>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <img
+              src={images[removeAccents(sportInfo.sport).toLowerCase()]}
+              alt=""
+              style={{ width: "100%", imageFit: "cover" }}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h3" component="h3">
+              Description :
+            </Typography>
+            <Typography variant="body1" paragraph>
+              {sportInfo.description}
+            </Typography>
+          </Grid>
+        </Grid>
+
         <Typography variant="h5" component="h3" gutterBottom>
           Dates :
         </Typography>
         <Typography variant="body1">
-          Début : {new Date(dates.début).toLocaleDateString()}
+          Début : {new Date(sportInfo.dates.début).toLocaleDateString()}
         </Typography>
         <Typography variant="body1">
-          Fin : {new Date(dates.fin).toLocaleDateString()}
+          Fin : {new Date(sportInfo.dates.fin).toLocaleDateString()}
         </Typography>
         <Typography variant="h5" component="h3" gutterBottom>
-          Participants :
+          Liste des Participants :
         </Typography>
-        <List>
-          {participants.Hommes.map((participant, index) => (
-            <ListItem key={index}>
-              <ListItemText primary={participant} />
-            </ListItem>
-          ))}
-        </List>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h6" component="h4" gutterBottom>
+              Hommes
+            </Typography>
+            {sportInfo.participants && sportInfo.participants.Hommes && (
+              <List>
+                {sportInfo.participants.Hommes.map((participant, index) => (
+                  <ListItem key={index}>
+                    <ListItemAvatar>
+                      <Avatar>
+                        <PersonIcon />
+                      </Avatar>
+                    </ListItemAvatar>
+                    <ListItemText primary={participant} />
+                  </ListItem>
+                ))}
+              </List>
+            )}
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h6" component="h4" gutterBottom>
+              Femmes
+            </Typography>
+            {sportInfo.participants && sportInfo.participants.Femmes && (
+              <List>
+                {sportInfo.participants.Femmes.map((participant, index) => (
+                  <ListItem key={index}>
+                    <ListItemAvatar>
+                      <Avatar>
+                        <PersonIcon />
+                      </Avatar>
+                    </ListItemAvatar>
+                    <ListItemText primary={participant} />
+                  </ListItem>
+                ))}
+              </List>
+            )}
+          </Grid>
+        </Grid>
 
-    </Box>
-  );
+        <Typography variant="h4" component="h2" gutterBottom>
+          Lieu : {sportInfo.lieu}
+        </Typography>
+        <Box sx={{ height: "400px", my: 2 }}>
+          <MapContainer
+            center={sportInfo.coordonnees_gps}
+            zoom={15}
+            style={{ height: "100%", width: "100%" }}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={sportInfo.coordonnees_gps} />
+          </MapContainer>
+        </Box>
+      </Box>
+    );
+  }
 }
