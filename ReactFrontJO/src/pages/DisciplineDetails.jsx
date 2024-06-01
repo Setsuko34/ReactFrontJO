@@ -94,13 +94,13 @@ export default function DisciplineDetails() {
           Liste des Participants :
         </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <Typography variant="h6" component="h4" gutterBottom>
-              Hommes
-            </Typography>
-            {sportInfo.participants && sportInfo.participants.Hommes && (
+          {Object.keys(sportInfo.participants).map((key, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <Typography variant="h6" component="h4" gutterBottom>
+                {key}
+              </Typography>
               <List>
-                {sportInfo.participants.Hommes.map((participant, index) => (
+                {sportInfo.participants[key].map((participant, index) => (
                   <ListItem key={index}>
                     <ListItemAvatar>
                       <Avatar>
@@ -111,27 +111,8 @@ export default function DisciplineDetails() {
                   </ListItem>
                 ))}
               </List>
-            )}
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Typography variant="h6" component="h4" gutterBottom>
-              Femmes
-            </Typography>
-            {sportInfo.participants && sportInfo.participants.Femmes && (
-              <List>
-                {sportInfo.participants.Femmes.map((participant, index) => (
-                  <ListItem key={index}>
-                    <ListItemAvatar>
-                      <Avatar>
-                        <PersonIcon />
-                      </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText primary={participant} />
-                  </ListItem>
-                ))}
-              </List>
-            )}
-          </Grid>
+            </Grid>
+          ))}
         </Grid>
 
         <Typography variant="h4" component="h2" gutterBottom>
