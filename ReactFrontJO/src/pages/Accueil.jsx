@@ -37,19 +37,19 @@ export default function Accueil() {
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={4}>
-          <SportCard item="237" title="Football" />
+          <SportCard item="237" title="Football" onclick={"/disciplines"} />
         </Grid>
         <Grid item xs={4}>
-          <SportCard item="11" title="Basket" />
+          <SportCard item="11" title="Basket" onclick={"/disciplines"} />
         </Grid>
         <Grid item xs={4}>
-          <SportCard item="257" title="Natation" />
+          <SportCard item="257" title="Natation" onclick={"/disciplines"} />
         </Grid>
         <Grid item xs={4}>
-          <SportCard item="200" title="Athlétisme" />
+          <SportCard item="200" title="Athlétisme" onclick={"/disciplines"} />
         </Grid>
         <Grid item xs={4}>
-          <SportCard item="201" title="Rugby" />
+          <SportCard item="201" title="Rugby" onclick={"/disciplines"} />
         </Grid>
         <Grid item xs={4}>
           <SportCard item="..." title="Voir Plus" onclick={"/disciplines"}/>
