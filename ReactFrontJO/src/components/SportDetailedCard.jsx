@@ -1,20 +1,19 @@
-import * as React from "react";
+import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, IconButton } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
 import Button from "@mui/material/Button";
 
-export default function SportDetailedCard({ item, sportInfo }) {
-  const { sport, description, lieu, dates, participants, coordonnees_gps } =
+export default function SportDetailedCard({ sportInfo, addToFavorites }) {
+  const { sport, description, lieu, dates, participants } =
     sportInfo;
-
   function removeAccents(str) {
     return str
       .normalize("NFD")
@@ -72,9 +71,13 @@ export default function SportDetailedCard({ item, sportInfo }) {
       </Link>
       {/* Si on clique, on ajoute au tableau de favoris et on met l'icone plein */}
       {/* Pour vérifier si on met l'icone plein ou vide, on check si le sport est déjà dans le tableau, comme fait dans le composant favoris */}
-        <IconButton aria-label="favorite" color="error">
-          <FavoriteBorderIcon />
-        </IconButton>
+      <IconButton
+        aria-label="favorite"
+        color="error"
+        onClick={() => addToFavorites(sport)}
+      >
+        <FavoriteBorderIcon />
+      </IconButton>
     </Box>
   );
 }

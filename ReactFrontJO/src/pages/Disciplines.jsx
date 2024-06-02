@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NavBar from "../components/Navbar";
 import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
 
-export default function Disciplines() {
+export default function Disciplines({}) {
+  const [favorites, setFavorites] = React.useState([]);
+
+  const addToFavorites = (event) => {
+    if (!favorites.includes(event)) {
+      setFavorites([...favorites, event]);
+    }
+    console.log(favorites);
+  };
+
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
@@ -19,6 +28,7 @@ export default function Disciplines() {
           item={1}
           title={sport.sport}
           sportInfo={sport}
+          addToFavorites={addToFavorites}
         />
       ))}
     </Box>

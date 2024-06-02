@@ -9,6 +9,7 @@ import { Carousel } from "react-responsive-carousel";
 import SportCard from "../components/SportCard";
 import { Divider } from "@mui/material";
 import * as images from "../assets/picture/images.jsx";
+import { Link } from "react-router-dom";
 
 
 export default function Accueil() {
@@ -16,9 +17,8 @@ export default function Accueil() {
     return str.normalize("NFD").replaceAll(/[\u0300-\u036f]/g, "").replaceAll(' ', '_').replace("'",'_').replace('-','_');
   }
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 5 }}>
       <NavBar />
-      <div style={{ height: "12vh" }}></div>
       <Typography variant="h4" align="center" gutterBottom>
         Les Jeux Olympiques
       </Typography>
@@ -66,9 +66,12 @@ export default function Accueil() {
           borderTop: "3px solid black",
         }}
       >
+        <Link
+        to="/disciplines">
         <Button variant="contained" color="primary">
           Voir toutes les disciplines
         </Button>
+        </Link>
       </Box>
     </Box>
   );

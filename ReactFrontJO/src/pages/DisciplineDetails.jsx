@@ -60,7 +60,7 @@ export default function DisciplineDetails() {
       <Box sx={{ flexGrow: 1, marginTop: "50px", textAlign: "left" }}>
         <NavBar />
 
-        <Typography variant="h2" component="h1" gutterBottom>
+        <Typography variant="h2" component="h2" gutterBottom>
           {sportInfo.sport}
         </Typography>
         <Grid container spacing={2}>
@@ -81,17 +81,17 @@ export default function DisciplineDetails() {
           </Grid>
         </Grid>
 
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h4" component="h4" gutterBottom>
           Dates :
         </Typography>
         <Typography variant="body1">
           Début : {new Date(sportInfo.dates.début).toLocaleDateString()}
         </Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" gutterBottom>
           Fin : {new Date(sportInfo.dates.fin).toLocaleDateString()}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
-          Liste des Participants :
+        <Typography variant="h4" component="h4" gutterBottom>
+          Liste des participants :
         </Typography>
         <Grid container spacing={2}>
           {Object.keys(sportInfo.participants).map((key, index) => (
