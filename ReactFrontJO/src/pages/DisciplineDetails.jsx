@@ -19,7 +19,6 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import sportsData from "../assets/data/sports.json";
 import * as images from "../assets/picture/images.jsx";
-import Favoris from "./Favoris.jsx";
 
 export default function DisciplineDetails({ favoris, managementFavoris }) {
   const location = useLocation();
@@ -57,7 +56,7 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
   // console.log( participants);
 
   if (!sportInfo) {
-    return <p>Loading...</p>;
+    return <p>Chargement...</p>;
   } else {
     const isFavoris = favoris.includes(sportInfo.sport);
     return (
