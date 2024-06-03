@@ -33,7 +33,7 @@ function App() {
         <Route path="/disciplines" element={<Disciplines managementFavoris={managementFavoris} setFavoris={setFavoris} favoris={favoris} />} />
         <Route path="/football" element={<Football />} />
         <Route path="/basketball" element={<Basketball />} />
-        <Route path="/favoris" element={<Favoris favoris={favoris} />} />
+        <Route path="/favoris" element={<Favoris managementFavoris={managementFavoris} favoris={favoris} />} />
         <Route path="/profil" element={<Profil />} />
         <Route path="/disciplinedetails" element={<DisciplineDetails managementFavoris={managementFavoris} setFavoris={setFavoris} favoris={favoris} />} />
       </Routes>

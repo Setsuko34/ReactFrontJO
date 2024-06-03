@@ -55,7 +55,6 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
 
   // console.log(dates);
   // console.log( participants);
-  console.log(favoris);
 
   if (!sportInfo) {
     return <p>Loading...</p>;

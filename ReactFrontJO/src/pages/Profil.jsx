@@ -22,7 +22,7 @@ const Profil = () => {
   };
 
   const handleSave = () => {
-    console.log("Saving user data:", user);
+    console.log("Sauvagarde des données de l'utilisateur ", user);
     setIsSaved(true);
     setUser(user);
   };
