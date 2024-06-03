@@ -37,9 +37,9 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
               component="img"
               sx={{
                 width: 400,
-                imageFit: "cover",
-                height: "100%",
-                margin: "auto",
+                minWidth: 400,
+                height: 250,
+                minHeight: 250,
               }}
               image={images[removeAccents(sport).toLowerCase()]}
               alt={sport}

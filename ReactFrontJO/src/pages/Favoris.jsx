@@ -13,24 +13,27 @@ export default function Favoris({ favoris, managementFavoris }) {
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
       {favoris && favoris.length > 0 ? (
-        <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 5 }}>
-          {filteredSports.map((sport, index) => (
-            <SportDetailedCard
-              key={index}
-              item={1}
-              title={sport.sport}
-              sportInfo={sport}
-              isFavoris={favoris.includes(sport.sport)}
-              managementFavoris={managementFavoris}
-            />
-          ))}
+        <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7 }}>
+          <Typography variant="h4" align="center" gutterBottom>
+            Favoris
+          </Typography>
+          <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 3 }}>
+            {filteredSports.map((sport, index) => (
+              <SportDetailedCard
+                key={index}
+                item={1}
+                title={sport.sport}
+                sportInfo={sport}
+                isFavoris={favoris.includes(sport.sport)}
+                managementFavoris={managementFavoris}
+              />
+            ))}
+          </Box>
         </Box>
       ) : (
-        <Box sx={{ flexGrow: 1, textAlign: "left" }}>
-          <Typography variant="h4" align="center" gutterBottom>
-            La liste de favoris est vide
-          </Typography>
-        </Box>
+        <Typography variant="h4" align="center" gutterBottom>
+          La liste de favoris est vide
+        </Typography>
       )}
     </Box>
   );

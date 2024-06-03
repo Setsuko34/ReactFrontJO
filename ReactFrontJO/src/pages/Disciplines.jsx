@@ -7,23 +7,25 @@ import sportsData from "../assets/data/sports.json";
 
 export default function Disciplines({ favoris, managementFavoris }) {
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 5  }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left"}}>
       <NavBar />
       {sportsData && sportsData.length > 0 ? (
-        <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+        <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7 }}>
           <Typography variant="h4" align="center" gutterBottom>
             Disciplines
           </Typography>
-          {sportsData.map((sport, key) => (
-            <SportDetailedCard
-              key={sport.sport}
-              item={1}
-              title={sport.sport}
-              sportInfo={sport}
-              isFavoris={favoris.includes(sport.sport)}
-              managementFavoris={managementFavoris}
-            />
-          ))}
+          <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 3 }}>
+            {sportsData.map((sport, key) => (
+              <SportDetailedCard
+                key={sport.sport}
+                item={1}
+                title={sport.sport}
+                sportInfo={sport}
+                isFavoris={favoris.includes(sport.sport)}
+                managementFavoris={managementFavoris}
+              />
+            ))}
+          </Box>
         </Box>
       ) : (
         <Typography variant="h4" align="center" gutterBottom>

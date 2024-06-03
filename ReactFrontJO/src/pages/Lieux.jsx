@@ -31,7 +31,7 @@ export default function Lieux() {
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />
-      <Box sx={{ flexGrow: 1, textAlign: "center", marginY: 5 }}>
+      <Box sx={{ flexGrow: 1, textAlign: "center", marginY: 7 }}>
         <Typography variant="h4" align="center" gutterBottom>
           Lieux
         </Typography>

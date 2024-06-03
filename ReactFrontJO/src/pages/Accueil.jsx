@@ -16,7 +16,7 @@ export default function Accueil() {
     return str.normalize("NFD").replaceAll(/[\u0300-\u036f]/g, "").replaceAll(' ', '_').replace("'",'_').replace('-','_');
   }
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 5 }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7 }}>
       <NavBar />
       <Typography variant="h4" align="center" gutterBottom>
         Les Jeux Olympiques
