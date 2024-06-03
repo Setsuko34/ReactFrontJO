@@ -5,15 +5,7 @@ import NavBar from "../components/Navbar";
 import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
 
-export default function Disciplines({favoris, setFavoris}) {
-  const managementFavoris = (event) => {
-    if (!favoris.includes(event)) {
-      setFavoris([...favoris, event]);
-    } else {
-      setFavoris(favoris.filter((item) => item !== event));
-    }
-  };
-
+export default function Disciplines({favoris, managementFavoris}) {
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <NavBar />

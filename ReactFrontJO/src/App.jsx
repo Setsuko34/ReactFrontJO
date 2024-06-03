@@ -16,17 +16,26 @@ import DisciplineDetails from "./pages/DisciplineDetails.jsx";
 function App() {
   const [favoris, setFavoris] = useState([]);
 
+  const managementFavoris = (event) => {
+    if (!favoris.includes(event)) {
+      setFavoris([...favoris, event]);
+    } else {
+      setFavoris(favoris.filter((item) => item !== event));
+    }
+  };
+
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/lieux" element={<Lieux />} />
-        <Route path="/disciplines" element={<Disciplines setFavoris={setFavoris} favoris={favoris} />} />
+        <Route path="/disciplines" element={<Disciplines managementFavoris={managementFavoris} setFavoris={setFavoris} favoris={favoris} />} />
         <Route path="/football" element={<Football />} />
         <Route path="/basketball" element={<Basketball />} />
         <Route path="/favoris" element={<Favoris favoris={favoris} />} />
         <Route path="/profil" element={<Profil />} />
-        <Route path="/disciplinedetails" element={<DisciplineDetails />} />
+        <Route path="/disciplinedetails" element={<DisciplineDetails managementFavoris={managementFavoris} setFavoris={setFavoris} favoris={favoris} />} />
       </Routes>
     </Router>
   );

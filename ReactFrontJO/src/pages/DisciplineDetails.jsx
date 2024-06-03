@@ -11,14 +11,17 @@ import {
   ListItemText,
   ListItemAvatar,
   Grid,
+  IconButton,
 } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import PersonIcon from "@mui/icons-material/Person";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import sportsData from "../assets/data/sports.json";
-import Person from "@mui/icons-material/Person";
 import * as images from "../assets/picture/images.jsx";
+import Favoris from "./Favoris.jsx";
 
-export default function DisciplineDetails() {
+export default function DisciplineDetails({ favoris, managementFavoris }) {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   const [sportInfo, setSportInfo] = useState(null);
@@ -39,7 +42,7 @@ export default function DisciplineDetails() {
   // const coordonnees_gps = params.get("coordonnees_gps").split(',');
   // const coords = [coordonnees_gps.lat, coordonnees_gps.lon];
 
-  console.log(sportInfo);
+  // console.log(sportInfo);
 
   function removeAccents(str) {
     return str
@@ -51,17 +54,26 @@ export default function DisciplineDetails() {
   }
 
   // console.log(dates);
-  //  console.log( participants);
+  // console.log( participants);
+  console.log(favoris);
 
   if (!sportInfo) {
     return <p>Loading...</p>;
   } else {
+    const isFavoris = favoris.includes(sportInfo.sport);
     return (
       <Box sx={{ flexGrow: 1, marginTop: "50px", textAlign: "left" }}>
         <NavBar />
 
         <Typography variant="h2" component="h2" gutterBottom>
           {sportInfo.sport}
+          <IconButton
+            aria-label="favorite"
+            color="error"
+            onClick={() => managementFavoris(sportInfo.sport)}
+          >
+            {isFavoris ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+          </IconButton>
         </Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>

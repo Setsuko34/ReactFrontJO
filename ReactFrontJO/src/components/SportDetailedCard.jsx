@@ -21,7 +21,7 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
       .replace("'", "_")
       .replace("-", "_");
   }
-
+  
   return (
     <Box sx={{ display: "flex", width: "100%", marginBottom: "2vh" }}>
       <Link
