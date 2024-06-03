@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NavBar from "../components/Navbar";
 import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
 
-export default function Disciplines({}) {
-  const [favorites, setFavorites] = React.useState([]);
-
-  const addToFavorites = (event) => {
-    if (!favorites.includes(event)) {
-      setFavorites([...favorites, event]);
+export default function Disciplines({favoris, setFavoris}) {
+  const managementFavoris = (event) => {
+    if (!favoris.includes(event)) {
+      setFavoris([...favoris, event]);
+    } else {
+      setFavoris(favoris.filter((item) => item !== event));
     }
-    console.log(favorites);
   };
 
   return (
@@ -24,11 +23,12 @@ export default function Disciplines({}) {
       </Typography>
       {sportsData.map((sport, key) => (
         <SportDetailedCard
-          key={key}
+          key={sport.sport}
           item={1}
           title={sport.sport}
           sportInfo={sport}
-          addToFavorites={addToFavorites}
+          isFavoris={favoris.includes(sport.sport)}
+          managementFavoris={managementFavoris}
         />
       ))}
     </Box>

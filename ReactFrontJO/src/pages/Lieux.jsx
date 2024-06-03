@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from "react";
 import {
-  Divider,
   Box,
   Typography,
   Grid,
   Card,
-  CardMedia,
   CardContent,
 } from "@mui/material";
 import NavBar from "../components/Navbar";
 import axios from "axios";
 import { Loader } from "semantic-ui-react";
-import Button from "@mui/material/Button";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import SportCard from "../components/SportCard";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Lieux() {
   const [lieux, setLieux] = useState([]);
@@ -51,7 +46,7 @@ export default function Lieux() {
       {lieux.length > 0 ? (
         <Grid container spacing={2}>
           {lieux.map((place) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={place.code_site}>
+            <Grid item xs={12} sm={6} md={4} lg={3} key={place.code_site+place.start_date}>
               {loading ? <Loader /> : null}
               <Card
                 sx={{
@@ -67,7 +62,10 @@ export default function Lieux() {
                   </Typography>
                   <div style={{ marginTop: "10px" }}>
                     <Typography variant="body2" color="text.secondary">
-                      <strong>Date : </strong>{new Date(place.start_date).toLocaleDateString("fr-FR")}
+                      <strong>Date début : </strong>{new Date(place.start_date).toLocaleDateString("fr-FR")}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      <strong>Date fin : </strong>{new Date(place.end_date).toLocaleDateString("fr-FR")}
                     </Typography>
                   </div>
                 </CardContent>

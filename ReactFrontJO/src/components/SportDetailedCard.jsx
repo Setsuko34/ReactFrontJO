@@ -9,9 +9,8 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
-import Button from "@mui/material/Button";
 
-export default function SportDetailedCard({ sportInfo, addToFavorites }) {
+export default function SportDetailedCard({ sportInfo, isFavoris, managementFavoris }) {
   const { sport, description, lieu, dates, participants } =
     sportInfo;
   function removeAccents(str) {
@@ -74,9 +73,9 @@ export default function SportDetailedCard({ sportInfo, addToFavorites }) {
       <IconButton
         aria-label="favorite"
         color="error"
-        onClick={() => addToFavorites(sport)}
+        onClick={() => managementFavoris(sport)}
       >
-        <FavoriteBorderIcon />
+        {isFavoris ? <FavoriteIcon /> : <FavoriteBorderIcon />}
       </IconButton>
     </Box>
   );

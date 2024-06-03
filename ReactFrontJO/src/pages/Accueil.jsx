@@ -4,10 +4,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import NavBar from "../components/Navbar";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import SportCard from "../components/SportCard";
-import { Divider } from "@mui/material";
 import * as images from "../assets/picture/images.jsx";
 import { Link } from "react-router-dom";
 
@@ -25,7 +24,7 @@ export default function Accueil() {
       <Box sx={{ textAlign: "center" }}>
         <Carousel autoPlay>
           {Object.keys(images).map((sport, index) => (
-            <div>
+            <div key={index}>
               <img src={images[removeAccents(sport).toLowerCase()]} />
             </div>
           ))}
@@ -52,7 +51,7 @@ export default function Accueil() {
           <SportCard item="201" title="Rugby" onclick={"/disciplines"} />
         </Grid>
         <Grid item xs={4}>
-          <SportCard item="..." title="Voir Plus" onclick={"/disciplines"}/>
+          <SportCard item="202" title="Voir Plus" onclick={"/disciplines"}/>
         </Grid>
       </Grid>
 
