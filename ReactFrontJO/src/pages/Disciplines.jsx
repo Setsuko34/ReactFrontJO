@@ -15,7 +15,7 @@ export default function Disciplines({ favoris, managementFavoris }) {
             Disciplines
           </Typography>
           <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 3 }}>
-            {sportsData.map((sport, key) => (
+            {sportsData.map((sport) => (
               <SportDetailedCard
                 key={sport.sport}
                 item={1}

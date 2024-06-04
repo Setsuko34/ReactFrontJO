@@ -1,0 +1,566 @@
+[
+  {
+    "date": "Mercredi 24 juillet",
+    "matches": [
+      {
+        "time": "15h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "teams": ["Ouzbékistan", "Espagne"]
+      },
+      {
+        "time": "15h",
+        "city": "Saint-Étienne",
+        "stadium": "Stade Geoffroy-Guichard",
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "teams": ["Argentine", "Maroc"]
+      },
+      {
+        "time": "17h",
+        "city": "Nice",
+        "stadium": "Stade de Nice",
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "teams": ["Guinée", "Nouvelle-Zélande"]
+      },
+      {
+        "time": "17h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "teams": ["Égypte", "République dominicaine"]
+      },
+      {
+        "time": "19h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Hommes",
+        "group": "Groupe D",
+        "matchday": "1re journée",
+        "teams": ["Japon", "Paraguay"]
+      },
+      {
+        "time": "19h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "teams": ["Iraq", "Ukraine"]
+      },
+      {
+        "time": "21h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "group": "Groupe D",
+        "matchday": "1re journée",
+        "teams": ["Mali", "Israël"]
+      },
+      {
+        "time": "21h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "teams": ["France", "États-Unis"]
+      }
+    ]
+  },
+  {
+    "date": "Jeudi 25 juillet",
+    "matches": [
+      {
+        "time": "17h",
+        "city": "Saint-Étienne",
+        "stadium": "Stade Geoffroy-Guichard",
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "teams": ["Canada", "Nouvelle-Zélande"]
+      },
+      {
+        "time": "17h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "teams": ["Espagne", "Japon"]
+      },
+      {
+        "time": "19h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "teams": ["Allemagne", "Australie"]
+      },
+      {
+        "time": "19h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "teams": ["Nigeria", "Brésil"]
+      },
+      {
+        "time": "21h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "teams": ["France", "Colombie"]
+      },
+      {
+        "time": "21h",
+        "city": "Nice",
+        "stadium": "Stade de Nice",
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "teams": ["États-Unis", "Zambie"]
+      }
+    ]
+  },
+  {
+    "date": "Samedi 27 juillet",
+    "matches": [
+      {
+        "time": "15h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "teams": ["Argentine", "Iraq"]
+      },
+      {
+        "time": "15h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "teams": ["République dominicaine", "Espagne"]
+      },
+      {
+        "time": "17h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "teams": ["Ouzbékistan", "Égypte"]
+      },
+      {
+        "time": "17h",
+        "city": "Saint-Étienne",
+        "stadium": "Stade Geoffroy-Guichard",
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "teams": ["Ukraine", "Maroc"]
+      },
+      {
+        "time": "19h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "teams": ["Nouvelle-Zélande", "États-Unis"]
+      },
+      {
+        "time": "19h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "group": "Groupe D",
+        "matchday": "2e journée",
+        "teams": ["Israël", "Paraguay"]
+      },
+      {
+        "time": "21h",
+        "city": "Nice",
+        "stadium": "Stade de Nice",
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "teams": ["France", "Guinée"]
+      },
+      {
+        "time": "21h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Hommes",
+        "group": "Groupe D",
+        "matchday": "2e journée",
+        "teams": ["Japon", "Mali"]
+      }
+    ]
+  },
+  {
+    "date": "Dimanche 28 juillet",
+    "matches": [
+      {
+        "time": "17h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "teams": ["Brésil", "Japon"]
+      },
+      {
+        "time": "17h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "teams": ["Nouvelle-Zélande", "Colombie"]
+      },
+      {
+        "time": "19h",
+        "city": "Nice",
+        "stadium": "Stade de Nice",
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "teams": ["Australie", "Zambie"]
+      },
+      {
+        "time": "19h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "teams": ["Espagne", "Nigeria"]
+      },
+      {
+        "time": "21h",
+        "city": "Saint-Étienne",
+        "stadium": "Stade Geoffroy-Guichard",
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+
+        "teams": ["France", "Canada"]
+      },
+      {
+        "time": "21h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "teams": ["États-Unis", "Allemagne"]
+      }
+    ]
+  },
+  {
+    "date": "Mardi 30 juillet",
+    "matches": [
+      {
+        "time": "15h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "teams": ["République dominicaine", "Ouzbékistan"]
+      },
+      {
+        "time": "15h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "teams": ["Espagne", "Égypte"]
+      },
+      {
+        "time": "17h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "teams": ["Ukraine", "Argentine"]
+      },
+      {
+        "time": "17h",
+        "city": "Nice",
+        "stadium": "Stade de Nice",
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "teams": ["Maroc", "Iraq"]
+      },
+      {
+        "time": "19h",
+        "city": "Saint-Étienne",
+        "stadium": "Stade Geoffroy-Guichard",
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "teams": ["États-Unis", "Guinée"]
+      },
+      {
+        "time": "19h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "teams": ["Nouvelle-Zélande", "France"]
+      },
+      {
+        "time": "21h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "group": "Groupe D",
+        "matchday": "3e journée",
+        "teams": ["Paraguay", "Mali"]
+      },
+      {
+        "time": "21h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Hommes",
+        "group": "Groupe D",
+        "matchday": "3e journée",
+        "teams": ["Israël", "Japon"]
+      }
+    ]
+  },
+  {
+    "date": "Mercredi 31 juillet",
+    "matches": [
+      {
+        "time": "17h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "teams": ["Brésil", "Espagne"]
+      },
+      {
+        "time": "17h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "teams": ["Japon", "Nigeria"]
+      },
+      {
+        "time": "19h",
+        "city": "Saint-Étienne",
+        "stadium": "Stade Geoffroy-Guichard",
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "teams": ["Zambie", "Allemagne"]
+      },
+      {
+        "time": "19h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "teams": ["Australie", "États-Unis"]
+      },
+      {
+        "time": "21h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "teams": ["Nouvelle-Zélande", "France"]
+      },
+      {
+        "time": "21h",
+        "city": "Nice",
+        "stadium": "Stade de Nice",
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "teams": ["Colombie", "Canada"]
+      }
+    ]
+  },
+  {
+    "date": "Vendredi 2 août",
+    "matches": [
+      {
+        "time": "15h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "teams": ["1B", "2A"]
+      },
+      {
+        "time": "17h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "teams": ["1D", "2C"]
+      },
+      {
+        "time": "19h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "teams": ["1C", "2D"]
+      },
+      {
+        "time": "21h",
+        "city": "Bordeaux",
+        "stadium": "Stade de Bordeaux",
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "teams": ["1A", "2B"]
+      }
+    ]
+  },
+  {
+    "date": "Samedi 3 août",
+    "matches": [
+      {
+        "time": "15h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "teams": ["1B", "2C"]
+      },
+      {
+        "time": "17h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "teams": ["1C", "3A/B"]
+      },
+      {
+        "time": "19h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "teams": ["2A", "2B"]
+      },
+      {
+        "time": "21h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "teams": ["1A", "3B/C"]
+      }
+    ]
+  },
+  {
+    "date": "Lundi 5 août",
+    "matches": [
+      {
+        "time": "18h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Hommes",
+        "round": "Demi-finale"
+      },
+      {
+        "time": "21h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Hommes",
+        "round": "Demi-finale"
+      }
+    ]
+  },
+  {
+    "date": "Mardi 6 août",
+    "matches": [
+      {
+        "time": "18h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Femmes",
+        "round": "Demi-finale"
+      },
+      {
+        "time": "21h",
+        "city": "Marseille",
+        "stadium": "Stade Vélodrome",
+        "gender": "Femmes",
+        "round": "Demi-finale"
+      }
+    ]
+  },
+  {
+    "date": "Jeudi 8 août",
+    "matches": [
+      {
+        "time": "17h",
+        "city": "Nantes",
+        "stadium": "Stade de la Beaujoire",
+        "gender": "Hommes",
+        "round": "Match pour la 3e place"
+      }
+    ]
+  },
+  {
+    "date": "Vendredi 9 août",
+    "matches": [
+      {
+        "time": "15h",
+        "city": "Lyon",
+        "stadium": "Stade de Lyon",
+        "gender": "Femmes",
+        "round": "Match pour la 3e place"
+      },
+      {
+        "time": "18h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Hommes",
+        "round": "Finale"
+      }
+    ]
+  },
+  {
+    "date": "Samedi 10 août",
+    "matches": [
+      {
+        "time": "17h",
+        "city": "Paris",
+        "stadium": "Parc des Princes",
+        "gender": "Femmes",
+        "round": "Finale"
+      }
+    ]
+  }
+]

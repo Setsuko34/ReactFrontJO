@@ -1,0 +1,455 @@
+[
+  {
+    "date": "Samedi 27 juillet",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "time": "11h00",
+        "teams": ["Australie", "Vainqueur du TQO (Espagne)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "time": "21h00",
+        "teams": ["Vainqueur du TQO (Grèce)", "Canada"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "time": "17h15",
+        "teams": ["France", "Vainqueur du TQO (Lettonie)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "time": "13h30",
+        "teams": ["Allemagne", "Japon"]
+      }
+    ]
+  },
+  {
+    "date": "Dimanche 28 juillet",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "time": "21h00",
+        "teams": ["Serbie", "Porto Rico"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "1re journée",
+        "time": "13h30",
+        "teams": ["Espagne", "République populaire de Chine"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "time": "11h00",
+        "teams": ["Soudan du Sud", "Vainqueur du TQO (Puerto Rico)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "time": "17h15",
+        "teams": ["Serbie", "États-Unis d'Amérique"]
+      }
+    ]
+  },
+  {
+    "date": "Lundi 29 juillet",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "time": "17h15",
+        "teams": ["Canada", "France"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "1re journée",
+        "time": "11h00",
+        "teams": ["Nigéria", "Australie"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "time": "13h30",
+        "teams": ["Allemagne", "Belgique"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "1re journée",
+        "time": "21h00",
+        "teams": ["États-Unis d'Amérique", "Japon"]
+      }
+    ]
+  },
+  {
+    "date": "Mardi 30 juillet",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "time": "13h30",
+        "teams": ["Canada", "Australie"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "time": "11h00",
+        "teams": ["Vainqueur du TQO (Espagne)", "Vainqueur du TQO (Grèce)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "time": "21h00",
+        "teams": ["Vainqueur du TQO (Lettonie)", "Allemagne"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "time": "17h15",
+        "teams": ["Japon", "France"]
+      }
+    ]
+  },
+  {
+    "date": "Mercredi 31 juillet",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "time": "13h30",
+        "teams": ["République populaire de Chine", "Serbie"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "2e journée",
+        "time": "11h00",
+        "teams": ["Porto Rico", "Espagne"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "time": "21h00",
+        "teams": ["États-Unis d'Amérique", "Soudan du Sud"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "time": "17h15",
+        "teams": ["Vainqueur du TQO (Puerto Rico)", "Serbie"]
+      }
+    ]
+  },
+  {
+    "date": "Jeudi 1 août",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "time": "13h30",
+        "teams": ["Australie", "Canada"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "2e journée",
+        "time": "17h15",
+        "teams": ["France", "Nigéria"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "time": "11h00",
+        "teams": ["Japon", "Allemagne"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "2e journée",
+        "time": "21h00",
+        "teams": ["Belgique", "États-Unis d'Amérique"]
+      }
+    ]
+  },
+  {
+    "date": "Vendredi 2 août",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "time": "13h30",
+        "teams": ["Australie", "Vainqueur du TQO (Grèce)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "time": "17h15",
+        "teams": ["Canada", "Vainqueur du TQO (Espagne)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "time": "11h00",
+        "teams": ["Japon", "Vainqueur du TQO (Lettonie)"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "time": "21h00",
+        "teams": ["France", "Allemagne"]
+      }
+    ]
+  },
+  {
+    "date": "Samedi 3 août",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Femmes",
+
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "time": "13h30",
+        "teams": ["Serbie", "Espagne"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe A",
+        "matchday": "3e journée",
+        "time": "11h00",
+        "teams": ["République populaire de Chine", "Porto Rico"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "time": "17h15",
+        "teams": ["Vainqueur du TQO (Puerto Rico)", "États-Unis d'Amérique"]
+      },
+      {
+        "gender": "Hommes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "time": "21h00",
+        "teams": ["Serbie", "Soudan du Sud"]
+      }
+    ]
+  },
+  {
+    "date": "Dimanche 4 août",
+    "start": "11h00",
+    "end": "22h45",
+    "stadium": "Stade Pierre Mauroy de Lille",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "time": "13h30",
+        "teams": ["Canada", "Nigéria"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe B",
+        "matchday": "3e journée",
+        "time": "21h00",
+        "teams": ["Australie", "France"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "time": "17h15",
+        "teams": ["Allemagne", "États-Unis d'Amérique"]
+      },
+      {
+        "gender": "Femmes",
+        "group": "Groupe C",
+        "matchday": "3e journée",
+        "time": "11h00",
+        "teams": ["Japon", "Belgique"]
+      }
+    ]
+  },
+  {
+    "date": "Mardi 6 août",
+    "start": "11h00",
+    "end": "13h00",
+    "stadium": "Arena de Bercy à Paris",
+    "matches": [
+      {
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "time": "11h00"
+      },
+      {
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "time": "14h30"
+      },
+      {
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "time": "18h00"
+      },
+      {
+        "gender": "Hommes",
+        "round": "Quart de finale",
+        "time": "21h30"
+      }
+    ]
+  },
+  {
+    "date": "Mercredi 7 août",
+    "start": "11h00",
+    "end": "23h30",
+    "stadium": "Arena de Bercy à Paris",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "time": "11h00"
+      },
+      {
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "time": "14h30"
+      },
+      {
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "time": "18h00"
+      },
+      {
+        "gender": "Femmes",
+        "round": "Quart de finale",
+        "time": "21h30"
+      }
+    ]
+  },
+  {
+    "date": "Jeudi 8 août",
+    "start": "17h30",
+    "end": "23h00",
+    "stadium": "Arena de Bercy à Paris",
+    "matches": [
+      {
+        "gender": "Hommes",
+        "round": "Demi-finale",
+        "time": "17h30"
+      },
+      {
+        "gender": "Hommes",
+        "round": "Demi-finale",
+        "time": "21h00"
+      }
+    ]
+  },
+  {
+    "date": "Vendredi 9 août",
+    "start": "17h30",
+    "end": "23h00",
+    "stadium": "Arena de Bercy à Paris",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "round": "Demi-finale",
+        "time": "17h30"
+      },
+      {
+        "gender": "Femmes",
+        "round": "Demi-finale",
+        "time": "21h00"
+      }
+    ]
+  },
+  {
+    "date": "Samedi 10 août",
+    "start": "11h00",
+    "end": "00h00",
+    "stadium": "Arena de Bercy à Paris",
+    "matches": [
+      {
+        "gender": "Hommes",
+        "round": "Match pour la 3e place",
+        "time": "11h00"
+      },
+      {
+        "gender": "Hommes",
+        "round": "Finale",
+        "time": "21h30"
+      }
+    ]
+  },
+  {
+    "date": "Dimanche 11 août",
+    "start": "11h30",
+    "end": "18h00",
+    "stadium": "Arena de Bercy à Paris",
+    "matches": [
+      {
+        "gender": "Femmes",
+        "round": "Match pour la 3e place",
+        "time": "11h30"
+      },
+      {
+        "gender": "Femmes",
+        "round": "Finale",
+        "time": "15h30"
+      }
+    ]
+  }
+]

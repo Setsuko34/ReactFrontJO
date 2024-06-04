@@ -10,10 +10,14 @@ import SportCard from "../components/SportCard";
 import * as images from "../assets/picture/images.jsx";
 import { Link } from "react-router-dom";
 
-
 export default function Accueil() {
   function removeAccents(str) {
-    return str.normalize("NFD").replaceAll(/[\u0300-\u036f]/g, "").replaceAll(' ', '_').replace("'",'_').replace('-','_');
+    return str
+      .normalize("NFD")
+      .replaceAll(/[\u0300-\u036f]/g, "")
+      .replaceAll(" ", "_")
+      .replace("'", "_")
+      .replace("-", "_");
   }
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7 }}>
@@ -21,13 +25,19 @@ export default function Accueil() {
       <Typography variant="h4" align="center" gutterBottom>
         Les Jeux Olympiques
       </Typography>
-      <Box sx={{ textAlign: "center" }}>
+      <Box sx={{ flexGrow: 1, textAlign: "center" }}>
         <Carousel autoPlay>
-          {Object.keys(images).map((sport, index) => (
-            <div key={index}>
-              <img src={images[removeAccents(sport).toLowerCase()]} />
-            </div>
-          ))}
+          {Object.keys(images)
+            // Affichage des images de manière aléatoire pour plus de dynamisme
+            .sort(() => Math.random() - 0.5)
+            .map((sport, index) => (
+              <div key={index}>
+                <img
+                  src={images[removeAccents(sport).toLowerCase()]}
+                  style={{ maxWidth: "100%", height: "auto" }}
+                />
+              </div>
+            ))}
         </Carousel>
       </Box>
 
@@ -35,23 +45,23 @@ export default function Accueil() {
         Les disciplines
       </Typography>
       <Grid container spacing={4}>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <SportCard item="237" title="Football" onclick={"/disciplines"} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <SportCard item="11" title="Basket" onclick={"/disciplines"} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <SportCard item="257" title="Natation" onclick={"/disciplines"} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <SportCard item="200" title="Athlétisme" onclick={"/disciplines"} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={6} md={4}>
           <SportCard item="201" title="Rugby" onclick={"/disciplines"} />
         </Grid>
-        <Grid item xs={4}>
-          <SportCard item="202" title="Voir Plus" onclick={"/disciplines"}/>
+        <Grid item xs={12} sm={6} md={4}>
+          <SportCard item="202" title="Voir Plus" onclick={"/disciplines"} />
         </Grid>
       </Grid>
 
@@ -65,11 +75,10 @@ export default function Accueil() {
           borderTop: "3px solid black",
         }}
       >
-        <Link
-        to="/disciplines">
-        <Button variant="contained" color="primary">
-          Voir toutes les disciplines
-        </Button>
+        <Link to="/disciplines">
+          <Button variant="contained" color="primary">
+            Voir toutes les disciplines
+          </Button>
         </Link>
       </Box>
     </Box>
