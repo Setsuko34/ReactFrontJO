@@ -25,21 +25,12 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
   const params = new URLSearchParams(location.search);
   const [sportInfo, setSportInfo] = useState(null);
 
-  // const sport = params.get("sport");
-
   useEffect(() => {
     const sportFind = sportsData.find(
       (data) => data.sport === params.get("sport")
     );
     setSportInfo(sportFind);
-  }, []);
-  // const sport = params.get("sport");
-  // const description = params.get("description");
-  // const lieu = params.get("lieu");
-  // const dates = params.get("dates");
-  // const participants = params.get("participants");
-  // const coordonnees_gps = params.get("coordonnees_gps").split(',');
-  // const coords = [coordonnees_gps.lat, coordonnees_gps.lon];
+  }, [location.search]);
 
   // console.log(sportInfo);
 

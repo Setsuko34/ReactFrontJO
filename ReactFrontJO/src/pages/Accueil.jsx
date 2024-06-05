@@ -20,12 +20,12 @@ export default function Accueil() {
       .replace("-", "_");
   }
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7 }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7, padding: 3 }}>
       <NavBar />
       <Typography variant="h4" align="center" gutterBottom>
         Les Jeux Olympiques
       </Typography>
-      <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+      <Box sx={{ flexGrow: 1, textAlign: "center", marginY: 2 }}>
         <Carousel autoPlay>
           {Object.keys(images)
             // Affichage des images de manière aléatoire pour plus de dynamisme
@@ -34,7 +34,7 @@ export default function Accueil() {
               <div key={index}>
                 <img
                   src={images[removeAccents(sport).toLowerCase()]}
-                  style={{ maxWidth: "100%", height: "auto" }}
+                  style={{ maxWidth: "80%", height: "auto" }}
                 />
               </div>
             ))}
@@ -46,19 +46,51 @@ export default function Accueil() {
       </Typography>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} md={4}>
-          <SportCard item="237" title="Football" onclick={"/disciplines"} />
+          <SportCard
+            item="Football"
+            title="Football"
+            onclick={{
+              pathname: "/disciplinedetails",
+              search: `?sport=Football`,
+            }}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <SportCard item="11" title="Basket" onclick={"/disciplines"} />
+          <SportCard
+            item="Basketball"
+            title="Basket"
+            onclick={{
+              pathname: "/disciplinedetails",
+              search: `?sport=Basketball`,
+            }}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <SportCard item="257" title="Natation" onclick={"/disciplines"} />
+          <SportCard
+            item="Natation"
+            title="Natation"
+            onclick={{
+              pathname: "/disciplinedetails",
+              search: `?sport=Natation`,
+            }}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <SportCard item="200" title="Athlétisme" onclick={"/disciplines"} />
+          <SportCard
+            item="Athlétisme"
+            title="Athlétisme"
+            onclick={{
+              pathname: "/disciplinedetails",
+              search: `?sport=Athlétisme`,
+            }}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <SportCard item="201" title="Rugby" onclick={"/disciplines"} />
+          <SportCard
+            item="Rugby"
+            title="Rugby"
+            onclick={{ pathname: "/disciplinedetails", search: `?sport=Rugby` }}
+          />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SportCard item="202" title="Voir Plus" onclick={"/disciplines"} />
