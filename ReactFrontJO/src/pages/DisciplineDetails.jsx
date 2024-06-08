@@ -79,18 +79,16 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
             <Typography variant="body1" paragraph>
               {sportInfo.description}
             </Typography>
+
+            <Typography variant="h4">
+              Début : {new Date(sportInfo.dates.début).toLocaleDateString()}
+            </Typography>
+            <Typography variant="h4" gutterBottom>
+              Fin : {new Date(sportInfo.dates.fin).toLocaleDateString()}
+            </Typography>
           </Grid>
         </Grid>
 
-        <Typography variant="h4" component="h4" gutterBottom>
-          Dates :
-        </Typography>
-        <Typography variant="body1">
-          Début : {new Date(sportInfo.dates.début).toLocaleDateString()}
-        </Typography>
-        <Typography variant="body1" gutterBottom>
-          Fin : {new Date(sportInfo.dates.fin).toLocaleDateString()}
-        </Typography>
         <Typography variant="h4" component="h4" gutterBottom>
           Liste des participants :
         </Typography>

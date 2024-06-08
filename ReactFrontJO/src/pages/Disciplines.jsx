@@ -6,16 +6,19 @@ import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
 
 export default function Disciplines({ favoris, managementFavoris }) {
+  // Trie des sports par ordre alphabétique
+  const sortedSportsData = sportsData.sort((a, b) => a.sport.localeCompare(b.sport));
+
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left"}}>
       <NavBar />
-      {sportsData && sportsData.length > 0 ? (
+      {sortedSportsData && sortedSportsData.length > 0 ? (
         <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 7 }}>
           <Typography variant="h4" align="center" gutterBottom>
             Disciplines
           </Typography>
           <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 3 }}>
-            {sportsData.map((sport) => (
+            {sortedSportsData.map((sport) => (
               <SportDetailedCard
                 key={sport.sport}
                 item={1}

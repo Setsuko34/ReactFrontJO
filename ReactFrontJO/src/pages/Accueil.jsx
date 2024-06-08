@@ -93,7 +93,7 @@ export default function Accueil() {
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
-          <SportCard item="202" title="Voir Plus" onclick={"/disciplines"} />
+          <SportCard item="more" title="Toutes les épreuves" onclick={"/disciplines"} />
         </Grid>
       </Grid>
 

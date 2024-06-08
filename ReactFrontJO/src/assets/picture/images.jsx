@@ -23,6 +23,7 @@ export { default as handball } from './handball.png';
 export { default as hockey } from './hockey.png';
 export { default as judo } from './judo.png';
 export { default as karate } from './karate.png';
+export { default as more } from './more.jpg';
 export { default as pentathlon_moderne } from './pentathlon_moderne.png';
 export { default as rugby } from './rugby.png';
 export { default as skateboard } from './skateboard.png';
