@@ -32,8 +32,6 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
     setSportInfo(sportFind);
   }, [location.search]);
 
-  // console.log(sportInfo);
-
   function removeAccents(str) {
     return str
       .normalize("NFD")
@@ -42,9 +40,6 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
       .replace("'", "_")
       .replace("-", "_");
   }
-
-  // console.log(dates);
-  // console.log( participants);
 
   if (!sportInfo) {
     return <p>Chargement...</p>;

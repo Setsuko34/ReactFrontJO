@@ -35,7 +35,7 @@ export default function Lieux() {
         <Typography variant="h4" align="center" gutterBottom>
           Lieux
         </Typography>
-        <Typography variant="p" align="center" gutterBottom>
+        <Typography variant="p" component="div" align="center" gutterBottom>
           Voici tous les lieux qui vont accueillir les compétitions des Jeux
           Olympiques de Paris 2024.
         </Typography>
@@ -62,16 +62,16 @@ export default function Lieux() {
                     <Typography variant="h6" component="div" gutterBottom>
                       {place.nom_site}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body2" >
                       <strong>Sport : </strong>
                       {place.sports}
                     </Typography>
                     <div style={{ marginTop: "10px" }}>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" >
                         <strong>Date début : </strong>
                         {new Date(place.start_date).toLocaleDateString("fr-FR")}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" >
                         <strong>Date fin : </strong>
                         {new Date(place.end_date).toLocaleDateString("fr-FR")}
                       </Typography>

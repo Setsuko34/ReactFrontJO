@@ -13,10 +13,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.filtres {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+
 .epreuves-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   gap: 1em;
+  width: 100%;
 }
 
 a {

@@ -9,14 +9,14 @@ const FiltreGenre = ({ genres, selectedGenres, onGenreSelect }) => {
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 2 }}>
       <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel>Genres</InputLabel>
+        <InputLabel style={{ color: "white" }}>Genres</InputLabel>
         <Select
           key={genres}
           label="Genre"
           multiple
           value={selectedGenres}
           onChange={handleChange}
-          style={{ width: "100%" }}
+          style={{ width: "100%", color: "white", outline: "white" }}
         >
           {genres.map((genre) => (
             <MenuItem key={genre} value={genre}>

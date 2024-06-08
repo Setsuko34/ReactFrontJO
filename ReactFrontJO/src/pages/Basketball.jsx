@@ -54,9 +54,6 @@ export default function Basketball() {
     setselectedGenres(selectedOption);
   };
 
-
-  console.log(typeof(selectedGenres));
-  console.log(typeof(selectedEpreuves));
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 7 }}>
       <NavBar />

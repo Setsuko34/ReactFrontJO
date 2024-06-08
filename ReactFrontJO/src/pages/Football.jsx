@@ -40,7 +40,8 @@ export default function Football() {
   const filteredFoot = programme_foot.filter((foot) => {
     return foot.matches.some((match) => {
       return (
-        (selectedEpreuves.length === 0 || selectedEpreuves.includes(match.round)) &&
+        (selectedEpreuves.length === 0 ||
+          selectedEpreuves.includes(match.round)) &&
         (selectedGenres.length === 0 || selectedGenres.includes(match.gender))
       );
     });
@@ -54,26 +55,27 @@ export default function Football() {
     setselectedGenres(selectedOption);
   };
 
-
-  console.log(typeof(selectedGenres));
-  console.log(typeof(selectedEpreuves));
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 7 }}>
       <NavBar />
-      <FiltreEpreuve
-        epreuves={epreuve}
-        selectedEpreuves={selectedEpreuves}
-        onEpreuveSelect={handleEpreuveSelect}
-      />
+      <div className="filtres">
+        <FiltreEpreuve
+          epreuves={epreuve}
+          selectedEpreuves={selectedEpreuves}
+          onEpreuveSelect={handleEpreuveSelect}
+        />
 
-      <FiltreGenre
-        genres={genre}
-        selectedGenres={selectedGenres}
-        onGenreSelect={handleGenreChange}
-      />
-      {filteredFoot.map((foot, index) => (
-        <Epreuve key={index} epreuve={foot} />
-      ))}
+        <FiltreGenre
+          genres={genre}
+          selectedGenres={selectedGenres}
+          onGenreSelect={handleGenreChange}
+        />
+      </div>
+      <div className="epreuves-list">
+        {filteredFoot.map((foot, index) => (
+          <Epreuve key={index} epreuve={foot} />
+        ))}
+      </div>
     </Box>
   );
 }

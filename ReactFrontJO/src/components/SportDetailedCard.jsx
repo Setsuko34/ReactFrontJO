@@ -21,7 +21,6 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
       .replace("'", "_")
       .replace("-", "_");
   }
-  
   return (
     <Box sx={{ display: "flex", width: "100%", marginBottom: "2vh" }}>
       <Link
@@ -48,7 +47,7 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
               <Typography gutterBottom variant="h5" component="div">
                 {sport}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" >
                 {description}
               </Typography>
               <Typography
@@ -60,9 +59,6 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
               </Typography>
               <Typography variant="body2" color="text.primary">
                 <strong>Dates :</strong> {dates.début} - {dates.fin}
-              </Typography>
-              <Typography variant="body2" color="text.primary">
-                <strong>Participants :</strong> {participants.length}
               </Typography>
             </CardContent>
           </CardActionArea>
