@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NavBar from "../components/Navbar";
 import foot from "../assets/picture/football.png";
@@ -8,6 +7,7 @@ import { Divider } from "@mui/material";
 import FiltreGenre from "../components/FiltreGenre";
 import FiltreEpreuve from "../components/FiltreEpreuve";
 import Epreuve from "../components/Epreuve";
+import Box from "@mui/material/Box";
 
 export default function Football() {
   const [selectedEpreuves, setselectedEpreuves] = useState([]);

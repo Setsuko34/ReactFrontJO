@@ -28,13 +28,12 @@ const Profil = () => {
   };
 
   return (
-    <div>
       <Box sx={{ flexGrow: 1, textAlign: "left" }}>
         <NavBar />
         <Typography variant="h4" align="center" gutterBottom>
           Profil
         </Typography>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <Box sx={{ display: "flex", flexDirection: "column" }}>
           <TextField
             label="Pseudo"
             name="pseudo"
@@ -75,9 +74,8 @@ const Profil = () => {
               Données sauvegardées (visible dans la console)
             </Alert>
           </Snackbar>
-        </div>
+        </Box>
       </Box>
-    </div>
   );
 };
 

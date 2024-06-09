@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
+import { MenuItem, Select, FormControl, InputLabel } from "@mui/material";
+import Box from "@mui/material/Box";
 
 const FiltreGenre = ({ genres, selectedGenres, onGenreSelect }) => {
   const handleChange = (e) => {
@@ -7,7 +8,7 @@ const FiltreGenre = ({ genres, selectedGenres, onGenreSelect }) => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 2 }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel style={{ color: "white" }}>Genres</InputLabel>
         <Select

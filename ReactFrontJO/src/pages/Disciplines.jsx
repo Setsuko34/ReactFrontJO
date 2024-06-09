@@ -6,7 +6,7 @@ import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
 
 export default function Disciplines({ favoris, managementFavoris }) {
-  // Trie des sports par ordre alphabétique
+  // Tri des sports par ordre alphabétique
   const sortedSportsData = sportsData.sort((a, b) => a.sport.localeCompare(b.sport));
 
   return (

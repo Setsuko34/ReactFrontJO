@@ -1,5 +1,4 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -9,6 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 import SportCard from "../components/SportCard";
 import * as images from "../assets/picture/images.jsx";
 import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
 
 export default function Accueil() {
   function removeAccents(str) {

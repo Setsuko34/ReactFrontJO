@@ -6,9 +6,9 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea, IconButton } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
+import Box from "@mui/material/Box";
 
 export default function SportDetailedCard({ sportInfo, isFavoris, managementFavoris }) {
   const { sport, description, lieu, dates, participants } =

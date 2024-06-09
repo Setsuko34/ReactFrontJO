@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, MenuItem, Select, FormControl, InputLabel } from "@mui/material";
+import { MenuItem, Select, FormControl, InputLabel } from "@mui/material";
+import Box from "@mui/material/Box";
 
 const FiltreEpreuve = ({ epreuves, selectedEpreuves, onEpreuveSelect }) => {
   const handleChange = (e) => {
@@ -7,24 +8,24 @@ const FiltreEpreuve = ({ epreuves, selectedEpreuves, onEpreuveSelect }) => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 2 }}>
-    <FormControl sx={{ m: 1, width: 300 }}>
-      <InputLabel style={{ color: "white" }}>Épreuves</InputLabel>
-      <Select
-        key={epreuves}
-        label="epreuve"
-        multiple
-        value={selectedEpreuves}
-        onChange={handleChange}
-        style={{ width: "100%", color: "white", outline: "white" }}
-      >
-        {epreuves.map((epreuve) => (
-          <MenuItem key={epreuve} value={epreuve}>
-            {epreuve}
-          </MenuItem>
-        ))}
-      </Select>
-    </FormControl>
+    <Box sx={{ flexGrow: 1, textAlign: "left" }}>
+      <FormControl sx={{ m: 1, width: 300 }}>
+        <InputLabel style={{ color: "white" }}>Épreuves</InputLabel>
+        <Select
+          key={epreuves}
+          label="epreuve"
+          multiple
+          value={selectedEpreuves}
+          onChange={handleChange}
+          style={{ width: "100%", color: "white", outline: "white" }}
+        >
+          {epreuves.map((epreuve) => (
+            <MenuItem key={epreuve} value={epreuve}>
+              {epreuve}
+            </MenuItem>
+          ))}
+        </Select>
+      </FormControl>
     </Box>
   );
 };

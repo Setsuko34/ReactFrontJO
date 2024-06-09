@@ -4,9 +4,9 @@ import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
+import Box from "@mui/material/Box";
 
 export default function SportCard({ item, title, onclick }) {
   function removeAccents(str) {

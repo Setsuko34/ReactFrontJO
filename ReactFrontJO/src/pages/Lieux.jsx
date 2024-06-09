@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Box, Typography, Grid, Card, CardContent } from "@mui/material";
+import { Typography, Grid, Card, CardContent } from "@mui/material";
 import NavBar from "../components/Navbar";
 import axios from "axios";
 import { Loader } from "semantic-ui-react";
@@ -7,6 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import sportsData from "../assets/data/sports.json";
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import Box from "@mui/material/Box";
 
 export default function Lieux() {
   const [lieux, setLieux] = useState([]);

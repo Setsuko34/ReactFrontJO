@@ -1,9 +1,9 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import NavBar from "../components/Navbar";
 import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
+import Box from "@mui/material/Box";
 
 export default function Favoris({ favoris, managementFavoris }) {
   const filteredSports = sportsData.filter((sport) =>
