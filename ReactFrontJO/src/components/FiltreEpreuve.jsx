@@ -10,14 +10,14 @@ const FiltreEpreuve = ({ epreuves, selectedEpreuves, onEpreuveSelect }) => {
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
       <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel style={{ color: "white" }}>Épreuves</InputLabel>
+        <InputLabel>Épreuves</InputLabel>
         <Select
           key={epreuves}
           label="epreuve"
           multiple
           value={selectedEpreuves}
           onChange={handleChange}
-          style={{ width: "100%", color: "white", outline: "white" }}
+          style={{ width: "100%" }}
         >
           {epreuves.map((epreuve) => (
             <MenuItem key={epreuve} value={epreuve}>

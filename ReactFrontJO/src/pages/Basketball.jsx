@@ -57,6 +57,7 @@ export default function Basketball() {
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 7 }}>
       <NavBar />
+      <div className="filtres">
       <FiltreEpreuve
         epreuves={epreuve}
         selectedEpreuves={selectedEpreuves}
@@ -68,9 +69,12 @@ export default function Basketball() {
         selectedGenres={selectedGenres}
         onGenreSelect={handleGenreChange}
       />
+      </div>
+      <div className="epreuves-list">
       {filteredBasket.map((basket, index) => (
         <Epreuve key={index} epreuve={basket} />
       ))}
+      </div>
     </Box>
   );
 }

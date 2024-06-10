@@ -28,7 +28,6 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
           pathname: "/disciplinedetails",
           search: `?sport=${sport}`,
         }}
-        style={{ textDecoration: "none" }}
       >
         <Card sx={{ borderRadius: 6 }}>
           <CardActionArea sx={{ display: "flex" }}>

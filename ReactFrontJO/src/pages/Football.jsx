@@ -4,6 +4,9 @@ import NavBar from "../components/Navbar";
 import foot from "../assets/picture/football.png";
 import programme_foot from "../assets/data/programme_foot.json";
 import { Divider } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { CardActionArea } from "@mui/material";
 import FiltreGenre from "../components/FiltreGenre";
 import FiltreEpreuve from "../components/FiltreEpreuve";
 import Epreuve from "../components/Epreuve";
@@ -56,7 +59,7 @@ export default function Football() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 7 }}>
+    <Box sx={{ flexGrow: 1, textAlign: "left", paddingTop: 7 }}>
       <NavBar />
       <div className="filtres">
         <FiltreEpreuve
@@ -64,7 +67,6 @@ export default function Football() {
           selectedEpreuves={selectedEpreuves}
           onEpreuveSelect={handleEpreuveSelect}
         />
-
         <FiltreGenre
           genres={genre}
           selectedGenres={selectedGenres}
@@ -73,7 +75,16 @@ export default function Football() {
       </div>
       <div className="epreuves-list">
         {filteredFoot.map((foot, index) => (
-          <Epreuve key={index} epreuve={foot} />
+          <div key={index}>
+          <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+            <Card variant="outlined" sx={{ minWidth: 275, borderRadius: 5 }}>
+              <Typography gutterBottom variant="h5" component="div">
+                {foot.date}
+              </Typography>
+              <Epreuve key={index} epreuve={foot} />
+            </Card>
+          </Box>
+          </div>
         ))}
       </div>
     </Box>
