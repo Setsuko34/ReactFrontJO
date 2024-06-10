@@ -13,6 +13,7 @@ import Box from "@mui/material/Box";
 export default function SportDetailedCard({ sportInfo, isFavoris, managementFavoris }) {
   const { sport, description, lieu, dates, participants } =
     sportInfo;
+    
   function removeAccents(str) {
     return str
       .normalize("NFD")
@@ -21,6 +22,7 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
       .replace("'", "_")
       .replace("-", "_");
   }
+
   return (
     <Box sx={{ display: "flex", width: "100%", marginBottom: "2vh" }}>
       <Link
