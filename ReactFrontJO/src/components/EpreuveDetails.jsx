@@ -29,13 +29,24 @@ const EpreuveDetails = ({ match, open, setOpen }) => {
       aria-describedby="modal-modal-description"
     >
       <Box sx={style}>
-        <Typography id="modal-modal-title" variant="h6" component="h2" align="center">
+        <Typography
+          id="modal-modal-title"
+          variant="h6"
+          component="h2"
+          align="center"
+        >
           Informations sur l'épreuve
         </Typography>
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           {match.time}
           <br />
-          {match.teams}
+          {match.teams &&
+            match.teams.map((team, index) => (
+              <React.Fragment key={index}>
+                {team}
+                {index !== match.teams.length - 1 && " - "}
+              </React.Fragment>
+            ))}
           <br />
           {match.group}
           <br />
