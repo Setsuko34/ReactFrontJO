@@ -78,7 +78,7 @@ export default function Football() {
           <div key={index}>
           <Box sx={{ flexGrow: 1, textAlign: "center" }}>
             <Card variant="outlined" sx={{ minWidth: 275, borderRadius: 5 }}>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h5" component="div" paddingTop={1}>
                 {foot.date}
               </Typography>
               <Epreuve key={index} epreuve={foot} />

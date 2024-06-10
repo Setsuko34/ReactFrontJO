@@ -28,7 +28,12 @@ const Epreuve = ({ epreuve }) => {
               <Typography gutterBottom variant="p" component="div">
                 {match.time}
                 <br />
-                {match.teams}
+                {match.teams && match.teams.map((team, index) => (
+                  <React.Fragment key={index}>
+                    {team}
+                    {index !== match.teams.length - 1 && " - "}
+                  </React.Fragment>
+                ))}
                 <br />
                 {match.group}
                 <br />
@@ -41,7 +46,11 @@ const Epreuve = ({ epreuve }) => {
             </CardContent>
           </CardActionArea>
           {selectedMatch && (
-            <EpreuveDetails match={selectedMatch} open={open} setOpen={setOpen} />
+            <EpreuveDetails
+              match={selectedMatch}
+              open={open}
+              setOpen={setOpen}
+            />
           )}
         </div>
       ))}

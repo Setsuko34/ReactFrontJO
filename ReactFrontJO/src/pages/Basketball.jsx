@@ -4,6 +4,9 @@ import NavBar from "../components/Navbar";
 import basket from "../assets/picture/basketball.png";
 import programme_basket from "../assets/data/programme_basket.json";
 import { Divider } from "@mui/material";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { CardActionArea } from "@mui/material";
 import FiltreGenre from "../components/FiltreGenre";
 import FiltreEpreuve from "../components/FiltreEpreuve";
 import Epreuve from "../components/Epreuve";
@@ -40,7 +43,8 @@ export default function Basketball() {
   const filteredBasket = programme_basket.filter((basket) => {
     return basket.matches.some((match) => {
       return (
-        (selectedEpreuves.length === 0 || selectedEpreuves.includes(match.round)) &&
+        (selectedEpreuves.length === 0 ||
+          selectedEpreuves.includes(match.round)) &&
         (selectedGenres.length === 0 || selectedGenres.includes(match.gender))
       );
     });
@@ -58,22 +62,31 @@ export default function Basketball() {
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingY: 7 }}>
       <NavBar />
       <div className="filtres">
-      <FiltreEpreuve
-        epreuves={epreuve}
-        selectedEpreuves={selectedEpreuves}
-        onEpreuveSelect={handleEpreuveSelect}
-      />
+        <FiltreEpreuve
+          epreuves={epreuve}
+          selectedEpreuves={selectedEpreuves}
+          onEpreuveSelect={handleEpreuveSelect}
+        />
 
-      <FiltreGenre
-        genres={genre}
-        selectedGenres={selectedGenres}
-        onGenreSelect={handleGenreChange}
-      />
+        <FiltreGenre
+          genres={genre}
+          selectedGenres={selectedGenres}
+          onGenreSelect={handleGenreChange}
+        />
       </div>
       <div className="epreuves-list">
-      {filteredBasket.map((basket, index) => (
-        <Epreuve key={index} epreuve={basket} />
-      ))}
+        {filteredBasket.map((basket, index) => (
+          <div key={index}>
+            <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+              <Card variant="outlined" sx={{ minWidth: 275, borderRadius: 5 }}>
+                <Typography gutterBottom variant="h5" component="div" paddingTop={1}>
+                  {basket.date}
+                </Typography>
+                <Epreuve key={index} epreuve={basket} />
+              </Card>
+            </Box>
+          </div>
+        ))}
       </div>
     </Box>
   );
