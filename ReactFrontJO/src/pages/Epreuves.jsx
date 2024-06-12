@@ -1,26 +1,22 @@
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
-import NavBar from "../components/Navbar";
-import foot from "../assets/picture/football.png";
-import programme_foot from "../assets/data/programme_foot.json";
-import { Divider } from "@mui/material";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import { CardActionArea } from "@mui/material";
 import FiltreGenre from "../components/FiltreGenre";
 import FiltreEpreuve from "../components/FiltreEpreuve";
 import Epreuve from "../components/Epreuve";
 import Box from "@mui/material/Box";
 
-export default function Football() {
+export default function Epreuves(programme) {
   const [selectedEpreuves, setselectedEpreuves] = useState([]);
   const [selectedGenres, setselectedGenres] = useState([]);
-
+  {
+    programme = programme.programme;
+  }
   const genre = [
     ...new Set(
-      programme_foot
-        .map((foot) => {
-          return foot.matches.map((match) => {
+      programme
+        .map((epreuves) => {
+          return epreuves.matches.map((match) => {
             return match.gender;
           });
         })
@@ -30,9 +26,9 @@ export default function Football() {
 
   const epreuve = [
     ...new Set(
-      programme_foot
-        .map((foot) => {
-          return foot.matches.map((match) => {
+      programme
+        .map((epreuves) => {
+          return epreuves.matches.map((match) => {
             return match.round;
           });
         })
@@ -40,8 +36,8 @@ export default function Football() {
     ),
   ].filter((round) => round !== undefined);
 
-  const filteredFoot = programme_foot.filter((foot) => {
-    return foot.matches.some((match) => {
+  const filteredepreuves = programme.filter((epreuves) => {
+    return epreuves.matches.some((match) => {
       return (
         (selectedEpreuves.length === 0 ||
           selectedEpreuves.includes(match.round)) &&
@@ -60,7 +56,7 @@ export default function Football() {
 
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingTop: 7 }}>
-      <NavBar />
+      <Typography variant="h4">Listes des Matchs :</Typography>
       <div className="filtres">
         <FiltreEpreuve
           epreuves={epreuve}
@@ -74,16 +70,21 @@ export default function Football() {
         />
       </div>
       <div className="epreuves-list">
-        {filteredFoot.map((foot, index) => (
+        {filteredepreuves.map((epreuves, index) => (
           <div key={index}>
-          <Box sx={{ flexGrow: 1, textAlign: "center" }}>
-            <Card variant="outlined" sx={{ minWidth: 275, borderRadius: 5 }}>
-              <Typography gutterBottom variant="h5" component="div" paddingTop={1}>
-                {foot.date}
-              </Typography>
-              <Epreuve key={index} epreuve={foot} />
-            </Card>
-          </Box>
+            <Box sx={{ flexGrow: 1, textAlign: "center" }}>
+              <Card variant="outlined" sx={{ minWidth: 275, borderRadius: 5 }}>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  paddingTop={1}
+                >
+                  {epreuves.date}
+                </Typography>
+                <Epreuve key={index} epreuve={epreuves} />
+              </Card>
+            </Box>
           </div>
         ))}
       </div>

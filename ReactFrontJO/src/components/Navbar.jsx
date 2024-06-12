@@ -30,11 +30,11 @@ const navItems = [
   },
   {
     label: "Football",
-    href: { pathname: "/Football" },
+    href: { pathname: "/disciplinedetails", search: "?sport=Football" },
   },
   {
     label: "Basketball",
-    href: { pathname: "/Basketball" },
+    href: { pathname: "/disciplinedetails", search: "?sport=Basketball" },
   },
   {
     label: "Favoris",

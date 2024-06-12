@@ -19,6 +19,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import sportsData from "../assets/data/sports.json";
 import * as images from "../assets/picture/images.jsx";
+import * as programmes from "../assets/data/programmes.jsx";
+import Epreuves from "./Epreuves.jsx";
 
 export default function DisciplineDetails({ favoris, managementFavoris }) {
   const location = useLocation();
@@ -83,7 +85,15 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
             </Typography>
           </Grid>
         </Grid>
-
+        {sportInfo.sport === "Football" || sportInfo.sport === "Basketball" ? (
+          <Epreuves
+            programme={
+              programmes[
+                "programme_" + removeAccents(sportInfo.sport).toLowerCase()
+              ]
+            }
+          />
+        ) : null}
         <Typography variant="h4" component="h4" gutterBottom>
           Liste des participants :
         </Typography>

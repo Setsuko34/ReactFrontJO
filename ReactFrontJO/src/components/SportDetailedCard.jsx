@@ -6,14 +6,18 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea, IconButton } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { Snackbar, Alert } from "@mui/material";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
 import Box from "@mui/material/Box";
 
-export default function SportDetailedCard({ sportInfo, isFavoris, managementFavoris }) {
-  const { sport, description, lieu, dates, participants } =
-    sportInfo;
-    
+export default function SportDetailedCard({
+  sportInfo,
+  isFavoris,
+  managementFavoris,
+}) {
+  const { sport, description, lieu, dates, participants } = sportInfo;
+
   function removeAccents(str) {
     return str
       .normalize("NFD")
@@ -48,9 +52,7 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
               <Typography gutterBottom variant="h5" component="div">
                 {sport}
               </Typography>
-              <Typography variant="body2" >
-                {description}
-              </Typography>
+              <Typography variant="body2">{description}</Typography>
               <Typography
                 variant="body2"
                 color="text.primary"
@@ -74,6 +76,9 @@ export default function SportDetailedCard({ sportInfo, isFavoris, managementFavo
       >
         {isFavoris ? <FavoriteIcon /> : <FavoriteBorderIcon />}
       </IconButton>
+      <Snackbar open={isFavoris} autoHideDuration={4000}>
+        <Alert severity="success">Favoris Ajouté avec Succée</Alert>
+      </Snackbar>
     </Box>
   );
 }
