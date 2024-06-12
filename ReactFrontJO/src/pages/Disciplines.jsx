@@ -6,15 +6,13 @@ import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import SportDetailedCard from "../components/SportDetailedCard";
 import sportsData from "../assets/data/sports.json";
-import Search from "@mui/icons-material/Search";
-import InputAdornment from "@mui/material/InputAdornment";
 
 export default function Disciplines({ favoris, managementFavoris }) {
   // Tri des sports par ordre alphabétique
   const sortedSportsData = sportsData.sort((a, b) =>
     a.sport.localeCompare(b.sport)
   );
-  const [selectedSports, setSelectedSports] = React.useState([]);
+  const [selectedSports, setSelectedSports] = React.useState(sortedSportsData);
   const selectedValues = React.useMemo(() => {
     const filteredSport = sortedSportsData.filter((v) => v.selected);
     setSelectedSports(filteredSport);
@@ -22,7 +20,7 @@ export default function Disciplines({ favoris, managementFavoris }) {
 
   useState(() => {
     setSelectedSports(sortedSportsData);
-  });
+  }, []);
 
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left" }}>
@@ -45,18 +43,7 @@ export default function Disciplines({ favoris, managementFavoris }) {
               }
             }}
             renderInput={(params) => (
-              <TextField
-                {...params}
-                variant="outlined"
-                label="Rechercher..."
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <Search />
-                    </InputAdornment>
-                  ),
-                }}
-              />
+              <TextField {...params} variant="outlined" label="Rechercher..." />
             )}
           />
           <Box sx={{ flexGrow: 1, textAlign: "left", marginY: 3 }}>
