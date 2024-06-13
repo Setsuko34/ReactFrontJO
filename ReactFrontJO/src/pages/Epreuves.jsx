@@ -22,7 +22,7 @@ export default function Epreuves(programme) {
         })
         .flat()
     ),
-  ];
+  ].filter((gender) => gender !== undefined);
 
   const epreuve = [
     ...new Set(
@@ -40,8 +40,10 @@ export default function Epreuves(programme) {
     return epreuves.matches.some((match) => {
       return (
         (selectedEpreuves.length === 0 ||
-          selectedEpreuves.includes(match.round)) &&
-        (selectedGenres.length === 0 || selectedGenres.includes(match.gender))
+          selectedEpreuves.includes(match.round)) 
+          &&
+        (selectedGenres.length === 0 || 
+          selectedGenres.includes(match.gender))
       );
     });
   });
@@ -56,7 +58,7 @@ export default function Epreuves(programme) {
 
   return (
     <Box sx={{ flexGrow: 1, textAlign: "left", paddingTop: 7 }}>
-      <Typography variant="h4">Listes des Matchs :</Typography>
+      <Typography variant="h4">Listes des matchs :</Typography>
       <div className="filtres">
         <FiltreEpreuve
           epreuves={epreuve}

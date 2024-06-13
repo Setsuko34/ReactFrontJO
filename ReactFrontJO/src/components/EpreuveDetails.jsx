@@ -16,9 +16,6 @@ const style = {
 };
 
 const EpreuveDetails = ({ match, open, setOpen }) => {
-  //   const { title, description, date } = infos;
-
-  console.log(match);
   const handleClose = () => setOpen(false);
 
   return (

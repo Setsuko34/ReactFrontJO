@@ -60,6 +60,10 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
           >
             {isFavoris ? <FavoriteIcon /> : <FavoriteBorderIcon />}
           </IconButton>
+          <br />
+          <Typography variant="body1">
+              {new Date(sportInfo.dates.début).toLocaleDateString()} - {new Date(sportInfo.dates.fin).toLocaleDateString()}
+            </Typography>
         </Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
@@ -75,13 +79,6 @@ export default function DisciplineDetails({ favoris, managementFavoris }) {
             </Typography>
             <Typography variant="body1" paragraph>
               {sportInfo.description}
-            </Typography>
-
-            <Typography variant="h4">
-              Début : {new Date(sportInfo.dates.début).toLocaleDateString()}
-            </Typography>
-            <Typography variant="h4" gutterBottom>
-              Fin : {new Date(sportInfo.dates.fin).toLocaleDateString()}
             </Typography>
           </Grid>
         </Grid>

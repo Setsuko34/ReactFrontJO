@@ -77,7 +77,7 @@ export default function SportDetailedCard({
         {isFavoris ? <FavoriteIcon /> : <FavoriteBorderIcon />}
       </IconButton>
       <Snackbar open={isFavoris} autoHideDuration={4000}>
-        <Alert severity="success">Favoris Ajouté avec Succée</Alert>
+        <Alert severity="success">Ajouté aux favoris</Alert>
       </Snackbar>
     </Box>
   );
