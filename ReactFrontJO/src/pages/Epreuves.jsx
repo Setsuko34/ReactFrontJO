@@ -40,10 +40,8 @@ export default function Epreuves(programme) {
     return epreuves.matches.some((match) => {
       return (
         (selectedEpreuves.length === 0 ||
-          selectedEpreuves.includes(match.round)) 
-          &&
-        (selectedGenres.length === 0 || 
-          selectedGenres.includes(match.gender))
+          selectedEpreuves.includes(match.round)) &&
+        (selectedGenres.length === 0 || selectedGenres.includes(match.gender))
       );
     });
   });
@@ -84,7 +82,12 @@ export default function Epreuves(programme) {
                 >
                   {epreuves.date}
                 </Typography>
-                <Epreuve key={index} epreuve={epreuves} />
+                <Epreuve
+                  key={index}
+                  epreuve={epreuves}
+                  selectedEpreuves={selectedEpreuves}
+                  selectedGenres={selectedGenres}
+                />
               </Card>
             </Box>
           </div>

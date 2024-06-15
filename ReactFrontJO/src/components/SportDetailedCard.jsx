@@ -73,6 +73,7 @@ export default function SportDetailedCard({
         aria-label="favorite"
         color="error"
         onClick={() => managementFavoris(sport)}
+        sx={{ border: "none !important" }}
       >
         {isFavoris ? <FavoriteIcon /> : <FavoriteBorderIcon />}
       </IconButton>
