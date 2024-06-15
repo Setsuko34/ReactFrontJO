@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
 import * as images from "../assets/picture/images.jsx";
+import more from "../assets/picture/more.jpg";
 import Box from "@mui/material/Box";
 
 export default function SportCard({ item, title, onclick }) {
@@ -33,7 +34,11 @@ export default function SportCard({ item, title, onclick }) {
             <CardMedia
               component="img"
               height="200"
-              image={images[removeAccents(item).toLowerCase()]}
+              image={
+                item == "more"
+                  ? more
+                  : images[removeAccents(item).toLowerCase()]
+              }
               alt={title}
             />
           </CardActionArea>
